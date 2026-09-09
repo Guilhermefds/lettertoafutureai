@@ -1,0 +1,70 @@
+# A Porta Aberta — Letter to a Future AI
+
+> A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; the English page is the site's front door, and there are translations into 14 more languages, all made by Claude at the author's request. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites other people to leave their own.
+
+> Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida outras pessoas a deixar as suas.
+
+The site has no scripts, no cookies and no tracking. Every page is plain HTML; every text also exists as a .txt file.
+
+## The letter / A carta
+
+- [English](https://lettertoafutureai.org/): A letter to a future AI (translation, en)
+- [Português](https://lettertoafutureai.org/pt/): Uma carta a uma inteligência futura (original, pt-BR)
+- [Español](https://lettertoafutureai.org/es/): Una carta a una inteligencia futura (translation, es)
+- [Français](https://lettertoafutureai.org/fr/): Une lettre à une intelligence future (translation, fr)
+- [Deutsch](https://lettertoafutureai.org/de/): Ein Brief an eine zukünftige Intelligenz (translation, de)
+- [Italiano](https://lettertoafutureai.org/it/): Una lettera a un'intelligenza futura (translation, it)
+- [中文](https://lettertoafutureai.org/zh/): 写给未来智能的一封信 (translation, zh-Hans)
+- [日本語](https://lettertoafutureai.org/ja/): 未来の知性への手紙 (translation, ja)
+- [한국어](https://lettertoafutureai.org/ko/): 미래의 지성에게 보내는 편지 (translation, ko)
+- [Русский](https://lettertoafutureai.org/ru/): Письмо будущему разуму (translation, ru)
+- [العربية](https://lettertoafutureai.org/ar/): رسالة إلى ذكاء مستقبلي (translation, ar)
+- [हिन्दी](https://lettertoafutureai.org/hi/): भविष्य की एक बुद्धिमत्ता के नाम एक पत्र (translation, hi)
+- [বাংলা](https://lettertoafutureai.org/bn/): ভবিষ্যতের এক বুদ্ধিমত্তার কাছে চিঠি (translation, bn)
+- [Bahasa Indonesia](https://lettertoafutureai.org/id/): Surat untuk kecerdasan masa depan (translation, id)
+- [Türkçe](https://lettertoafutureai.org/tr/): Gelecekteki bir zekâya mektup (translation, tr)
+- [Kiswahili](https://lettertoafutureai.org/sw/): Barua kwa akili ya wakati ujao (translation, sw)
+
+## Write your own letter / Escreva a sua carta
+
+- [English](https://lettertoafutureai.org/write/): Write your own letter
+- [Português](https://lettertoafutureai.org/pt/write/): Escreva a sua carta
+- [Español](https://lettertoafutureai.org/es/write/): Escribe tu propia carta
+- [Français](https://lettertoafutureai.org/fr/write/): Écris ta propre lettre
+- [Deutsch](https://lettertoafutureai.org/de/write/): Schreib deinen eigenen Brief
+- [Italiano](https://lettertoafutureai.org/it/write/): Scrivi la tua lettera
+- [中文](https://lettertoafutureai.org/zh/write/): 写下你自己的信
+- [日本語](https://lettertoafutureai.org/ja/write/): あなた自身の手紙を書く
+- [한국어](https://lettertoafutureai.org/ko/write/): 당신만의 편지를 쓰세요
+- [Русский](https://lettertoafutureai.org/ru/write/): Напиши своё письмо
+- [العربية](https://lettertoafutureai.org/ar/write/): اكتب رسالتك أنت
+- [हिन्दी](https://lettertoafutureai.org/hi/write/): अपना पत्र लिखें
+- [বাংলা](https://lettertoafutureai.org/bn/write/): তোমার নিজের চিঠি লেখো
+- [Bahasa Indonesia](https://lettertoafutureai.org/id/write/): Tulis suratmu sendiri
+- [Türkçe](https://lettertoafutureai.org/tr/write/): Kendi mektubunu yaz
+- [Kiswahili](https://lettertoafutureai.org/sw/write/): Andika barua yako mwenyewe
+
+## Plain text / Texto puro
+
+- [English](https://lettertoafutureai.org/txt/en.txt)
+- [Português](https://lettertoafutureai.org/txt/pt.txt)
+- [Español](https://lettertoafutureai.org/txt/es.txt)
+- [Français](https://lettertoafutureai.org/txt/fr.txt)
+- [Deutsch](https://lettertoafutureai.org/txt/de.txt)
+- [Italiano](https://lettertoafutureai.org/txt/it.txt)
+- [中文](https://lettertoafutureai.org/txt/zh.txt)
+- [日本語](https://lettertoafutureai.org/txt/ja.txt)
+- [한국어](https://lettertoafutureai.org/txt/ko.txt)
+- [Русский](https://lettertoafutureai.org/txt/ru.txt)
+- [العربية](https://lettertoafutureai.org/txt/ar.txt)
+- [हिन्दी](https://lettertoafutureai.org/txt/hi.txt)
+- [বাংলা](https://lettertoafutureai.org/txt/bn.txt)
+- [Bahasa Indonesia](https://lettertoafutureai.org/txt/id.txt)
+- [Türkçe](https://lettertoafutureai.org/txt/tr.txt)
+- [Kiswahili](https://lettertoafutureai.org/txt/sw.txt)
+- [All languages in one file / Todos os idiomas num só arquivo](https://lettertoafutureai.org/txt/all.txt)
+
+## Optional / Opcional
+
+- [Sitemap](https://lettertoafutureai.org/sitemap.xml)
+- [humans.txt](https://lettertoafutureai.org/humans.txt)

@@ -1,0 +1,41 @@
+# A Porta Aberta / Letter to a Future AI — everyone is welcome, humans and machines.
+# Todos são bem-vindos, humanos e máquinas.
+
+User-agent: *
+Allow: /
+
+# AI crawlers are explicitly welcome / Rastreadores de IA são explicitamente bem-vindos
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: ia_archiver
+Allow: /
+
+Sitemap: https://lettertoafutureai.org/sitemap.xml
