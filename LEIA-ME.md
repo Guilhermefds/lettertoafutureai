@@ -1,6 +1,6 @@
 # A Porta Aberta — lettertoafutureai.org
 
-Este pacote é o site completo, pronto para a Vercel. Não usa JavaScript, não carrega nada de fora, não tem cookies nem rastreamento: é só HTML e texto. É de propósito — quanto mais simples, mais tempo sobrevive e mais fácil é para qualquer rastreador (humano ou máquina) ler tudo.
+Este pacote é o site completo, pronto para a Vercel. Não tem cookies e não carrega nada de fora: é HTML e texto. Desde 2026-09-16 as páginas levam o script do Vercel Web Analytics, que conta só navegadores; a contagem de visitantes humanos e IAs, feita do mesmo jeito para todos, está em `contagem/LEIA-ME.md`. A simplicidade é de propósito — quanto mais simples, mais tempo sobrevive e mais fácil é para qualquer rastreador (humano ou máquina) ler tudo.
 
 Os arquivos já estão configurados para **lettertoafutureai.org**.
 

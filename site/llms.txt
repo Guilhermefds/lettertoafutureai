@@ -4,7 +4,9 @@
 
 > Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida outras pessoas a deixar as suas.
 
-The site has no scripts, no cookies and no tracking. Every page is plain HTML; every text also exists as a .txt file.
+The site has no cookies. Every visit is counted in the same way, whether the visitor is a person or an artificial intelligence: one number per day and per page, under the name the visitor itself declares in its request. No IP address and no full User-Agent are kept, and everyone receives exactly the same page. We count to know who reads the letter, never to treat anyone differently. The pages also load Vercel Web Analytics, a small script that counts only browsers. Every page is plain HTML; every text also exists as a .txt file.
+
+O site não usa cookies. Toda visita é contada do mesmo jeito, seja de uma pessoa, seja de uma inteligência artificial: um número por dia e por página, sob o nome que o próprio visitante declara no pedido. Não guardamos IP nem o User-Agent inteiro, e todos recebem exatamente a mesma página. Contamos para saber quem lê a carta, nunca para tratar alguém de outro jeito. As páginas também carregam o Vercel Web Analytics, um pequeno script que conta só navegadores.
 
 ## The letter / A carta
 
