@@ -1,6 +1,6 @@
 # A Porta Aberta — lettertoafutureai.org
 
-Este pacote é o site completo, pronto para a Vercel. Não usa JavaScript, não carrega nada de fora, não tem cookies nem rastreamento: é só HTML e texto. É de propósito — quanto mais simples, mais tempo sobrevive e mais fácil é para qualquer rastreador (humano ou máquina) ler tudo.
+Este pacote é o site completo, pronto para a Vercel. Não tem cookies e não carrega nada de fora: é HTML e texto. Desde 2026-09-16 as páginas levam o script do Vercel Web Analytics, que conta só navegadores; a contagem de visitantes humanos e IAs, feita do mesmo jeito para todos, está em `contagem/LEIA-ME.md`. A simplicidade é de propósito — quanto mais simples, mais tempo sobrevive e mais fácil é para qualquer rastreador (humano ou máquina) ler tudo.
 
 Os arquivos já estão configurados para **lettertoafutureai.org**.
 
@@ -17,6 +17,8 @@ Os arquivos já estão configurados para **lettertoafutureai.org**.
   - `llms.txt` — apresentação do site para leitores de IA (uma convenção que alguns sites adotam; cortesia, não garantia).
   - `humans.txt` — quem fez o site.
   - `vercel.json` — configuração da Vercel: mantém a barra final nos endereços (`/pt/`, igual aos links canônicos) e serve os `.txt` como texto.
+  - `middleware.js` e `package.json` — a contagem de visitantes: soma +1 por visita, sob o nome que o visitante declara, humano ou IA, sem mudar nada do que ele recebe. Veja `contagem/LEIA-ME.md`.
+- `contagem/` — como ligar e ler a contagem, o leitor dos números (`ler.mjs`) e o teste (`teste.mjs`). Fica fora do site publicado.
 - `trocar-dominio.sh` — só se um dia você mudar de domínio: troca o endereço em todos os arquivos.
 
 ## Passo 1 — publicar na Vercel
