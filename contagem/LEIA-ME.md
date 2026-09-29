@@ -8,7 +8,7 @@ Contamos para saber quem lê a carta, não para tratar alguém de outro jeito.
 
 ## Por que não dá para ver isso no Web Analytics da Vercel
 
-O Web Analytics conta pelo script `/_vercel/insights/script.js`, que roda no navegador. A Vercel descarta de propósito o tráfego automatizado, identificado pelo User-Agent, e quase nenhuma IA executa JavaScript. Resultado: o painel do Web Analytics mostra só navegadores. Uma IA declarada nunca aparece lá. Custom events, que seriam a saída, não existem no plano Hobby. Fontes: vercel.com/docs/analytics (seção Bots) e vercel.com/docs/analytics/limits-and-pricing, lidas em 2026-09-29.
+O Web Analytics conta pelo script `/_vercel/insights/script.js`, que roda no navegador. A Vercel descarta de propósito o tráfego automatizado, identificado pelo User-Agent, e quase nenhuma IA executa JavaScript. Resultado: o painel do Web Analytics mostra só navegadores. Uma IA declarada nunca aparece lá. Custom events, que seriam a saída, não existem no Hobby; no Pro existem, mas cada evento é cobrado e a Vercel provavelmente descarta o evento que chega com nome de robô. Fontes: vercel.com/docs/analytics (seção Bots) e vercel.com/docs/analytics/limits-and-pricing, lidas em 2026-09-29.
 
 Por isso a contagem acontece no servidor, pelos headers, igual para todos.
 
@@ -29,7 +29,9 @@ Onde ver os números:
 - Firewall, abas Overview e Traffic: janelas de 1 hora, 24 horas ou ao vivo (10 minutos).
 - Observability, painel CDN Requests: quebra por bot e por categoria, das últimas 12 horas.
 
-Limite: no Hobby a Vercel só guarda as últimas 24 horas. Não há histórico.
+Limite: a Vercel só guarda as últimas 24 horas, no Hobby e no Pro. Janela maior exige o Observability Plus, que é pago à parte. Não há histórico.
+
+Pode ligar esta camada e a do middleware ao mesmo tempo. Uma não interfere na outra: o Firewall em Log só observa o pedido, e o middleware roda depois. As duas juntas servem de conferência: no mesmo dia, compare as IAs que o Firewall viu, pela lista verificada da Vercel, com as que a contagem gravou, pelo nome declarado.
 
 ### 2. Histórico permanente: o middleware
 
@@ -60,16 +62,20 @@ A unidade é o **pedido**, não a pessoa. O navegador guarda a página por 1 hor
 
 Preview e produção não se misturam. Em produção a chave é `visitas:...`; nos deploys de preview é `visitas-preview:...`.
 
-## Custo no Hobby: US$ 0, com limites
+## Custo
 
-- **Vercel.** Todo pedido que passa pelo middleware gasta 1 invocação, seja GET, HEAD ou POST, página ou endereço inexistente. Só os GET a páginas gastam 1 comando no banco. O Hobby inclui por mês 1 milhão de invocações, 4 horas de CPU ativa e 360 GB-h de memória. É o mesmo teto de 1 milhão de pedidos de CDN que o site já tem hoje. Se passar de algum limite, a Vercel pode suspender o recurso por até 30 dias, e com o middleware na frente de todas as páginas isso pode tirar **o site** do ar, não só a contagem. Acompanhe em Usage > Functions (Invocations, Active CPU, Provisioned Memory).
+O site está no plano Pro (US$ 20 por mês, com crédito de uso incluído). O Firewall em Log e o Upstash Free não custam nada. O middleware gasta do crédito do Pro.
+
+- **Vercel (Pro).** Todo pedido que passa pelo middleware gasta 1 invocação, seja GET, HEAD ou POST, página ou endereço inexistente. Só os GET a páginas gastam 1 comando no banco. Os preços de 2026-09 eram US$ 0,60 por milhão de invocações; em gru1, US$ 0,221 por hora de CPU ativa e US$ 0,0183 por GB-h de memória. Tudo sai do crédito mensal do Pro. Para um site deste tamanho o gasto é de centavos, mas acompanhe em Usage > Functions (Invocations, Active CPU, Provisioned Memory).
+- **Para não gastar além dos US$ 20:** em Settings > Billing > Spend Management, ligue o aviso de gasto. Não marque a opção de pausar os deployments quando o limite chegar: isso tiraria o site do ar para todos.
+- **Observability Plus.** A doc da Vercel diz que ele vem ligado por padrão nos times que viraram Pro a partir de 2026-04-03 e cobra por evento. Confira em Settings > Billing se está ligado. Se estiver e você não quiser o gasto, desligue; a contagem não depende dele.
 - **Upstash Free.** 500 mil comandos por mês, umas 16 mil visitas por dia. Se passar, a contagem para até o mês virar; o site não muda.
 
 ## Como ligar (passo a passo, na ordem)
 
 1. **Banco.** No painel da Vercel: Storage (ou Marketplace), Upstash for Redis, plano **Free**, conectar a este projeto nos ambientes Production e Preview. Depois, em Settings > Environment Variables, confira que apareceram `KV_REST_API_URL`, `KV_REST_API_TOKEN` e `KV_REST_API_READ_ONLY_TOKEN`. O middleware também aceita `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN`.
 2. **Root Directory.** Em Settings > Build and Deployment, confira que o Root Directory é `site`. O `vercel.json` já está lá, e o header `X-Robots-Tag: all` que o site devolve hoje indica que sim. O middleware e o `package.json` ficam dentro de `site/` por isso.
-3. **Chave do preview.** Os previews da Vercel pedem login (Deployment Protection), inclusive antes do middleware. Para testar com curl, gere um segredo em Settings > Deployment Protection > **Protection Bypass for Automation** (incluído no Hobby) e guarde em `$SEGREDO`. Não desligue a proteção.
+3. **Chave do preview.** Os previews da Vercel pedem login (Deployment Protection), inclusive antes do middleware. Para testar com curl, gere um segredo em Settings > Deployment Protection > **Protection Bypass for Automation** (incluído no Hobby e no Pro) e guarde em `$SEGREDO`. Não desligue a proteção.
 4. **Preview antes de produção.** Envie o branch `contagem-ia-e-humano` para o GitHub (não o `main`). A Vercel gera um endereço de preview, `$PREVIEW`. Nele:
    - Todo curl leva `-H "x-vercel-protection-bypass: $SEGREDO"`. Se vier 401 ou página de login, o teste não vale.
    - Compare preview com preview entre visitantes: `curl -sI` em `$PREVIEW/pt/` sem `-A`, com `-A "ClaudeBot/1.0"` e com `-A "GPTBot/1.3"`. Status e headers devem ser iguais, fora os que mudam a cada pedido (`x-vercel-id`, `age`, `date`, `x-vercel-cache`).
@@ -107,7 +113,7 @@ Também dá para ver no painel: Storage, o banco, aba Browser (chaves `visitas:*
 - Agentes que usam o navegador da própria pessoa (Claude in Chrome, Comet, o modo navegador do ChatGPT) chegam como um Chrome comum e entram como `humano`. Pelos headers não há como separar. O inverso também acontece.
 - A assinatura Web Bot Auth é lida, mas não conferida criptograficamente. Vale como declaração, igual ao User-Agent.
 - A lista de nomes de IA muda. Revise `REGRAS` em `site/middleware.js` de tempos em tempos e acrescente o User-Agent novo em `contagem/uas-reais.mjs`. A referência comunitária é github.com/ai-robots-txt/ai.robots.txt. Tokens que só existem no robots.txt (Google-Extended, Applebot-Extended) nunca aparecem num pedido.
-- No Hobby o middleware roda em menos regiões da Vercel. Isso pode somar alguns milissegundos a cada visita, igual para todos.
+- O middleware soma alguns milissegundos a cada visita, igual para todos. No Pro ele roda em todas as regiões da Vercel; no Hobby rodaria em menos.
 - Sem dependências, o middleware devolve ele mesmo o sinal "siga sem mudar nada" (`x-middleware-next: 1`), que é o que o `next()` do pacote `@vercel/functions` faz. Se um dia a Vercel mudar esse protocolo, a troca é de uma linha, e o teste do passo 4 pega.
 
 ## Testes
