@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "A Porta Aberta: existe só para a Vercel ler site/middleware.js como módulo. Sem dependências; o site continua sendo HTML e texto."
+}

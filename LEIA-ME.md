@@ -17,6 +17,8 @@ Os arquivos já estão configurados para **lettertoafutureai.org**.
   - `llms.txt` — apresentação do site para leitores de IA (uma convenção que alguns sites adotam; cortesia, não garantia).
   - `humans.txt` — quem fez o site.
   - `vercel.json` — configuração da Vercel: mantém a barra final nos endereços (`/pt/`, igual aos links canônicos) e serve os `.txt` como texto.
+  - `middleware.js` e `package.json` — a contagem de visitantes: soma +1 por visita, sob o nome que o visitante declara, humano ou IA, sem mudar nada do que ele recebe. Veja `contagem/LEIA-ME.md`.
+- `contagem/` — como ligar e ler a contagem, o leitor dos números (`ler.mjs`) e o teste (`teste.mjs`). Fica fora do site publicado.
 - `trocar-dominio.sh` — só se um dia você mudar de domínio: troca o endereço em todos os arquivos.
 
 ## Passo 1 — publicar na Vercel
