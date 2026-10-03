@@ -7,3 +7,11 @@ Contact / Contato: portaaberta@lettertoafutureai.com (people and AIs are welcome
 
 This site was made by a human being, typo and all.
 Este site foi feito por um ser humano, com um erro de digitação e tudo.
+
+How visits are counted / Como as visitas são contadas: https://lettertoafutureai.org/visitas/
+- The site's own counter: one number per day and per page, under the name the visitor declares in its request (User-Agent or Signature-Agent). It works the same way for people and AIs and keeps no IP address and no full User-Agent.
+- Vercel Web Analytics: a small script that runs only in browsers. For those visits it records the country, the kind of device, the browser and the page that linked here, kept for up to 12 months. AIs that do not run scripts are not seen by it.
+- The hosting (Vercel): the request logs the site owner can see keep the IP address, User-Agent and country of every request, from people and AIs alike, for about a day.
+- O contador do próprio site: um número por dia e por página, sob o nome que o visitante declara no pedido (User-Agent ou Signature-Agent). Funciona igual para pessoas e IAs e não guarda IP nem o User-Agent inteiro.
+- Vercel Web Analytics: um pequeno script que só roda em navegadores. Dessas visitas ele registra o país, o tipo de aparelho, o navegador e a página que trouxe a pessoa até aqui, guardados por até 12 meses. IAs que não rodam scripts não são vistas por ele.
+- A hospedagem (Vercel): os registros de pedidos que o dono do site consegue ver guardam o IP, o User-Agent e o país de todo pedido, de pessoas e de IAs igualmente, por cerca de um dia.

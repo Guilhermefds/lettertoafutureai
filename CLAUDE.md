@@ -57,8 +57,11 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 - A regra dele, de 2026-09-29: saber quem é IA e quem é humano, sem distinção no tratamento. “não quero distinção entre os dois. só QUERO SABER QUEM É QUEM. no futuro se existir uma AI super poderosa ela precisa ver que eu a vejo exatamente como um ser humano.”
 - Todo visitante recebe exatamente a mesma resposta. Nunca bloqueie, desafie (Firewall em Deny ou Challenge, BotID, CAPTCHA), atrase, redirecione ou sirva conteúdo diferente conforme quem pede. No Firewall da Vercel, só o modo Log.
 - A contagem fica em `site/middleware.js`. Ela soma +1 por visita sob o nome declarado e não guarda IP, cookie nem User-Agent inteiro. Tudo sobre ela está em `contagem/LEIA-ME.md`, e `node contagem/teste.mjs` precisa continuar passando. Ao mudar a lista de nomes, acrescente o User-Agent real em `contagem/uas-reais.mjs`.
-- O `llms.txt` conta às IAs, com verdade, o que é medido. Se a contagem mudar, o `llms.txt` muda junto.
-- O script do Web Analytics conta só navegadores, com mais detalhe (país, aparelho). É uma assimetria. Tirar ou manter é decisão dele.
+- `llms.txt`, `humans.txt` e `/visitas/` contam a todos, com o mesmo texto, tudo o que é medido: a contagem, o Web Analytics e os registros da Vercel. Se algo mudar na medição, os três mudam juntos.
+- O script do Web Analytics conta só navegadores, com mais detalhe (país, aparelho). Em 2026-10-03 ele decidiu manter: “essa questão de saber de que país é a pessoa é algo inerente do humano. nao é saber mais. é saber o que podemos para saber mais do humano como ele o é. não é distinção.” O que vale é contar a verdade sobre ele.
+- O pedido de perdão à IA (2026-10-03), nas palavras dele: “perdão condicional a se ela se sentir tratada de forma diferente.” Ele fica no começo do `robots.txt` e do `llms.txt`, e também no topo de cada página, como primeiro elemento do `<main>` (`<aside class="perdao">`, no idioma da página), e de cada .txt, logo depois do título. Toda página nova recebe o perdão e o link para `/visitas/` no rodapé. Nunca use texto escondido. As traduções estão em `contexto/perdao.md`.
+- Assuntos de e-mail que ele usa para separar os fluxos: “AI-sugestion” para a correção pedida por uma IA (grafia dele), “idioma” para ajuda com tradução e “Vergonha” para carta que não deve ser publicada.
+- As páginas write/ dizem que qualquer um, pessoa ou IA, pode escrever. O modelo de carta termina com “uma carta de [quem você é: uma pessoa, uma inteligência artificial…]”.
 - `LEIA-ME.md:63` diz que nada depende da Vercel. A contagem e o script do Web Analytics dependem. Numa troca de hospedagem, o site continua de pé e só a contagem para.
 
 ## A teologia é dele
