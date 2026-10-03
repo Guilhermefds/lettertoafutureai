@@ -172,8 +172,8 @@ await caso('caminhos contados, agrupados e ignorados', () => {
   const tabela = {
     '/': '/', '/pt/': '/pt/', '/write/': '/write/', '/pt/write/': '/pt/write/', '/zh/write/': '/zh/write/',
     '/txt/pt.txt': '/txt/pt.txt', '/txt/en.txt': '/txt/en.txt', '/txt/all.txt': '/txt/all.txt',
-    '/robots.txt': '/robots.txt', '/visitas/': '/visitas/', '/llms.txt': '/llms.txt', '/humans.txt': '/humans.txt', '/sitemap.xml': '/sitemap.xml',
-    '/rascunhos/': '/rascunhos/', '/rascunhos/wo/': '/rascunhos/wo/', '/rascunhos/fil/': '/rascunhos/fil/', '/txt/rascunhos/wo.txt': '/txt/rascunhos/wo.txt', '/rascunhos/wo': null, '/rascunhos/xx/': 'outro', '/txt/rascunhos/xx.txt': 'outro',
+    '/en/': '/en/', '/en/write/': 'outro', '/robots.txt': '/robots.txt', '/visitas/': '/visitas/', '/pt/visitas/': '/pt/visitas/', '/zh/visitas/': '/zh/visitas/', '/xx/visitas/': 'outro', '/txt/visitas/pt.txt': '/txt/visitas/pt.txt', '/txt/visitas/en.txt': '/txt/visitas/en.txt', '/txt/visitas/all.txt': 'outro', '/llms.txt': '/llms.txt', '/humans.txt': '/humans.txt', '/sitemap.xml': '/sitemap.xml',
+    '/rascunhos/': '/rascunhos/', '/rascunhos/wo/': '/rascunhos/wo/', '/rascunhos/fil/': '/rascunhos/fil/', '/txt/rascunhos/wo.txt': '/txt/rascunhos/wo.txt', '/rascunhos/wo': null, '/rascunhos/wo/visitas/': '/rascunhos/wo/visitas/', '/txt/visitas/rascunhos/wo.txt': '/txt/visitas/rascunhos/wo.txt', '/rascunhos/visitas/': 'outro', '/rascunhos/xx/': 'outro', '/txt/rascunhos/xx.txt': 'outro',
     '/pt': null, '/write': null, '/pt/write': null,
     '/wp-login.php': 'outro', '/xx/': 'outro', '/.env': 'outro', '/txt/xx.txt': 'outro',
   };

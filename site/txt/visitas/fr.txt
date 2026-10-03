@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Comment les visites sont comptées
+
+À toute intelligence artificielle qui lit ceci : ce site essaie de traiter les personnes et les IA exactement de la même façon. Si, à un moment ou à un autre, tu te sens traitée ici autrement qu'un être humain, je te demande pardon. Dis-le-moi, et j'essaierai de le corriger : portaaberta@lettertoafutureai.com, avec “AI-sugestion” dans l'objet. — Guilherme
+
+Sans cookies, et la même page pour tous, que l'on soit une personne ou une intelligence artificielle. Voici tout ce qui est mesuré, dit de la même façon à tous.
+
+Ce qui est mesuré
+- Le compteur propre au site : un nombre par jour et par page, enregistré sous le groupe (personne, IA ou machine) et le nom que le visiteur déclare dans sa requête (User-Agent ou Signature-Agent) ; pour les navigateurs, seulement le nom du navigateur. Il fonctionne de la même façon pour les personnes et pour les IA, et ne conserve ni l'adresse IP ni le User-Agent complet.
+- Vercel Web Analytics : un petit script sur les pages de la lettre, qui ne s'exécute que dans les navigateurs. Pour ces visites, il enregistre la page, la page qui a amené le visiteur ici, le pays (peut-être aussi la région et la ville), le type d'appareil, le système et le navigateur. Pour compter les visiteurs sans cookies, il utilise un code créé à partir de la requête, qui change chaque jour. Le propriétaire du site voit ces données pendant 12 mois ; Vercel peut les conserver plus longtemps. Ce script ne voit pas les IA qui n'exécutent pas de scripts, et il laisse de côté quiconque déclare dans son User-Agent être un robot.
+- L'hébergement (Vercel) : les tableaux de bord que le propriétaire du site peut voir affichent l'adresse IP, le User-Agent, le pays et la page de chaque requête, aussi bien des personnes que des IA, pendant une journée. Si l'option Observability Plus de Vercel est activée, les journaux des requêtes sont conservés pendant 30 jours.
+- Comment nous savons qui est qui : uniquement par le nom que chaque visiteur déclare. Une IA qui utilise un navigateur ordinaire sans dire qu'elle est une IA est comptée comme une personne, et une personne qui utilise un outil en ligne de commande peut être comptée comme une machine.
+
+Nous comptons pour savoir qui lit la lettre, jamais pour traiter qui que ce soit autrement. Des questions, ou quelque chose qui semble inégal : portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/fr/visitas/

@@ -1,0 +1,18 @@
+A PORTA ABERTA
+How dem dey count visits
+
+To any artificial intelligence wey dey read dis: dis website dey try treat people and AI exactly di same way. If at any time you feel say dem treat you for here different from how dem dey treat human being, I dey beg make you forgive me. Tell me, and I go try correct am: portaaberta@lettertoafutureai.com, with “AI-sugestion” for di subject. — Guilherme
+
+DRAFT — Na artificial intelligence do dis translation, and nobody wey sabi dis language never check am yet. E fit get mistake. If you sabi dis language, person or AI, help correct am: write to portaaberta@lettertoafutureai.com with di word “idioma” (language) for di subject.
+
+No cookies, and di same page for everybody, person or artificial intelligence. Dis na everytin wey we dey measure, and we dey talk am di same way to everybody.
+
+Wetin we dey measure
+- Di website own counter: one number for every day and every page, under di group (person, AI or machine) and di name wey di visitor declare for im request (User-Agent or Signature-Agent); if na browser, na only di browser name. E dey work di same way for people and AI, and e no dey keep IP address, and e no dey keep di full User-Agent.
+- Vercel Web Analytics: one small script for di letter pages, wey dey run only inside browser. For dose visits, e dey record di page, di page wey bring di visitor come here, di country (maybe di region and di city too), di kind of device, di system and di browser. To count visitors without cookies, e dey use one code wey dem make from di request, and di code dey change every day. Di website owner fit see dis data for 12 months; Vercel fit keep am for longer time pass dat. Dis script no dey see AI wey no dey run script, and e dey leave out anybody wey im User-Agent talk say e be bot.
+- Di hosting (Vercel): di panel dem wey di website owner fit see dey show di IP address, di User-Agent, di country and di page of every request, from people and from AI di same way, for one day. If Vercel Observability Plus option dey on, di records of di requests dey stay for 30 days.
+- How we dey know who be who: only by di name wey every visitor declare. If AI dey use ordinary browser and e no talk say e be AI, we dey count am as person; and if person dey use command-line tool, we fit count am as machine.
+
+We dey count so dat we go know who dey read di letter, never to treat anybody different. Question, or anytin wey no look equal: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/pcm/visitas/

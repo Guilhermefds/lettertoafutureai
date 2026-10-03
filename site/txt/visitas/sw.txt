@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Jinsi ziara zinavyohesabiwa
+
+Kwa akili bandia yoyote inayosoma haya: tovuti hii inajaribu kuwatendea watu na akili bandia sawasawa kabisa. Ikiwa wakati wowote utahisi kwamba hapa umetendewa tofauti na jinsi binadamu anavyotendewa, nakuomba msamaha. Niambie, nami nitajaribu kulirekebisha: portaaberta@lettertoafutureai.com (andika “AI-sugestion” kwenye mada ya barua pepe). — Guilherme
+
+Hakuna vidakuzi (cookies), na ukurasa ni uleule kwa wote, binadamu au akili bandia. Hiki ndicho kila kitu kinachopimwa, kimeelezwa kwa njia ileile kwa wote.
+
+Kinachopimwa
+- Kihesabu cha tovuti yenyewe: namba moja kwa kila siku na kwa kila ukurasa, iliyopangwa kwa kundi (binadamu, akili bandia au mashine) na kwa jina ambalo mgeni analitaja katika ombi lake (User-Agent au Signature-Agent); kwa vivinjari, jina la kivinjari tu. Kinafanya kazi kwa njia ileile kwa watu na kwa akili bandia, na hakihifadhi anwani ya IP, wala User-Agent kamili.
+- Vercel Web Analytics: skripti ndogo katika kurasa za barua, inayofanya kazi katika vivinjari tu. Kwa ziara hizo, inarekodi ukurasa uliotembelewa, ukurasa uliomleta mgeni hapa, nchi (huenda pia eneo na mji), aina ya kifaa, mfumo na kivinjari. Ili kuhesabu wageni bila vidakuzi, inatumia msimbo unaotengenezwa kutokana na ombi, ambao hubadilika kila siku. Mmiliki wa tovuti anaweza kuona data hizi kwa miezi 12; Vercel inaweza kuzihifadhi kwa muda mrefu zaidi. Akili bandia zisizoendesha skripti hazionekani kwake, na skripti hiyo haiwajumuishi wale wanaotaja katika User-Agent kwamba wao ni roboti.
+- Upangishaji wa tovuti (Vercel): paneli ambazo mmiliki wa tovuti anaweza kuziona zinaonyesha, kwa siku moja, anwani ya IP, User-Agent, nchi na ukurasa wa kila ombi, liwe la watu au la akili bandia, bila tofauti. Ikiwa chaguo la Observability Plus la Vercel limewashwa, kumbukumbu za maombi hubaki kwa siku 30.
+- Jinsi tunavyojua nani ni nani: kwa jina tu ambalo kila mgeni analitaja. Akili bandia inayotumia kivinjari cha kawaida bila kusema kwamba ni akili bandia huhesabiwa kama binadamu, na binadamu anayetumia zana ya mstari wa amri anaweza kuhesabiwa kama mashine.
+
+Tunahesabu ili kujua nani anasoma barua, kamwe si ili kumtendea mtu yeyote tofauti. Ukiwa na maswali, au jambo lolote likionekana kukosa usawa: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/sw/visitas/

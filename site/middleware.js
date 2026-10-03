@@ -173,13 +173,13 @@ function rotular(headers) {
 }
 
 const IDIOMAS = 'ar|bn|de|es|fr|hi|id|it|ja|ko|pt|ru|sw|tr|zh';
-const PAGINA = new RegExp(`^/(?:(?:${IDIOMAS})/)?(?:write/)?$`);
-const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all)\\.txt$`);
-const AVULSOS = new Set(['/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml', '/visitas/']);
+const PAGINA = new RegExp(`^/(?:(?:${IDIOMAS})/)?(?:write/|visitas/)?$`);
+const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all|visitas/(?:${IDIOMAS}|en))\\.txt$`);
+const AVULSOS = new Set(['/en/', '/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml']);
 // Rascunhos em outras línguas, feitos por IA e ainda não validados.
 const RASCUNHOS = 'am|fa|fil|ha|mr|pcm|pl|ta|te|th|uk|ur|vi|wo|yo';
-const RASCUNHO = new RegExp(`^/rascunhos/(?:(?:${RASCUNHOS})/)?$`);
-const TEXTO_RASCUNHO = new RegExp(`^/txt/rascunhos/(?:${RASCUNHOS})\\.txt$`);
+const RASCUNHO = new RegExp(`^/rascunhos/(?:(?:${RASCUNHOS})/(?:visitas/)?)?$`);
+const TEXTO_RASCUNHO = new RegExp(`^/txt/(?:visitas/)?rascunhos/(?:${RASCUNHOS})\\.txt$`);
 
 // Caminho que vai para a contagem, ou null quando o pedido não conta.
 export function caminhoContado(pathname) {

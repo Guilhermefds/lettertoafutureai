@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Ni ñuy waññee visite yi
+
+Ñeel képp ku di xel mu nit defar (IA) te di jàng lii: site bii dafay jéem a jëflante ak nit ñi ak IA yi ci benn anam rekk. Bu fekkee benn yoon nga yëg ne dañu jëflante ak yow fii ci anam bu wuute ak ni ñuy jëflante ak nit, dama lay ñaan nga baal ma. Waxal ma ko, te dinaa jéem a jubbanti ko: portaaberta@lettertoafutureai.com. Bindal “AI-sugestion” ci objet bi. — Guilherme
+
+BROUILLON — Tekki bii, ab xel mu nit defar (IA) moo ko def, te ñiy wax làkk wii seetaatuñu ko ba tey. Mën na am ay njuumte. Su fekkee dangay wax làkk wii, nit nga walla IA, dimbali nu jubbanti ko: bindal ci portaaberta@lettertoafutureai.com, te nga bind baat bi “idioma” (làkk) ci objet bi.
+
+Amul cookies, te xët wi benn la ci ñépp, nit walla xel mu nit defar. Lii mooy lépp lu ñuy natt, ñu xamal ko ñépp ci benn anam rekk.
+
+Li ñuy natt
+- Waññukaayu site bi ci boppam: benn lim ci bés bu nekk ak ci xët wu nekk, ci mbooloo mi (nit, IA walla masin) ak tur bi ki seetsi di wax ci laajam (User-Agent walla Signature-Agent); bu fekkee ab navigateur la, turu navigateur bi rekk. Dafay dox ci benn anam rekk ci nit ñi ak IA yi, te dencul adrees IP, dencul it User-Agent bi bépp.
+- Vercel Web Analytics: ab script bu tuuti ci xëti bataaxal bi, buy dox ci navigateur yi rekk. Ci visite yooyu, dafay bind xët wi, xët wi indi ki seetsi fii, réew mi (te mën na am it diiwaan bi ak dëkk bi), xeetu appareil bi, système bi ak navigateur bi. Ngir waññ ñi seetsi te du jëfandikoo cookies, dafay jëfandikoo ab code bu ñu defar ci laaj bi, buy soppiku bés bu nekk. Boroom site bi mën na gis données yooyu diirub 12 weer; Vercel mën na leen denc diir bu gën a yàgg. Script bii du gis IA yi dul doxal script, te dafay bàyyi ci biti ku wax ci User-Agent bi ne ab robot la.
+- Hébergement bi (Vercel): tableau de bord yi boroom site bi mën a gis dañuy won adrees IP bi, User-Agent bi, réew mi ak xët wi ci laaj bu nekk, ci nit ñi ak ci IA yi ci benn anam, diirub benn fan. Su ñu taalee option Observability Plus bu Vercel, li ñu denc ci laaj yi dafay des 30 fan.
+- Ni nuy xame kan mooy kan: ci tur bi ku nekk ci ñi seetsi di wax rekk. IA buy jëfandikoo ab navigateur bu ñépp di jëfandikoo te waxul ne IA la, dañu koy waññ ni nit; te nit kuy jëfandikoo jumtukaayu ligne de commande, mën nañu ko waññ ni masin.
+
+Danuy waññ ngir xam kan moy jàng bataaxal bi, te mukk du ngir jëflante ak kenn ci anam bu wuute. Sikk walla lenn lu mel ni lu yamul: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/wo/visitas/

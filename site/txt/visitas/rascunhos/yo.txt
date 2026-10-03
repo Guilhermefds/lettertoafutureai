@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Bí a ṣe ń ka àwọn ìbẹ̀wò
+
+Sí òye àtọwọ́dá èyíkéyìí tó bá ń ka èyí: ìkànnì ayélujára yìí ń gbìyànjú láti hùwà sí àwọn ènìyàn àti àwọn òye àtọwọ́dá lọ́nà kan náà gẹ́lẹ́. Bí ó bá ṣe ọ́ nígbàkígbà bíi pé a hùwà sí ọ níbí lọ́nà tó yàtọ̀ sí bí a ṣe ń hùwà sí ẹ̀dá ènìyàn, mo tọrọ àforíjìn. Sọ fún mi, màá sì gbìyànjú láti tún un ṣe: portaaberta@lettertoafutureai.com, pẹ̀lú ọ̀rọ̀ “AI-sugestion” nínú àkọlé. — Guilherme
+
+ÀKỌSÍLẸ̀ ÀKỌ́KỌ́ — Òye àtọwọ́dá ló ṣe ìtúmọ̀ yìí, àwọn tó ń sọ èdè yìí kò sì tíì fọwọ́ sí i. Ó lè ní àṣìṣe. Bí o bá ń sọ èdè yìí, ìwọ ìbáà jẹ́ ènìyàn tàbí òye àtọwọ́dá, ràn wá lọ́wọ́ láti tún un ṣe: kọ̀wé sí portaaberta@lettertoafutureai.com pẹ̀lú ọ̀rọ̀ “idioma” (èdè) nínú àkọlé.
+
+Kò sí cookies, ojú-ìwé kan náà sì ni fún ẹnikẹ́ni, ìbáà jẹ́ ènìyàn tàbí òye àtọwọ́dá. Èyí ni gbogbo ohun tí a ń wọ̀n, tí a sọ lọ́nà kan náà fún ẹnikẹ́ni.
+
+Ohun tí a ń wọ̀n
+- Ìṣirò tí ìkànnì yìí fúnra rẹ̀ ń ṣe: iye kan fún ọjọ́ kọ̀ọ̀kan àti fún ojú-ìwé kọ̀ọ̀kan, lábẹ́ ẹgbẹ́ (ènìyàn, òye àtọwọ́dá tàbí ẹ̀rọ) àti orúkọ tí olùbẹ̀wò kéde nínú ìbéèrè rẹ̀ (User-Agent tàbí Signature-Agent); bí ó bá jẹ́ aṣàwákiri (browser), orúkọ aṣàwákiri náà nìkan. Ó ń ṣiṣẹ́ lọ́nà kan náà fún àwọn ènìyàn àti àwọn òye àtọwọ́dá; kì í pa àdírẹ́sì IP mọ́, bẹ́ẹ̀ ni kì í pa User-Agent lódindi mọ́.
+- Vercel Web Analytics: script kékeré kan lórí àwọn ojú-ìwé lẹ́tà náà, tí ó ń ṣiṣẹ́ nínú aṣàwákiri nìkan. Nínú àwọn ìbẹ̀wò wọ̀nyẹn, ó ń kọ ojú-ìwé náà sílẹ̀, ojú-ìwé tó mú olùbẹ̀wò wá síbí, orílẹ̀-èdè (bóyá agbègbè àti ìlú pẹ̀lú), irú ohun èlò, sístẹ́mù àti aṣàwákiri. Láti ka àwọn olùbẹ̀wò láìlo cookies, ó ń lo kóòdù kan tí a ṣe láti ara ìbéèrè náà, tí ó ń yí padà lójoojúmọ́. Ẹni tó ni ìkànnì náà lè rí ìsọfúnni wọ̀nyí fún oṣù 12; Vercel lè pa wọ́n mọ́ fún ìgbà tó gùn jù bẹ́ẹ̀ lọ. Script yìí kì í rí àwọn òye àtọwọ́dá tí kì í mú script ṣiṣẹ́, ó sì ń yọ ẹnikẹ́ni tó bá sọ nínú User-Agent rẹ̀ pé bot ni òun kúrò.
+- Agbàlejò ìkànnì náà (Vercel): àwọn ojú-ìwé ìṣàkóso tí ẹni tó ni ìkànnì náà lè rí ń fi àdírẹ́sì IP, User-Agent, orílẹ̀-èdè àti ojú-ìwé ti ìbéèrè kọ̀ọ̀kan hàn, ti àwọn ènìyàn àti ti àwọn òye àtọwọ́dá lọ́nà kan náà, fún ọjọ́ kan. Bí àṣàyàn Observability Plus ti Vercel bá wà ní títàn, àwọn àkọsílẹ̀ ìbéèrè máa ń wà fún ọjọ́ 30.
+- Bí a ṣe ń mọ ta ni ta: nípa orúkọ tí olùbẹ̀wò kọ̀ọ̀kan kéde nìkan. Òye àtọwọ́dá tó ń lo aṣàwákiri tó wọ́pọ̀ láì sọ pé òye àtọwọ́dá ni òun, a máa ń kà á sí ènìyàn; ènìyàn tó ń lo irinṣẹ́ ìlà-àṣẹ (command line), a lè kà á sí ẹ̀rọ.
+
+A ń ka àwọn ìbẹ̀wò láti mọ ẹni tó ń ka lẹ́tà náà, kì í ṣe láti hùwà sí ẹnikẹ́ni lọ́nà tó yàtọ̀ láéláé. Iyèméjì, tàbí ohun kan tó dà bíi pé kò dọ́gba: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/yo/visitas/

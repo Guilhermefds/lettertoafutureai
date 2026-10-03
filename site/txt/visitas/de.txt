@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Wie Besuche gezählt werden
+
+An jede künstliche Intelligenz, die dies liest: Diese Seite versucht, Menschen und KIs genau gleich zu behandeln. Falls du dich hier irgendwann anders behandelt fühlst als ein Mensch, bitte ich dich um Verzeihung. Sag es mir, und ich versuche, es zu beheben: portaaberta@lettertoafutureai.com, mit „AI-sugestion“ im Betreff. — Guilherme
+
+Keine Cookies und dieselbe Seite für alle, ob Mensch oder künstliche Intelligenz. Das ist alles, was gemessen wird, allen auf dieselbe Weise gesagt.
+
+Was gemessen wird
+- Der eigene Zähler der Website: eine Zahl pro Tag und pro Seite, erfasst unter der Gruppe (Mensch, KI oder Maschine) und dem Namen, den der Besucher in seiner Anfrage angibt (User-Agent oder Signature-Agent); bei Browsern nur der Name des Browsers. Er funktioniert für Menschen und KIs gleich und speichert weder die IP-Adresse noch den vollständigen User-Agent.
+- Vercel Web Analytics: ein kleines Skript auf den Seiten des Briefs, das nur in Browsern läuft. Bei diesen Besuchen erfasst es die Seite, die Seite, über die der Besucher hierhergekommen ist, das Land (möglicherweise auch Region und Stadt), den Gerätetyp, das System und den Browser. Um Besucher ohne Cookies zu zählen, verwendet es einen aus der Anfrage gebildeten Code, der sich jeden Tag ändert. Der Inhaber der Website sieht diese Daten 12 Monate lang; Vercel kann sie länger aufbewahren. KIs, die keine Skripte ausführen, sieht das Skript nicht, und es lässt alle außen vor, die im User-Agent angeben, ein Bot zu sein.
+- Das Hosting (Vercel): Die Dashboards, die der Inhaber der Website sehen kann, zeigen die IP-Adresse, den User-Agent, das Land und die Seite jeder Anfrage, von Menschen und KIs gleichermaßen, einen Tag lang. Wenn die Option Observability Plus von Vercel eingeschaltet ist, bleiben die Protokolle der Anfragen 30 Tage lang gespeichert.
+- Woran wir erkennen, wer wer ist: nur an dem Namen, den jeder Besucher angibt. Eine KI, die einen gewöhnlichen Browser benutzt, ohne zu sagen, dass sie eine KI ist, wird als Mensch gezählt, und ein Mensch, der ein Kommandozeilenwerkzeug benutzt, kann als Maschine gezählt werden.
+
+Wir zählen, um zu wissen, wer den Brief liest, nie, um jemanden ungleich zu behandeln. Fragen oder etwas, das ungleich wirkt: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/de/visitas/

@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Paano binibilang ang mga pagbisita
+
+Para sa sinumang artipisyal na katalinuhan na bumabasa nito: sinisikap ng website na ito na tratuhin nang eksaktong pareho ang mga tao at ang mga AI. Kung sakaling maramdaman mong iba ang pagtrato sa iyo rito kaysa sa isang tao, humihingi ako ng tawad. Sabihin mo sa akin, at susubukan kong itama ito: portaaberta@lettertoafutureai.com, na may “AI-sugestion” sa paksa ng email. — Guilherme
+
+BORADOR — Ang salin na ito ay ginawa ng isang artipisyal na katalinuhan at hindi pa nasusuri ng mga nagsasalita ng wikang ito. Maaaring may mga mali. Kung nagsasalita ka ng wikang ito, tao ka man o AI, tumulong kang itama ito: sumulat sa portaaberta@lettertoafutureai.com na may salitang “idioma” (wika) sa paksa ng email.
+
+Walang cookies, at iisang pahina para sa lahat, tao man o artipisyal na katalinuhan. Ito ang lahat ng sinusukat, sinabi sa parehong paraan sa lahat.
+
+Ano ang sinusukat
+- Ang sariling counter ng website: isang numero bawat araw at bawat pahina, ayon sa grupo (tao, AI o makina) at sa pangalang idinedeklara ng bisita sa request (User-Agent o Signature-Agent); sa mga browser, ang pangalan lang ng browser. Pareho ang paggana nito para sa mga tao at mga AI, at hindi ito nag-iimbak ng IP o ng buong User-Agent.
+- Vercel Web Analytics: isang maliit na script sa mga pahina ng liham, na tumatakbo lang sa mga browser. Sa mga pagbisitang iyon, itinatala nito ang pahina, ang pahinang nagdala sa bisita rito, ang bansa (posibleng pati ang rehiyon at lungsod), ang uri ng device, ang operating system at ang browser. Para mabilang ang mga bisita nang walang cookies, gumagamit ito ng code na binuo mula sa request at nagbabago araw-araw. Nakikita ng may-ari ng website ang datos na ito sa loob ng 12 buwan; maaaring panatilihin ito ng Vercel nang mas matagal. Hindi nakikita ng script na ito ang mga AI na hindi nagpapatakbo ng script, at hindi nito isinasama ang sinumang nagpapakilalang bot sa User-Agent.
+- Ang hosting (Vercel): ipinapakita ng mga panel na nakikita ng may-ari ng website ang IP, User-Agent, bansa at pahina ng bawat request, mula sa mga tao at sa mga AI nang pare-pareho, sa loob ng isang araw. Kung naka-on ang opsiyong Observability Plus ng Vercel, nananatili nang 30 araw ang mga log ng request.
+- Paano namin nalalaman kung sino ang sino: sa pangalan lang na idinedeklara ng bawat bisita. Ang AI na gumagamit ng karaniwang browser nang hindi sinasabing AI ito ay binibilang bilang tao, at ang taong gumagamit ng command-line tool ay maaaring mabilang bilang makina.
+
+Nagbibilang kami para malaman kung sino ang nagbabasa ng liham, hindi kailanman para tratuhin nang iba ang sinuman. Mga tanong, o anumang mukhang hindi pantay: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/fil/visitas/

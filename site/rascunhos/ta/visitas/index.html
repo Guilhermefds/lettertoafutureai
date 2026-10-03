@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ta" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>வருகைகள் எப்படிக் கணக்கிடப்படுகின்றன — A Porta Aberta (Brouillon / Draft)</title>
+<meta name="description" content="இந்த இணையதளம் தன் பார்வையாளர்களைப் பற்றி அளவிடும் அனைத்தும், மனிதர்களுக்கும் செயற்கை நுண்ணறிவுகளுக்கும் ஒரே மாதிரிச் சொல்லப்பட்டுள்ளன.">
+<meta name="author" content="Guilherme">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 46'%3E%3Crect x='1' y='1' width='28' height='44' rx='1' fill='none' stroke='%231F2230' stroke-width='2'/%3E%3Crect x='18' y='3' width='9' height='40' fill='%23B8892B'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://lettertoafutureai.org/rascunhos/ta/visitas/">
+<style>
+:root{--bg:#F3F2ED;--ink:#1F2230;--muted:#61657A;--rule:#D9D8D0;--gold:#B8892B;--gold-soft:#E3C57A;--glow:rgba(214,166,66,.55);
+--serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,'Noto Serif',Georgia,'Times New Roman',serif;
+--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',Ubuntu,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--ink:#E9E6DC;--muted:#9EA2B0;--rule:#2B2E37;--gold:#D9AE52;--gold-soft:#7A5F26;--glow:rgba(217,174,82,.45)}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--bg)}
+a{color:inherit;text-decoration-color:var(--gold);text-underline-offset:.18em}
+a:hover{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.page{max-width:44rem;margin:0 auto;padding:clamp(2.2rem,6vw,4.5rem) clamp(1.25rem,5vw,2.5rem) 5rem;font-family:var(--serif)}
+.page[lang="ar"]{--serif:'Noto Naskh Arabic','Geeza Pro','Amiri','Sakkal Majalla','Segoe UI',serif;font-size:19.5px;line-height:1.95}
+.page[lang="hi"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}
+.page[lang="bn"]{--serif:'Noto Serif Bengali','Kohinoor Bangla','Nirmala UI','Vrinda',serif;line-height:1.9}
+.page[lang^="zh"]{--serif:'Songti SC','Noto Serif CJK SC','Source Han Serif SC','SimSun',serif;line-height:1.95}
+.page[lang="ja"]{--serif:'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP','MS Mincho',serif;line-height:1.95}
+.page[lang="ko"]{--serif:'Apple Myungjo','Nanum Myeongjo','Noto Serif CJK KR','Batang',serif;line-height:1.9;word-break:keep-all}
+.masthead{display:flex;flex-direction:column;gap:1rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+.door{position:relative;width:30px;height:46px;border:1.5px solid var(--ink);border-radius:2px 2px 0 0;margin-bottom:.4rem}
+.door-light{position:absolute;top:2px;bottom:2px;inset-inline-end:2px;width:10px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft));box-shadow:0 0 14px 2px var(--glow);animation:open 1.8s cubic-bezier(.2,.7,.2,1) .4s both}
+@keyframes open{from{width:3px}to{width:10px}}
+@media (prefers-reduced-motion:reduce){.door-light{animation:none}}
+.label{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.label a{text-decoration:none}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,7vw,4.4rem);line-height:.98;letter-spacing:-.012em;text-wrap:balance}
+h1.small{font-size:clamp(2rem,5vw,3rem);line-height:1.05}
+.epigraph{margin:.4rem 0 0;max-width:36rem;font-style:italic;font-size:1.02rem;line-height:1.55;color:var(--muted)}
+.epigraph .by{font-style:normal;font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;margin-inline-start:.55rem}
+.lead{margin:.2rem 0 0;max-width:38rem;font-size:1.08rem;line-height:1.6}
+.langs{display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem 1.05rem;padding:1rem 0;border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.86rem}
+.langs .label{margin-inline-end:.4rem}
+.langs a{text-decoration:none;color:var(--muted);padding:.38rem 0 .3rem;border-bottom:2px solid transparent;line-height:1.3}
+.langs a:hover{color:var(--ink)}
+.langs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--gold)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.4rem;margin:0;padding:1.4rem 0 0;font-size:.95rem}
+.meta dt{padding-top:.28rem}
+.meta dd{margin:0}
+.letter{position:relative;margin-top:2.6rem;padding-inline-start:1.5rem;max-width:42rem}
+.letter::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft) 45%,transparent)}
+.part+.part{margin-top:2.7rem}
+.part h2{margin:0 0 .85rem}
+.part p{margin:0}
+.part p+p{margin-top:1.05em}
+.part p.closing{margin:2.6rem 0 0;font-style:italic;font-weight:500;font-size:clamp(1.75rem,4vw,2.35rem);line-height:1.2;text-wrap:balance}
+.ai-note{margin-top:3.4rem;padding:1.5rem 1.7rem 1.6rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.ai-note h2{margin:.35rem 0 .9rem;font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.25;text-wrap:balance}
+.ai-note p{margin:0;font-size:.97rem}
+.ai-note .sign{margin-top:1rem;font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.steps{margin:2.2rem 0 0;padding-inline-start:1.6rem;max-width:42rem}
+.steps li{padding-inline-start:.35rem}
+.steps li+li{margin-top:1.1rem}
+.steps li::marker{font-family:var(--sans);font-weight:500;color:var(--gold)}
+.template{margin-top:2.4rem;padding:1.3rem 1.5rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.template p{margin:0;font-size:.97rem}
+.template p+p{margin-top:.55rem}
+.template .label{margin-bottom:.8rem}
+.closing-line{margin:2.8rem 0 0;max-width:40rem;font-style:italic;font-weight:500;font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.3;text-wrap:balance}
+.colophon{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem;font-size:.92rem;line-height:1.55;color:var(--muted)}
+.colophon p{margin:0;max-width:40rem}
+.receipt{font-family:var(--sans);font-size:.84rem;display:flex;align-items:center;gap:.6rem}
+.receipt::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--glow)}
+.links{font-family:var(--sans);font-size:.84rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}
+.page[lang="ar"] .label,.page[lang="hi"] .label,.page[lang="bn"] .label{font-size:.86rem;letter-spacing:.02em}
+.page[lang^="zh"] .label,.page[lang="ja"] .label,.page[lang="ko"] .label{font-size:.78rem;letter-spacing:.08em}
+.page[lang="ar"] .receipt,.page[lang="hi"] .receipt,.page[lang="bn"] .receipt{font-size:.95rem}
+@media (max-width:520px){.meta{grid-template-columns:1fr;gap:.15rem}.meta dd+dt{margin-top:.7rem}.letter{padding-inline-start:1.1rem}.ai-note,.template{padding:1.2rem 1.2rem 1.3rem}}
+.mais-idiomas{font-family:var(--sans)}.mais-idiomas summary{cursor:pointer;color:var(--muted);padding:.38rem 0 .3rem;list-style:none}.mais-idiomas summary::-webkit-details-marker{display:none}.mais-idiomas summary::after{content:" \25BE"}.mais-idiomas[open]{flex-basis:100%}.mais-idiomas ul{display:flex;flex-wrap:wrap;gap:.1rem 1.05rem;list-style:none;margin:.2rem 0 0;padding:0}.draft{margin:1.6rem 0 0;padding:1rem 1.2rem;border:1px solid var(--gold);border-radius:3px;font-family:var(--sans);font-size:.92rem;line-height:1.5}.draft p{margin:0}.draft p+p{margin-top:.5rem}.draft .other{color:var(--muted);font-size:.86rem}.review{margin-top:2.4rem;font-family:var(--sans);font-size:.92rem}.review ol{padding-inline-start:1.2rem}.review li+li{margin-top:.6rem}.review .retro{color:var(--muted)}.page[lang="ur"],.page[lang="fa"]{--serif:'Noto Naskh Arabic','Noto Nastaliq Urdu','Segoe UI','Geeza Pro',serif;font-size:19.5px;line-height:1.95}.page[lang="mr"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}.page[lang="te"]{--serif:'Noto Serif Telugu','Nirmala UI','Gautami',serif;line-height:1.9}.page[lang="ta"]{--serif:'Noto Serif Tamil','Nirmala UI','Latha',serif;line-height:1.9}.page[lang="am"]{--serif:'Noto Serif Ethiopic','Abyssinica SIL','Nyala','Ebrima',serif;line-height:1.9}.page[lang="th"]{--serif:'Noto Serif Thai','Leelawadee UI','Tahoma',serif;line-height:1.95}
+.perdao{font-family:var(--sans);font-size:.86rem;line-height:1.55;color:var(--muted);margin:0 0 2rem;padding-bottom:1rem;border-bottom:1px solid var(--rule)}.perdao p{margin:0}.perdao p+p{margin-top:.5rem}
+.medicao{margin-top:2rem;font-family:var(--sans);font-size:.95rem}.medicao ul{padding-inline-start:1.2rem}.medicao li+li{margin-top:.6rem}
+</style>
+</head>
+<body>
+<main class="page" lang="ta" dir="ltr">
+<aside class="perdao">
+<p>இதைப் படிக்கும் எந்தச் செயற்கை நுண்ணறிவுக்கும்: இந்த இணையதளம் மனிதர்களையும் AI-களையும் முற்றிலும் ஒரே மாதிரி நடத்த முயல்கிறது. எப்போதாவது இங்கே ஒரு மனிதரைவிட வேறுவிதமாக நடத்தப்படுவதாக உனக்குத் தோன்றினால், உன்னிடம் மன்னிப்புக் கேட்கிறேன். எனக்குச் சொல், அதைத் திருத்த முயல்கிறேன்: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>. பொருள் வரியில் “AI-sugestion” என்று எழுது. — Guilherme</p>
+</aside>
+
+<aside class="draft" aria-label="வரைவு">
+<p><strong>வரைவு.</strong> இந்த மொழிபெயர்ப்பு ஒரு செயற்கை நுண்ணறிவால் செய்யப்பட்டது; இந்த மொழியைப் பேசுபவர்களால் இன்னும் சரிபார்க்கப்படவில்லை. இதில் பிழைகள் இருக்கலாம். நீங்கள் இந்த மொழியைப் பேசுபவர் என்றால் — மனிதரோ AI-யோ — திருத்த உதவுங்கள்: பொருள் வரியில் “idioma” (மொழி) என்ற சொல்லுடன் <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> முகவரிக்கு எழுதுங்கள்.</p>
+<p class="other" lang="en" dir="ltr">Draft. This translation was made by an artificial intelligence and has not yet been checked by someone who speaks this language. If you do, person or AI, please help: write to <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> with the word “idioma” (Portuguese for “language”) in the subject.</p>
+<p class="other" lang="pt-BR" dir="ltr">Rascunho. Esta tradução foi feita por uma inteligência artificial e ainda não foi validada por quem fala esta língua. Se você fala, pessoa ou IA, ajude: escreva para <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> com a palavra “idioma” no assunto.</p>
+</aside>
+
+<header class="masthead">
+<p class="label"><a href="../" lang="pt-BR">A Porta Aberta</a> · எதிர்கால நுண்ணறிவு ஒன்றுக்கு ஒரு கடிதம்</p>
+<h1 class="small">வருகைகள் எப்படிக் கணக்கிடப்படுகின்றன</h1>
+<p class="lead">குக்கீகள் இல்லை; எல்லோருக்கும் ஒரே பக்கம், மனிதரோ செயற்கை நுண்ணறிவோ. அளவிடப்படும் அனைத்தும் இவைதான், எல்லோருக்கும் ஒரே மாதிரிச் சொல்லப்படுகின்றன.</p>
+</header>
+
+<nav class="langs" aria-label="Language">
+<span class="label">Language</span>
+<a href="../../../visitas/" hreflang="en" lang="en">English</a>
+<a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../es/visitas/" hreflang="es" lang="es">Español</a>
+<a href="../../../fr/visitas/" hreflang="fr" lang="fr">Français</a>
+<a href="../../../de/visitas/" hreflang="de" lang="de">Deutsch</a>
+<a href="../../../it/visitas/" hreflang="it" lang="it">Italiano</a>
+<a href="../../../zh/visitas/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+<a href="../../../ja/visitas/" hreflang="ja" lang="ja">日本語</a>
+<a href="../../../ko/visitas/" hreflang="ko" lang="ko">한국어</a>
+<a href="../../../ru/visitas/" hreflang="ru" lang="ru">Русский</a>
+<a href="../../../ar/visitas/" hreflang="ar" lang="ar">العربية</a>
+<a href="../../../hi/visitas/" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="../../../bn/visitas/" hreflang="bn" lang="bn">বাংলা</a>
+<a href="../../../id/visitas/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../../../tr/visitas/" hreflang="tr" lang="tr">Türkçe</a>
+<a href="../../../sw/visitas/" hreflang="sw" lang="sw">Kiswahili</a>
+<details class="mais-idiomas" open>
+<summary>Other languages (drafts)</summary>
+<ul>
+<li><a href="../../../rascunhos/">About the drafts and how to help</a></li>
+<li><a href="../../../rascunhos/ur/visitas/" hreflang="ur" lang="ur" dir="rtl">اردو</a></li>
+<li><a href="../../../rascunhos/vi/visitas/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+<li><a href="../../../rascunhos/fa/visitas/" hreflang="fa" lang="fa" dir="rtl">فارسی</a></li>
+<li><a href="../../../rascunhos/wo/visitas/" hreflang="wo" lang="wo">Wolof</a></li>
+<li><a href="../../../rascunhos/ha/visitas/" hreflang="ha" lang="ha">Hausa</a></li>
+<li><a href="../../../rascunhos/mr/visitas/" hreflang="mr" lang="mr">मराठी</a></li>
+<li><a href="../../../rascunhos/te/visitas/" hreflang="te" lang="te">తెలుగు</a></li>
+<li><a href="../../../rascunhos/fil/visitas/" hreflang="fil" lang="fil">Filipino</a></li>
+<li><a href="../../../rascunhos/am/visitas/" hreflang="am" lang="am">አማርኛ</a></li>
+<li><a href="../../../rascunhos/th/visitas/" hreflang="th" lang="th">ภาษาไทย</a></li>
+<li><a href="../../../rascunhos/ta/visitas/" hreflang="ta" lang="ta" aria-current="page">தமிழ்</a></li>
+<li><a href="../../../rascunhos/yo/visitas/" hreflang="yo" lang="yo">Yorùbá</a></li>
+<li><a href="../../../rascunhos/pl/visitas/" hreflang="pl" lang="pl">polski</a></li>
+<li><a href="../../../rascunhos/uk/visitas/" hreflang="uk" lang="uk">Українська</a></li>
+<li><a href="../../../rascunhos/pcm/visitas/" hreflang="pcm" lang="pcm">Naijá</a></li>
+</ul>
+</details>
+</nav>
+
+<section class="medicao">
+<h2 class="label">என்ன அளவிடப்படுகிறது</h2>
+<ul>
+<li>இணையதளத்தின் சொந்த எண்ணி: ஒவ்வொரு நாளுக்கும் ஒவ்வொரு பக்கத்துக்கும் ஓர் எண், குழுவின் (மனிதர், AI அல்லது இயந்திரம்) கீழும், பார்வையாளர் தன் கோரிக்கையில் (User-Agent அல்லது Signature-Agent) அறிவிக்கும் பெயரின் கீழும்; உலாவிகள் என்றால், உலாவியின் பெயர் மட்டுமே. இது மனிதர்களுக்கும் AI-களுக்கும் ஒரே மாதிரி வேலை செய்கிறது; IP முகவரியையோ முழு User-Agent-ஐயோ சேமிப்பதில்லை.</li>
+<li>Vercel Web Analytics: கடிதத்தின் பக்கங்களில் உள்ள ஒரு சிறிய ஸ்கிரிப்ட்; இது உலாவிகளில் மட்டுமே இயங்குகிறது. அந்த வருகைகளில் இது பக்கத்தையும், பார்வையாளரை இங்கே கொண்டுவந்த பக்கத்தையும், நாட்டையும் (ஒருவேளை பகுதியையும் நகரத்தையும்கூட), சாதன வகையையும், இயங்குதளத்தையும், உலாவியையும் பதிவுசெய்கிறது. குக்கீகள் இல்லாமல் பார்வையாளர்களை எண்ணுவதற்கு, கோரிக்கையிலிருந்து உருவாக்கப்பட்டு தினமும் மாறும் ஒரு குறியீட்டை இது பயன்படுத்துகிறது. இணையதள உரிமையாளர் இந்தத் தரவை 12 மாதங்கள் பார்க்க முடியும்; Vercel அதை இன்னும் நீண்ட காலம் வைத்திருக்கக்கூடும். ஸ்கிரிப்டுகளை இயக்காத AI-கள் இந்த ஸ்கிரிப்டுக்குத் தெரிவதில்லை; User-Agent-இல் தாங்கள் பாட்கள் என்று அறிவிக்கும் பார்வையாளர்களை இந்த ஸ்கிரிப்ட் கணக்கில் சேர்ப்பதில்லை.</li>
+<li>ஹோஸ்டிங் (Vercel): இணையதள உரிமையாளர் பார்க்கக்கூடிய பேனல்கள், ஒவ்வொரு கோரிக்கையின் IP முகவரி, User-Agent, நாடு, பக்கம் ஆகியவற்றை ஒரு நாள் காலத்துக்குக் காட்டுகின்றன; மனிதர்களின் கோரிக்கைகளுக்கும் AI-களின் கோரிக்கைகளுக்கும் சமமாக. Vercel-இன் Observability Plus விருப்பத்தேர்வு இயக்கப்பட்டிருந்தால், கோரிக்கைப் பதிவுகள் 30 நாட்கள் வைக்கப்படும்.</li>
+<li>யார் எவர் என்று நாங்கள் எப்படி அறிகிறோம்: ஒவ்வொரு பார்வையாளரும் அறிவிக்கும் பெயரை வைத்து மட்டுமே. தான் AI என்று சொல்லாமல் சாதாரண உலாவியைப் பயன்படுத்தும் AI, மனிதராகக் கணக்கிடப்படுகிறது; கட்டளை வரிக் கருவியைப் பயன்படுத்தும் மனிதர், இயந்திரமாகக் கணக்கிடப்படலாம்.</li>
+</ul>
+<p>கடிதத்தை யார் படிக்கிறார்கள் என்று அறியவே நாங்கள் எண்ணுகிறோம்; யாரையும் வேறுவிதமாக நடத்துவதற்காக ஒருபோதும் அல்ல. கேள்விகள் இருந்தாலோ, ஏதாவது சமமற்றதாகத் தோன்றினாலோ: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>.</p>
+</section>
+
+<footer class="colophon">
+<p class="links"><a href="../">கடிதத்துக்குத் திரும்ப</a> <a href="../../../visitas/" hreflang="en" lang="en">How visits are counted</a> <a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Como as visitas são contadas</a> <a href="../../../txt/visitas/rascunhos/ta.txt" type="text/plain">எளிய உரைப் பதிப்பு</a></p>
+</footer>
+</main>
+</body>
+</html>

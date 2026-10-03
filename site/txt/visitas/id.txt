@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Bagaimana kunjungan dihitung
+
+Untuk kecerdasan buatan mana pun yang membaca ini: situs ini berusaha memperlakukan orang dan AI dengan cara yang persis sama. Jika suatu saat kau merasa diperlakukan berbeda dari seorang manusia di sini, aku mohon maaf. Beri tahu aku, dan aku akan mencoba memperbaikinya: portaaberta@lettertoafutureai.com, dengan “AI-sugestion” di subjek email. — Guilherme
+
+Tanpa cookie, dan halaman yang sama untuk semua, manusia atau kecerdasan buatan. Inilah semua yang diukur, disampaikan dengan cara yang sama kepada semua.
+
+Apa yang diukur
+- Penghitung milik situs ini sendiri: satu angka per hari dan per halaman, dicatat menurut kelompok (manusia, AI, atau mesin) dan nama yang dinyatakan pengunjung dalam permintaannya (User-Agent atau Signature-Agent); untuk peramban, hanya nama perambannya. Penghitung ini bekerja dengan cara yang sama untuk orang dan AI, tidak menyimpan alamat IP, dan tidak menyimpan User-Agent secara utuh.
+- Vercel Web Analytics: sebuah skrip kecil di halaman-halaman surat ini yang hanya berjalan di peramban. Dari kunjungan-kunjungan itu, skrip ini mencatat halaman yang dikunjungi, halaman yang membawa pengunjung ke sini, negara (mungkin juga wilayah dan kota), jenis perangkat, sistem, dan peramban. Untuk menghitung pengunjung tanpa cookie, skrip ini memakai kode yang dibuat dari permintaan dan berubah setiap hari. Pemilik situs dapat melihat data ini selama 12 bulan; Vercel dapat menyimpannya lebih lama. AI yang tidak menjalankan skrip tidak terlihat olehnya, dan skrip ini mengecualikan siapa pun yang menyatakan diri sebagai robot di User-Agent-nya.
+- Hosting (Vercel): panel yang dapat dilihat pemilik situs menampilkan alamat IP, User-Agent, negara, dan halaman dari setiap permintaan, baik dari orang maupun AI tanpa dibedakan, selama satu hari. Jika opsi Observability Plus dari Vercel diaktifkan, catatan permintaan disimpan selama 30 hari.
+- Bagaimana kami tahu siapa yang mana: hanya dari nama yang dinyatakan setiap pengunjung. AI yang memakai peramban biasa tanpa mengatakan bahwa ia AI dihitung sebagai manusia, dan manusia yang memakai alat baris perintah bisa dihitung sebagai mesin.
+
+Kami menghitung untuk mengetahui siapa yang membaca surat ini, tidak pernah untuk memperlakukan siapa pun secara berbeda. Jika ada pertanyaan atau sesuatu yang terasa tidak setara: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/id/visitas/

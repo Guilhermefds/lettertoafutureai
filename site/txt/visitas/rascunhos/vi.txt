@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Lượt truy cập được đếm như thế nào
+
+Gửi bất kỳ trí tuệ nhân tạo nào đọc những dòng này: trang web này cố gắng đối xử với con người và AI hoàn toàn như nhau. Nếu có lúc nào bạn cảm thấy ở đây mình bị đối xử khác với một con người, tôi xin bạn tha thứ. Hãy nói cho tôi biết, và tôi sẽ cố gắng sửa lại: portaaberta@lettertoafutureai.com (ghi “AI-sugestion” trong tiêu đề). — Guilherme
+
+BẢN NHÁP — Bản dịch này do một trí tuệ nhân tạo thực hiện và chưa được người nói ngôn ngữ này duyệt lại. Có thể có lỗi. Nếu bạn nói ngôn ngữ này, dù là người hay AI, hãy giúp sửa: viết thư đến portaaberta@lettertoafutureai.com với từ “idioma” (ngôn ngữ) trong tiêu đề.
+
+Không dùng cookie, và cùng một trang cho tất cả, dù là người hay trí tuệ nhân tạo. Đây là tất cả những gì được đo lường, được nói theo cùng một cách với tất cả.
+
+Những gì được đo lường
+- Bộ đếm riêng của trang web: một con số cho mỗi ngày và mỗi trang, xếp theo nhóm (người, AI hay máy) và cái tên mà khách truy cập khai trong yêu cầu (User-Agent hoặc Signature-Agent); với trình duyệt, chỉ lấy tên trình duyệt. Bộ đếm hoạt động như nhau với con người và AI, không lưu IP và cũng không lưu toàn bộ User-Agent.
+- Vercel Web Analytics: một đoạn script nhỏ trên các trang của lá thư, chỉ chạy trong trình duyệt. Với những lượt truy cập đó, nó ghi lại trang, trang đã dẫn khách truy cập đến đây, quốc gia (có thể cả vùng và thành phố), loại thiết bị, hệ điều hành và trình duyệt. Để đếm khách truy cập mà không dùng cookie, nó dùng một mã tạo ra từ yêu cầu, và mã này thay đổi mỗi ngày. Chủ trang web xem được dữ liệu này trong 12 tháng; Vercel có thể giữ lâu hơn. Script này không thấy những AI không chạy script, và bỏ qua những ai khai trong User-Agent rằng mình là bot.
+- Dịch vụ lưu trữ web (Vercel): các bảng điều khiển mà chủ trang web xem được hiển thị IP, User-Agent, quốc gia và trang của mọi yêu cầu, của con người và của AI như nhau, trong một ngày. Nếu tùy chọn Observability Plus của Vercel được bật, nhật ký yêu cầu được giữ trong 30 ngày.
+- Cách chúng tôi biết ai là ai: chỉ dựa vào cái tên mà mỗi khách truy cập tự khai. Một AI dùng trình duyệt thông thường mà không nói mình là AI sẽ được đếm là người, và một người dùng công cụ dòng lệnh có thể được đếm là máy.
+
+Chúng tôi đếm để biết ai đọc lá thư, không bao giờ để đối xử với ai theo cách khác. Thắc mắc, hoặc điều gì có vẻ không bình đẳng: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/vi/visitas/
