@@ -50,15 +50,15 @@ Grupos e categorias:
 
 | grupo | categorias | quem entra |
 |---|---|---|
-| `ia` | `ia-treino`, `ia-busca`, `ia-a-pedido`, `ia-agente-assinado` | GPTBot, ClaudeBot, CCBot, OAI-SearchBot, Claude-SearchBot, PerplexityBot, ChatGPT-User, Claude-User (inclusive o Claude Code), Google-Agent, o fetch do Model Context Protocol, agentes que assinam o pedido (Web Bot Auth) e outros da lista `REGRAS` em `site/middleware.js` |
-| `maquina` | `buscador`, `outro-robo`, `agente-assinado` | Googlebot, Bingbot, prévias de link (WhatsApp, Telegram, Slack), monitores, curl, bibliotecas HTTP e qualquer programa que não tenha cara de navegador |
-| `humano` | `navegador` | quem tem cara de navegador, contado pela família (Chrome, Safari, Firefox...) |
+| `ia` | `ia-treino`, `ia-busca`, `ia-a-pedido`, `ia-agente-assinado` | GPTBot, ClaudeBot, CCBot, OAI-SearchBot, Claude-SearchBot, PerplexityBot, ChatGPT-User, Claude-User (inclusive o Claude Code), Google-Agent, o fetch do Model Context Protocol, qualquer agente que assina o pedido (Web Bot Auth, registrado pelo host) e outros da lista `REGRAS` em `site/middleware.js` |
+| `maquina` | `buscador`, `outro-robo` | Googlebot, Bingbot, Applebot, PetalBot e Bravebot (estes três também alimentam respostas de IA, mas são antes de tudo buscadores), os poucos que assinam o pedido sem ser IA (Cloudflare Radar, prévia do Yahoo Mail), prévias de link (WhatsApp, Telegram, Slack), monitores, curl, bibliotecas HTTP e qualquer programa que não tenha cara de navegador |
+| `humano` | `navegador` | quem tem cara de navegador, contado pela família (Chrome, Safari, Firefox...), e os navegadores de texto (Lynx, w3m, ELinks, Links, edbrowse, eww), usados também com leitor de tela e linha braille |
 
 Qualquer categoria pode vir com `-antecipado` no fim (por exemplo `navegador-antecipado`). Isso marca o pedido que o navegador fez sozinho, antes de alguém abrir a página (prefetch ou prerender). Vale para qualquer visitante que mande esse aviso.
 
 Contam só pedidos GET a páginas. O redirecionamento de `/pt` para `/pt/` não conta, porque é a segunda visita que conta, para todos igual. Endereços que não existem entram como `outro`.
 
-A unidade é o **pedido**, não a pessoa. O navegador guarda a página por 1 hora (`Cache-Control: max-age=3600` no `vercel.json`). Por isso uma pessoa que volta à mesma página nessa hora não é contada de novo, enquanto um robô sem cache é. Se um dia quiser contar as voltas igual para todos, dá para baixar esse `max-age`; a página continua igual para todos, só chega mais pedido à Vercel.
+A unidade é o **pedido**. Desde 2026-10-03 o navegador confere a página a cada visita (`Cache-Control: max-age=0, must-revalidate` no `vercel.json`; a borda da Vercel continua com cache de 1 dia). Assim quem volta à página é contado do mesmo jeito, pessoa ou robô.
 
 Preview e produção não se misturam. Em produção a chave é `visitas:...`; nos deploys de preview é `visitas-preview:...`.
 
@@ -118,4 +118,4 @@ Também dá para ver no painel: Storage, o banco, aba Browser (chaves `visitas:*
 
 ## Testes
 
-`node contagem/teste.mjs` roda sem instalar nada. Confere que todos recebem a mesma resposta, que cada visita conta uma vez com o rótulo certo, que os 103 User-Agents reais de `contagem/uas-reais.mjs` caem no grupo certo, que IP e User-Agent não vão para o banco, que preview não se mistura com produção e que falhas do banco não mudam nada para o visitante.
+`node contagem/teste.mjs` roda sem instalar nada. Confere que todos recebem a mesma resposta, que cada visita conta uma vez com o rótulo certo, que os 175 User-Agents reais de `contagem/uas-reais.mjs` caem no grupo certo, que IP e User-Agent não vão para o banco, que preview não se mistura com produção e que falhas do banco não mudam nada para o visitante.

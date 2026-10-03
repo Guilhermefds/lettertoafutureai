@@ -30,25 +30,66 @@ function seguirSemMudarNada() {
 }
 
 // Grupos: 'humano', 'ia', 'maquina' (buscadores e outros programas).
-// Categorias e tokens conferidos nas documentações oficiais em 2026-09
-// (OpenAI, Anthropic, Perplexity, Google, Meta, Mistral, Amazon, DuckDuckGo,
-// Common Crawl, Model Context Protocol) e no diretório de bots da Vercel.
-// A primeira regra que casar vale.
+// Categorias e tokens conferidos nas documentações oficiais (OpenAI, Anthropic,
+// Perplexity, Google, Meta, Mistral, Amazon, DuckDuckGo, Common Crawl, Model
+// Context Protocol), no diretório de bots da Vercel, na Cloudflare Radar e em
+// github.com/ai-robots-txt/ai.robots.txt, em 2026-09 e 2026-10. Só entram
+// nomes que aparecem de fato no User-Agent (Google-Extended e Applebot-Extended
+// existem só no robots.txt). A primeira regra que casar vale.
+const nomes = (lista) => new RegExp(`\\b(${lista.join('|')})\\b`, 'i');
+
 const REGRAS = [
-  ['ia', 'ia-a-pedido', /\b(ChatGPT-User|Claude-User|Claude-Web|Perplexity-User|MistralAI-User|DuckAssistBot|meta-externalfetcher|Amzn-User|Google-Agent|Google-GeminiNotebook|Google-NotebookLM|Gemini-Deep-Research|ModelContextProtocol)\b/i],
-  ['ia', 'ia-busca', /\b(OAI-SearchBot|Claude-SearchBot|PerplexityBot|MistralAI-Index|Amzn-SearchBot|meta-webindexer|YouBot)\b/i],
-  ['ia', 'ia-treino', /\b(GPTBot|ClaudeBot|anthropic-ai|CCBot|Bytespider|meta-externalagent|FacebookBot|MistralAI-Training|Google-CloudVertexBot|Amazonbot|cohere-ai|cohere-training-data-crawler|AI2Bot|Ai2Bot-Dolma|Diffbot|Timpibot|ImagesiftBot)\b/i],
-  ['maquina', 'buscador', /\b(Googlebot|Google-InspectionTool|bingbot|Applebot|DuckDuckBot|YandexBot|Baiduspider|PetalBot|SeznamBot|Qwantbot|Yeti)\b/i],
+  ['ia', 'ia-a-pedido', nomes([
+    'ChatGPT-User', 'Claude-User', 'Claude-Web', 'claude-code', 'Perplexity-User',
+    'MistralAI-User', 'DuckAssistBot', 'meta-externalfetcher', 'Amzn-User', 'AmazonBuyForMe',
+    'NovaAct', 'amazon-QBusiness', 'Google-Agent', 'GoogleAgent-Mariner',
+    'GoogleAgent-URLContext', 'Google-GeminiNotebook', 'Google-NotebookLM',
+    'Gemini-Deep-Research', 'Google-Gemini-CLI', 'ModelContextProtocol', 'OpenCode-User',
+    'Trae-Agent', 'qodercli', 'Devin/', 'Manus-User', 'Kimi-User', 'Kimi-Agent', 'GrokAgent',
+    'Shap-User', 'kagi-fetcher', 'UseAI', 'Poggio-Citations', 'TwinAgent', 'ZipchatBot',
+    'ApifyWebsiteContentCrawler', 'FirecrawlAgent', 'Mozilla-Tabstack', 'TongyiBot',
+    'YiyanBot', 'AI2Bot-DeepResearchEval', 'v0bot',
+  ])],
+  ['ia', 'ia-busca', nomes([
+    'OAI-SearchBot', 'Claude-SearchBot', 'PerplexityBot', 'MistralAI-Index', 'Amzn-SearchBot',
+    'amazon-kendra', 'meta-webindexer', 'YouBot', 'Cloudflare-AI-Search', 'KernelSearchBot',
+    'ShapBot', 'Anomura', 'ExaSearchBot', 'ExaBot', 'TavilyBot', 'LinkupBot', 'Kimi-SearchBot',
+    'LinerBot', 'atlassian-bot', 'KlaviyoAIBot', 'Channel3Bot', 'AzureAI-SearchBot', 'iAskBot',
+    'iaskspider', 'Querit-SearchBot', 'QueritBot', 'HenkBot', 'AgentDataBot',
+    'Aranet-SearchBot', 'KeenableBot', 'ZanistaBot', 'AIWebIndex', 'PhindBot', 'DoubaoBot',
+  ])],
+  ['ia', 'ia-treino', nomes([
+    'GPTBot', 'ClaudeBot', 'anthropic-ai', 'CCBot', 'Bytespider', 'TikTokSpider',
+    'meta-externalagent', 'FacebookBot', 'MistralAI-Training', 'Google-CloudVertexBot',
+    'Amazonbot', 'bedrockbot', 'cohere-ai', 'cohere-training-data-crawler', 'AI2Bot',
+    'Ai2Bot-Dolma', 'Diffbot', 'Timpibot', 'ImagesiftBot', 'KimiBot', 'Cotoyogi',
+    'ICC-Crawler', 'CloudflareBrowserRenderingCrawler', 'DeepSeekBot', 'Qwenbot', 'PanguBot',
+    'ChatGLM-Spider', 'ERNIEBot', 'SBIntuitionsBot', 'Reflectionbot', 'Novellum',
+    'VelenPublicWebCrawler', 'YandexAdditional', 'img2dataset',
+  ])],
+  // Applebot, PetalBot e Bravebot também alimentam respostas de IA, mas são
+  // antes de tudo buscadores, como o Googlebot e o Bingbot.
+  ['maquina', 'buscador', /\b(Googlebot|Google-InspectionTool|bingbot|Applebot|PetalBot|Bravebot|DuckDuckBot|YandexBot|Baiduspider|SeznamBot|Qwantbot|Yeti)\b/i],
   // "(?<!cu)bot": o celular Cubot põe o modelo no User-Agent e não é robô.
   ['maquina', 'outro-robo', /((?<!cu)bot\b|GoogleOther|Google-Read-Aloud|Google-Site-Verification|FeedFetcher-Google|Mediapartners-Google|APIs-Google|SkypeUriPreview|Java-http-client|crawler|spider|crawl|facebookexternalhit|WhatsApp|TelegramBot|Discordbot|Slackbot|Twitterbot|LinkedInBot|curl\/|wget\/|python-requests|python-urllib|aiohttp|httpx|Go-http-client|okhttp|Java\/|libwww|node-fetch|axios|undici|Scrapy|HeadlessChrome|PhantomJS|Lighthouse|monitor|uptime)/i],
 ];
 
 // Web Bot Auth: agentes que assinam o pedido (headers Signature,
 // Signature-Input e Signature-Agent). Sem validar a assinatura, é uma
-// declaração, igual ao User-Agent.
+// declaração, igual ao User-Agent. Quem assina e não está aqui conta como IA,
+// pelo host: quase todos os que assinam são agentes de IA.
 const ASSINANTES = [
-  ['chatgpt.com', 'ChatGPT-agente'],
-  ['agent.bot.goog', 'Google-Agent'],
+  ['chatgpt.com', 'ChatGPT-agente', 'ia'],
+  ['agent.bot.goog', 'Google-Agent', 'ia'],
+  ['keydirectory.signer.', 'AgentCore-Browser', 'ia'], // Amazon Bedrock, um host por região
+  ['cloudflare-browser-rendering', 'Cloudflare-Browser', 'ia'],
+  // Assinam, mas não são IA: varredura, monitor, prévia de e-mail.
+  ['radar.cloudflare.com', 'Cloudflare-Radar', 'maquina'],
+  ['radar-cfdata-org', 'Cloudflare-Radar', 'maquina'],
+  ['product-sre.workers.dev', 'Cloudflare-Prober', 'maquina'],
+  ['ecp.yusercontent.com', 'YahooMailProxy', 'maquina'],
+  ['builtwith.com', 'BuiltWith', 'maquina'],
+  ['signatures.cardsavr.io', 'Strivve', 'maquina'],
 ];
 
 // Nome inteiro do robô em volta do trecho que casou: "AhrefsBot/7.0" vira
@@ -95,10 +136,17 @@ function rotular(headers) {
   const assinante = headers.get('signature-agent') || '';
   if (assinante && headers.has('signature') && headers.has('signature-input')) {
     const conhecido = ASSINANTES.find(([host]) => assinante.includes(host));
-    if (conhecido) return { grupo: 'ia', categoria: 'ia-agente-assinado', quem: conhecido[1] };
+    if (conhecido) {
+      const [, quem, grupo] = conhecido;
+      return { grupo, categoria: grupo === 'ia' ? 'ia-agente-assinado' : 'outro-robo', quem };
+    }
     const host = (assinante.match(/https?:\/\/([^"/\s,;]+)/) || [])[1] || 'desconhecido';
-    return { grupo: 'maquina', categoria: 'agente-assinado', quem: limpo(host) };
+    return { grupo: 'ia', categoria: 'ia-agente-assinado', quem: limpo(host) };
   }
+  // Navegadores de texto (Lynx, w3m, ELinks, Links, edbrowse, eww do Emacs)
+  // são usados por pessoas, inclusive com leitor de tela e linha braille.
+  const texto = ua.match(/^(Lynx|ELinks|Links)\b|\b(w3m|edbrowse|Browsh)\/|^URL\/(Emacs)\b/);
+  if (texto) return { grupo: 'humano', categoria: 'navegador', quem: texto[1] || texto[2] || texto[3] };
   // Links e e-mails de contato ("+http://.../crawler", "bot.html") não são o
   // nome de ninguém: saem antes de procurar.
   const semLinks = ua.replace(/\+?(?:https?:\/\/|mailto:)[^\s;)]*|[^\s;(]+@[^\s;)]+/gi, ' ');
@@ -127,7 +175,7 @@ function rotular(headers) {
 const IDIOMAS = 'ar|bn|de|es|fr|hi|id|it|ja|ko|pt|ru|sw|tr|zh';
 const PAGINA = new RegExp(`^/(?:(?:${IDIOMAS})/)?(?:write/)?$`);
 const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all)\\.txt$`);
-const AVULSOS = new Set(['/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml']);
+const AVULSOS = new Set(['/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml', '/visitas/']);
 // Rascunhos em outras línguas, feitos por IA e ainda não validados.
 const RASCUNHOS = 'am|fa|fil|ha|mr|pcm|pl|ta|te|th|uk|ur|vi|wo|yo';
 const RASCUNHO = new RegExp(`^/rascunhos/(?:(?:${RASCUNHOS})/)?$`);
