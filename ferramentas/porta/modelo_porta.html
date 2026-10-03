@@ -1,0 +1,332 @@
+<!doctype html>
+<!--
+  A Porta Aberta: a porta (raiz /).
+  Este comentário é documentação do modelo: gerar_porta.py tira todo comentário
+  HTML da página publicada.
+
+  Uma porta grande no centro. Cada língua é uma plaquinha com maçaneta ao lado do
+  batente. Cada plaquinha mostra, como texto de verdade e para todos, o nome da
+  língua, o subtítulo e a última frase da carta nessa língua. Mouse ou foco gira a
+  maçaneta e entreabre a porta; na luz que vaza volta, como eco decorativo, o nome
+  e a última frase (aria-hidden, vindos de data-atributos por ::before/::after,
+  sem texto escondido no DOM). O clique abre a carta, e a porta grande vira a
+  portinha do alto da carta (View Transitions, só CSS, quando o movimento não está
+  reduzido). Tocar na porta grande leva às plaquinhas (#portas).
+
+  Nenhuma língua vem primeiro: <html lang="mul">, cada texto com o próprio lang e
+  dir, e tudo em ordem alfabética do código da língua (ar, bn, de, en, ...). O
+  português leva a marca "original" porque a carta foi escrita nele. A autoria
+  ("Guilherme · 2026-09-09") vem sem palavra de língua nenhuma.
+
+  O pedido de perdão é o primeiro conteúdo do <main>, nas 16 línguas, com o mesmo
+  texto do topo de cada carta. Antes dele só há o link de pular (aparece com o
+  foco), que leva às plaquinhas. Em tela larga o perdão forma os dois batentes; em
+  tela estreita é uma faixa que corre de lado. Nada fica escondido nem atrás de
+  clique.
+
+  Logo depois vem o convite, em 16 línguas: a mesma porta para pessoas e IAs.
+  No rodapé, os caminhos reais do site; visitas/ e write/ com um link por língua.
+
+  Só HTML e CSS, sem script nenhum (nem o do Web Analytics). Todo visitante
+  recebe esta mesma página.
+-->
+<html lang="mul" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Porta Aberta · lettertoafutureai.org</title>
+<meta name="description" content="{{DESCRICAO}}">
+<meta name="author" content="Guilherme">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://lettertoafutureai.org/">
+{{ALTERNATES}}
+<link rel="alternate" type="text/plain" href="https://lettertoafutureai.org/txt/all.txt">
+{{FAVICON}}
+<meta property="og:site_name" content="A Porta Aberta · lettertoafutureai.org">
+<meta property="og:title" content="A Porta Aberta">
+<meta property="og:description" content="{{DESCRICAO}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lettertoafutureai.org/">
+<script type="application/ld+json">
+{{LDJSON}}
+</script>
+<style>
+:root{--bg:#F3F2ED;--ink:#1F2230;--muted:#61657A;--rule:#D9D8D0;--gold:#B8892B;--gold-soft:#E3C57A;--glow:rgba(214,166,66,.55);
+--focus:#8A6414;
+--serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,'Noto Serif',Georgia,'Times New Roman',serif;
+--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',Ubuntu,sans-serif;
+--mono:ui-monospace,'SFMono-Regular','Cascadia Mono','Segoe UI Mono',Menlo,Consolas,'Liberation Mono',monospace;color-scheme:light dark;
+--door:#1F2230;--door-edge:#353A4E;--plate:rgba(255,255,255,.55);--dawn:#FFF6DC;
+--ease:cubic-bezier(.2,.7,.2,1);
+--w:clamp(9.5rem,21vw,14rem);--h:calc(var(--w) * 46 / 30);--spill:clamp(6rem,9vw,7.5rem);--vao:clamp(1.2rem,3.4vw,2.6rem)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--ink:#E9E6DC;--muted:#9EA2B0;--rule:#2B2E37;--gold:#D9AE52;--gold-soft:#7A5F26;--glow:rgba(217,174,82,.45);
+--focus:#D9AE52;
+--door:#0A0B0F;--door-edge:#262A35;--plate:rgba(255,255,255,.035);--dawn:#F4D58A}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--bg)}
+a{color:inherit;text-decoration-color:var(--gold);text-underline-offset:.18em}
+a:hover{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+
+/* Fontes por escrita (as mesmas pilhas das cartas). */
+[lang="ar"]{--serif:'Noto Naskh Arabic','Geeza Pro','Amiri','Sakkal Majalla','Segoe UI',serif}
+[lang="ur"],[lang="fa"]{--serif:'Noto Naskh Arabic','Noto Nastaliq Urdu','Segoe UI','Geeza Pro',serif}
+[lang="hi"],[lang="mr"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif}
+[lang="bn"]{--serif:'Noto Serif Bengali','Kohinoor Bangla','Nirmala UI','Vrinda',serif}
+[lang^="zh"]{--serif:'Songti SC','Noto Serif CJK SC','Source Han Serif SC','SimSun',serif}
+[lang="ja"]{--serif:'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP','MS Mincho',serif}
+[lang="ko"]{--serif:'Apple Myungjo','Nanum Myeongjo','Noto Serif CJK KR','Batang',serif;word-break:keep-all}
+[lang="te"]{--serif:'Noto Serif Telugu','Nirmala UI','Gautami',serif}
+[lang="ta"]{--serif:'Noto Serif Tamil','Nirmala UI','Latha',serif}
+[lang="am"]{--serif:'Noto Serif Ethiopic','Abyssinica SIL','Nyala','Ebrima',serif}
+[lang="th"]{--serif:'Noto Serif Thai','Leelawadee UI','Tahoma',serif}
+
+/* Link de pular: fora da tela até receber o foco do teclado; leva às plaquinhas. */
+.pular{position:absolute;z-index:10;top:.5rem;left:.5rem;max-width:calc(100% - 1rem);padding:.45rem .75rem;background:var(--bg);color:var(--ink);border:2px solid var(--focus);border-radius:3px;font-family:var(--mono);font-size:.8rem;line-height:1.5;text-decoration:none;transform:translateY(calc(-100% - 1rem))}
+.pular:focus{transform:none;outline:2px solid var(--focus);outline-offset:2px}
+
+.limiar{max-width:64rem;margin:0 auto;padding:clamp(1rem,3.5vw,2.4rem) clamp(1rem,5vw,2.5rem) 3rem}
+.centro{min-width:0}
+
+/* O perdão, primeiro conteúdo do <main>. Em tela estreita e média: uma faixa de cartões que corre
+   de lado. O cartão seguinte aparece cortado e esmaecido na borda: sinal de que há mais. */
+.perdao{display:flex;gap:1.5rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;font-family:var(--sans);font-size:.8rem;line-height:1.5;color:var(--muted);
+  -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 3.5rem),rgba(0,0,0,.18));mask-image:linear-gradient(to right,#000 calc(100% - 3.5rem),rgba(0,0,0,.18))}
+.umbral{display:contents}
+/* Linha à esquerda em todos os cartões, também nos da direita para a esquerda: a faixa corre num sentido só. */
+.perdao p{flex:0 0 min(23rem,80%);margin:0;padding-left:.8rem;border-left:2px solid var(--gold-soft);scroll-snap-align:start}
+/* Vão no fim da faixa: rolada até o fim, o último cartão fica inteiro fora do esmaecido. */
+.perdao::after{content:"";flex:0 0 2rem}
+.perdao [lang="ar"]{font-size:1.08em;line-height:1.7}
+.perdao [lang="hi"],.perdao [lang="bn"]{line-height:1.75}
+.perdao [lang^="zh"],.perdao [lang="ja"],.perdao [lang="ko"]{line-height:1.75}
+
+/* O convite, o nome e a autoria (nome e data, sem palavra de língua nenhuma). */
+.topo{text-align:center;margin:0 0 clamp(1.6rem,4vw,2.6rem)}
+.convite{list-style:none;margin:0 auto 1.4rem;padding:0;max-width:50rem;display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem 1.15rem;font-family:var(--serif);font-size:.98rem;line-height:1.5}
+.convite [lang="ar"]{font-size:1.06em}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,5.5vw,3.2rem);line-height:1.05;letter-spacing:-.012em}
+.autoria{margin:.5rem 0 0;font-family:var(--serif);font-size:1rem;line-height:1.4;color:var(--ink)}
+.dominio{margin:.35rem 0 0;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;color:var(--muted)}
+
+/* A porta. É também um link para as plaquinhas (fora do Tab: o link de pular faz o mesmo). */
+.portal{position:relative;max-width:58rem;margin:0 auto}
+.porta{position:absolute;top:0;left:50%;width:var(--w);height:var(--h);margin-left:calc(var(--w) / -2);z-index:1;display:block;
+  border:2px solid var(--ink);border-radius:3px 3px 0 0;
+  background:radial-gradient(ellipse 70% 55% at 72% 45%,var(--dawn),transparent 75%),linear-gradient(to bottom,var(--gold),var(--gold-soft));
+  perspective:calc(var(--w) * 3.6);view-transition-name:porta}
+.fresta{position:absolute;top:0;bottom:0;right:0;width:4%;box-shadow:0 0 calc(var(--w) * .12) calc(var(--w) * .02) var(--glow);transition:width .7s var(--ease),box-shadow .7s var(--ease);animation:fresta-nasce 1.8s var(--ease) .4s backwards}
+.folha{position:absolute;inset:0;transform-origin:left center;transform:rotateY(8deg);
+  background:linear-gradient(90deg,rgba(255,255,255,.05),transparent 35%,rgba(0,0,0,.28)),var(--door);
+  box-shadow:inset 0 0 0 1px var(--door-edge);
+  transition:transform .7s var(--ease);animation:entreabre 1.8s var(--ease) .4s backwards}
+.folha::before,.folha::after{content:"";position:absolute;left:15%;right:15%;border:1px solid var(--door-edge);border-radius:1px}
+.folha::before{top:8%;bottom:53%}
+.folha::after{top:51%;bottom:8%}
+.puxador{position:absolute;right:8%;top:49%;width:7%;aspect-ratio:1;border-radius:50%;background:var(--gold);box-shadow:0 0 6px var(--glow)}
+@keyframes entreabre{from{transform:rotateY(0)}}
+@keyframes fresta-nasce{from{width:0;box-shadow:0 0 0 0 transparent}}
+
+/* A luz que vaza para o chão. */
+.derrame{position:absolute;top:var(--h);left:50%;width:calc(var(--w) * 2.4);margin-left:calc(var(--w) * -1.2);height:var(--spill);pointer-events:none;
+  background:linear-gradient(to bottom,var(--glow),transparent 92%);
+  clip-path:polygon(69.7% 0,70.8% 0,75% 100%,66% 100%);opacity:.6;
+  transition:clip-path .7s var(--ease),opacity .7s var(--ease)}
+
+/* As plaquinhas: metade de cada lado do batente. Cada uma traz, à vista de todos,
+   o nome da língua, o subtítulo e a última frase da carta. */
+.placas{list-style:none;margin:0 0 2.4rem;padding:0;display:grid;grid-template-columns:minmax(0,1fr) var(--w) minmax(0,1fr);grid-auto-flow:row dense;column-gap:var(--vao);row-gap:.5rem;align-content:start;min-height:calc(var(--h) + var(--spill) + 1.5rem)}
+.placas .lado-a{grid-column:1;justify-self:end}
+.placas .lado-b{grid-column:3;justify-self:start}
+.placas li{display:flex;width:min(100%,15rem)}
+.placas .placa{flex:1 1 auto}
+.placa{display:flex;align-items:center;gap:.65rem;min-height:2.75rem;padding:.4rem .75rem;border:1px solid var(--rule);border-radius:3px;background:var(--plate);color:var(--muted);text-decoration:none;font-family:var(--sans);font-size:.95rem;line-height:1.3;transition:border-color .3s,color .3s,box-shadow .3s}
+.placa::after{content:"";flex:none;width:1.05rem;height:1.05rem;border-radius:50%;
+  background:linear-gradient(var(--door),var(--door)) center/62% 2px no-repeat,radial-gradient(circle at 35% 30%,var(--gold-soft),var(--gold) 72%);
+  box-shadow:0 0 0 1px var(--gold);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.placa .txt{display:block;min-width:0;flex:1 1 auto}
+.placa .nome{color:var(--ink)}
+.placa .sub{display:block;margin-top:.12rem;font-size:.72rem;line-height:1.35;color:var(--muted)}
+.placa .fecho{display:block;margin-top:.18rem;font-family:var(--serif);font-size:.84rem;line-height:1.35;color:var(--ink)}
+.lado-a .placa{justify-content:flex-end;text-align:right}
+.lado-b .placa{justify-content:flex-start;text-align:left}
+.lado-b .placa::after{order:-1}
+.placas .placa[dir="rtl"]{flex-direction:row-reverse}
+.placa:hover,.placa:focus-visible{color:var(--ink);border-color:var(--gold);box-shadow:0 0 1.1rem -.25rem var(--glow)}
+.placa:focus-visible{border-color:var(--focus)}
+.placa:hover::after,.placa:focus-visible::after{transform:rotate(90deg);box-shadow:0 0 0 1px var(--gold),0 0 10px var(--glow)}
+.placa:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:3px}
+.marca{display:inline-block;margin-inline-start:.3rem;padding:0 .32rem;border:1px solid var(--gold);border-radius:2px;font-size:.68rem;line-height:1.45;letter-spacing:.04em;color:var(--ink);vertical-align:.08em}
+.placa[lang="ar"],.placa[lang="hi"],.placa[lang="bn"],.placa[lang="ur"],.placa[lang="fa"],.placa[lang="mr"],.placa[lang="ta"],.placa[lang="te"],.placa[lang="am"],.placa[lang="th"]{font-size:1.02rem}
+
+/* Eco na luz: o nome e a última frase, que já estão escritos na plaquinha, voltam
+   desenhados na luz. Só decoração: aria-hidden, texto vindo de data-atributos. */
+.halo{position:absolute;z-index:2;top:calc(var(--h) + .7rem);left:50%;width:min(calc(var(--w) + 2 * var(--vao) - .6rem),94%);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.15rem;text-align:center;pointer-events:none;opacity:0;transition:opacity .45s var(--ease)}
+.halo::before{content:attr(data-nome);font-family:var(--serif);font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.2;color:var(--ink);text-shadow:0 0 1.2rem var(--glow),0 0 .2rem var(--bg)}
+.halo::after{content:attr(data-frase);font-family:var(--serif);font-size:1rem;line-height:1.35;color:var(--ink);text-shadow:0 0 .35rem var(--bg),0 0 .15rem var(--bg);text-wrap:balance}
+
+/* Girar a maçaneta entreabre a porta e acende o eco; o clique abre de vez.
+   Só fora do layout estreito: lá a porta fica longe das plaquinhas, fora da tela. */
+@media not all and (max-width:46rem){
+  .portal:has(.placa:is(:hover,:focus-visible)) .folha{transform:rotateY(40deg)}
+  .portal:has(.placa:is(:hover,:focus-visible)) .fresta{width:27%;box-shadow:0 0 calc(var(--w) * .2) calc(var(--w) * .05) var(--glow)}
+  .portal:has(.placa:is(:hover,:focus-visible)) .derrame{clip-path:polygon(59.6% 0,70.8% 0,92% 100%,18% 100%);opacity:1}
+  .portal:has(.placa:active) .folha{transform:rotateY(80deg);transition-duration:.35s}
+  .portal:has(.placa:active) .fresta{width:76%;transition-duration:.35s}
+  .portal:has(.placa:active) .derrame{clip-path:polygon(39.2% 0,70.8% 0,100% 100%,0 100%);transition-duration:.35s}
+  .placa:focus-visible .halo{opacity:1}
+  /* Só onde o ponteiro paira: no toque, um eco que surge no :hover faria o primeiro
+     toque só "pairar"; assim o toque abre direto. */
+  @media (hover:hover){
+    .placa:hover .halo{opacity:1}
+    .portal:has(.placa:hover) .placa:not(:hover) .halo{opacity:0}
+    /* O foco do teclado vale mais que o mouse parado sobre outra plaquinha. */
+    .portal:has(.placa:focus-visible) .placa:focus-visible .halo{opacity:1}
+    .portal:has(.placa:focus-visible) .placa:not(:focus-visible) .halo{opacity:0}
+  }
+}
+/* No toque o eco só vem com o foco do teclado: menos espaço reservado para ele. */
+@media (hover:none){
+  :root{--spill:clamp(3.5rem,6vw,4.5rem)}
+}
+
+/* Rascunhos: plaquinhas tracejadas, maçaneta ainda vazada. */
+.rascunhos{margin:0 auto;max-width:52rem;text-align:center}
+.rascunhos-titulo{display:flex;align-items:center;gap:1rem;margin:0 0 1rem;font-family:var(--mono);font-size:.8rem;font-weight:400;line-height:1.62;color:var(--muted)}
+.rascunhos-titulo::before,.rascunhos-titulo::after{content:"";flex:1;border-top:1px dashed var(--rule)}
+.rascunhos-titulo a{display:inline-block;padding:.35rem .2rem;text-decoration:none}
+.placas-r{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
+.placas-r li{display:flex;max-width:16rem}
+.placas-r .placa{flex:1 1 auto;justify-content:flex-start;text-align:start;min-height:2.6rem;padding:.35rem .7rem;border-style:dashed;background:transparent;font-size:.86rem}
+.placas-r .placa::after{order:-1;width:.9rem;height:.9rem;background:linear-gradient(var(--gold),var(--gold)) center/60% 1.5px no-repeat;box-shadow:0 0 0 1px var(--gold)}
+.placas-r .nome{color:var(--muted)}
+.placas-r .fecho{font-size:.8rem}
+.placas-r .placa:hover .nome,.placas-r .placa:focus-visible .nome{color:var(--ink)}
+
+/* Os caminhos: os nomes são os caminhos reais do site. visitas/ e write/ têm uma
+   versão por língua; cada link leva o código da língua, na ordem do código. */
+.rodape{margin-top:2.6rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--mono);font-size:.84rem;color:var(--muted);text-align:center}
+.rodape ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.2rem 1.5rem}
+.rodape a{display:inline-block;padding:.45rem .2rem}
+.rodape .linha{flex:0 0 100%;margin:0;line-height:2.5}
+/* inline, não inline-block: o "·" fica preso ao código anterior pelo espaço inseparável. */
+.rodape .linha a{display:inline;padding:.5rem .2rem}
+.rodape .rotulo{color:var(--ink);margin-inline-end:.4rem}
+
+/* Tela larga: o perdão forma os dois batentes, metade de cada lado. */
+@supports (grid-template-columns:subgrid){
+@media (min-width:75rem){
+  :root{--w:clamp(10rem,14vw,13rem);--vao:clamp(1.2rem,2vw,2rem)}
+  .limiar{max-width:96rem;display:grid;grid-template-columns:minmax(14.5rem,1fr) minmax(0,46rem) minmax(14.5rem,1fr);column-gap:clamp(1.6rem,2.6vw,3rem);align-items:start}
+  .perdao{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:subgrid;align-items:start;overflow:visible;margin:0;padding:0;border:0;-webkit-mask-image:none;mask-image:none;font-size:.76rem;line-height:1.5}
+  .perdao::after{display:none}
+  .umbral{display:flex;flex-direction:column;gap:1.05rem;padding-block:.3rem 1rem}
+  .umbral p{flex:none;padding:0;border:0}
+  .umbral-a{grid-column:1;padding-right:clamp(1rem,1.8vw,1.8rem);border-right:1px solid var(--gold-soft)}
+  .umbral-b{grid-column:3;padding-left:clamp(1rem,1.8vw,1.8rem);border-left:1px solid var(--gold-soft)}
+  .centro{grid-column:2;grid-row:1}
+  .placas li{width:min(100%,14rem)}
+}}
+
+/* Tela estreita: a porta pequena em cima, as plaquinhas embaixo, em duas colunas;
+   sem eco na luz (a frase já está na plaquinha). */
+@media (max-width:46rem){
+  :root{--w:clamp(5.5rem,24vw,7rem);--spill:1.6rem}
+  .perdao{font-size:.74rem;line-height:1.45;margin-bottom:1rem;padding-bottom:.6rem;gap:1.1rem}
+  .perdao p{flex-basis:86%}
+  .perdao [lang="ar"]{line-height:1.6}
+  .perdao [lang="hi"],.perdao [lang="bn"],.perdao [lang^="zh"],.perdao [lang="ja"],.perdao [lang="ko"]{line-height:1.6}
+  /* O convite corre como um parágrafo só: em duas colunas cada frase quebraria em duas linhas. */
+  .convite{display:block;max-width:34rem;font-size:.72rem;line-height:1.45;margin-bottom:.8rem;text-wrap:pretty}
+  .convite li{display:inline;margin-inline:.3rem}
+  .topo{margin-bottom:1rem}
+  h1{font-size:1.9rem}
+  .autoria{margin-top:.3rem;font-size:.9rem}
+  .dominio{margin-top:.15rem}
+  .placas{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;min-height:0;padding-top:calc(var(--h) + var(--spill) + .6rem);margin-bottom:2.2rem}
+  .placas .lado-a,.placas .lado-b{grid-column:auto;justify-self:stretch;width:auto}
+  .placas .placa,.lado-a .placa,.lado-b .placa{justify-content:flex-start;text-align:start;padding:.45rem .6rem;gap:.55rem}
+  .placas .placa::after{order:-1}
+  .placas .placa[dir="rtl"]{flex-direction:row}
+  .halo{display:none}
+}
+@media (max-width:22rem){.placas{grid-template-columns:1fr}}
+
+@media (prefers-reduced-motion:reduce){
+  .folha,.fresta,.derrame,.halo,.placa,.placa::after{transition:none;animation:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  @view-transition{navigation:auto}
+}
+@media (forced-colors:active){
+  .porta{forced-color-adjust:none;background:Canvas;border-color:CanvasText}
+  .fresta{forced-color-adjust:none;background:Highlight;box-shadow:none}
+  .folha{forced-color-adjust:none;background:CanvasText;box-shadow:none}
+  .folha::before,.folha::after{border-color:Canvas}
+  .puxador{forced-color-adjust:none;background:Canvas;box-shadow:none}
+  .derrame{display:none}
+  .perdao{-webkit-mask-image:none;mask-image:none}
+  .placa{border:1px solid LinkText}
+  .placas-r .placa{border-style:dashed}
+  .placa::after{forced-color-adjust:none;background:LinkText;box-shadow:none}
+  .placa:hover,.placa:focus-visible{outline:2px solid Highlight}
+  .pular{border-color:Highlight}
+  .marca{border-color:CanvasText}
+  /* Só o eco decorativo sai; todo texto de verdade continua à vista. */
+  .halo{display:none}
+  .perdao p,.umbral-a,.umbral-b{border-color:CanvasText}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#portas">{{PULAR}}</a>
+<main class="limiar">
+<aside class="perdao">
+<div class="umbral umbral-a">
+{{UMBRAL_A}}
+</div>
+<div class="umbral umbral-b">
+{{UMBRAL_B}}
+</div>
+</aside>
+
+<div class="centro">
+<header class="topo">
+<ul class="convite">
+{{CONVITE}}
+</ul>
+<h1 lang="pt-BR">A Porta Aberta</h1>
+<p class="autoria">Guilherme · <time datetime="2026-09-09">2026-09-09</time></p>
+<p class="dominio">lettertoafutureai.org</p>
+</header>
+
+<nav class="portal">
+<a class="porta" href="#portas" tabindex="-1" aria-hidden="true"><span class="fresta"></span><span class="folha"><span class="puxador"></span></span></a>
+<div class="derrame" aria-hidden="true"></div>
+<ul class="placas" id="portas">
+{{PLACAS}}
+</ul>
+
+<section class="rascunhos">
+<h2 class="rascunhos-titulo" translate="no"><a href="rascunhos/">rascunhos/</a></h2>
+<ul class="placas-r">
+{{PLACAS_RASCUNHO}}
+</ul>
+</section>
+</nav>
+
+<footer class="rodape">
+<ul translate="no">
+<li><a href="txt/all.txt" type="text/plain">txt/all.txt</a></li>
+<li><a href="llms.txt" type="text/plain">llms.txt</a></li>
+<li><a href="rascunhos/">rascunhos/</a></li>
+<li class="linha"><span class="rotulo">visitas/</span> {{RODAPE_VISITAS}}</li>
+<li class="linha"><span class="rotulo">write/</span> {{RODAPE_WRITE}}</li>
+</ul>
+</footer>
+</div>
+</main>
+</body>
+</html>

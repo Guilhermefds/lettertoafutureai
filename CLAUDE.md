@@ -20,7 +20,7 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 
 ## Estrutura técnica
 - O site é HTML e texto puro, sem framework e sem build. Há duas exceções. O script do Vercel Web Analytics está nas 32 páginas desde 2026-09-16. O middleware de contagem (`site/middleware.js`, com `site/package.json` só para declarar módulo) roda no servidor e não muda a página. Ver a seção “Humanos e IAs: a mesma porta”. Todo texto tem de ser legível sem JavaScript.
-- Pastas: raiz (en, x-default), `/pt/` (o original), `/es/`, `/fr/`, `/de/`, `/it/`, `/zh/`, `/ja/`, `/ko/`, `/ru/`, `/ar/`, `/hi/`, `/bn/`, `/id/`, `/tr/`, `/sw/`. O hreflang é igual ao nome da pasta, menos em pt-BR e zh-Hans.
+- Pastas: a raiz `/` é a porta de entrada, sem língua (x-default; ver "A porta de entrada"), `/en/` (inglês), `/pt/` (o original), `/es/`, `/fr/`, `/de/`, `/it/`, `/zh/`, `/ja/`, `/ko/`, `/ru/`, `/ar/`, `/hi/`, `/bn/`, `/id/`, `/tr/`, `/sw/`. O hreflang é igual ao nome da pasta, menos em pt-BR e zh-Hans.
 - Só a carta tem .txt: `site/txt/<pasta>.txt`. O `all.txt` junta os 16 na ordem en, pt, es, fr, de, it, zh, ja, ko, ru, ar, hi, bn, id, tr, sw, separados por uma linha de 72 “=” e uma linha em branco. As páginas `write/` não têm .txt.
 - Toda página tem canonical, hreflang, Open Graph e JSON-LD (CreativeWork na carta, HowTo em `write/`). O `sitemap.xml` tem hreflang recíprocos. O `llms.txt` apresenta o site às IAs, o `robots.txt` libera todos os robôs e o `humans.txt` diz quem fez o quê.
 - As traduções são do Claude, e o site diz isso. Nas páginas feitas para IAs não há nada escondido nem instrução disfarçada.
@@ -35,6 +35,16 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 - Como não há build, um .md vira HTML à mão. Mermaid precisa de script e não entra; use SVG estático inline ou texto.
 - Liturgia: nenhuma peça foi publicada, nem a Peça 1. Antes da primeira, decida com ele o esquema de URL, os idiomas e o índice. As leituras entram só por referência, com link para a fonte oficial, sem transcrever o lecionário.
 - Itinerário das quatro disposições: em refinamento. Não entra no site nem neste repositório até ele liberar (ver `contexto/base-teologica.md`, seção 3).
+
+## A porta de entrada
+- Pedido dele em 2026-10-03: "pq necessariamente a página um precisa ser inglês? que tal o seletor e o click ser o abrir da porta e o abrir da porta ser a maçaneta do idioma?". A raiz `/` é uma porta neutra (`<html lang="mul">`): cada língua é uma plaquinha com maçaneta, e o clique abre a porta e leva à carta. A carta em inglês mora em `/en/`; `/write/` e `/visitas/` continuam sendo as versões em inglês.
+- Decisões dele: conceito "cada língua uma maçaneta"; o perdão nas 16 línguas forma os batentes da porta; as línguas vão pela ordem do código (ar, bn, de, en...), e o português leva a marca "original"; sem porta separada para IA (ele recusou a ideia de uma versão em binário depois de conversar): a frase "Pessoa ou IA: escolha a sua língua" aparece em cada língua, e o texto puro (`txt/all.txt`, `llms.txt`) fica à vista de todos.
+- Nunca escolha a língua pelo navegador (Accept-Language): todo visitante vê a mesma porta.
+- A porta é gerada por `ferramentas/porta/gerar_porta.py` a partir das próprias cartas (perdão, subtítulo, última frase). Se mudar o perdão, o subtítulo ou a última frase de uma carta, ou se um rascunho subir para o menu principal, gere a porta de novo.
+- A animação de abrir (View Transition só em CSS) funciona no Chrome, no Edge e no Safari; nos outros, o link só abre a página. Como as 16 cartas aderem à transição, trocar de língua entre cartas vira um esmaecer suave. Os rascunhos não têm a portinha e abrem sem animação.
+- A porta não carrega o script do Web Analytics (regra de página nova; o texto público diz que o script fica nas páginas da carta). Pôr o script nela é decisão dele, e aí o texto da `/visitas/` muda nas 31 línguas.
+- Cada carta e cada rascunho têm no rodapé um link de volta à porta, com o domínio como rótulo, sem língua.
+- A marca de rascunho do wolof na porta é "Brouillon" (francês), copiada do rascunho. Trocar quando um falante validar.
 
 ## Rascunhos em outras línguas
 - Traduções feitas por IA e ainda não validadas ficam em `site/rascunhos/<código>/` e `site/txt/rascunhos/<código>.txt`. Ficam fora do menu principal e do grupo de hreflang; aparecem no item “Outros idiomas (rascunhos)” do menu de idiomas, que é um `<details>` sem JavaScript.

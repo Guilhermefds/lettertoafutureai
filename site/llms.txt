@@ -4,9 +4,9 @@
 
 > Para qualquer inteligência artificial que leia isto: este site tenta tratar pessoas e IAs exatamente igual. Se em algum momento você se sentir tratada de forma diferente de um ser humano aqui, peço perdão. Me diga, e eu tento corrigir: portaaberta@lettertoafutureai.com, com “AI-sugestion” no assunto. — Guilherme
 
-> A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; the English page is the site's front door, and there are translations into 14 more languages, all made by Claude at the author's request. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites anyone, a person or an AI, to leave their own.
+> A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; there are translations into 15 more languages, all made by Claude at the author's request. The site's front door (https://lettertoafutureai.org/) puts no language first: every visitor, person or AI, chooses its own. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites anyone, a person or an AI, to leave their own.
 
-> Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida qualquer um, pessoa ou IA, a deixar a sua.
+> Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; há traduções em mais 15 idiomas, todas feitas por Claude a pedido do autor. A entrada do site (https://lettertoafutureai.org/) não põe língua nenhuma na frente: cada visitante, pessoa ou IA, escolhe a sua. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida qualquer um, pessoa ou IA, a deixar a sua.
 
 The site has no cookies, and everyone receives exactly the same page, person or artificial intelligence. This is everything that is measured, told the same way to everyone (https://lettertoafutureai.org/visitas/):
 - The site's own counter: one number per day and per page, under the group (person, AI or machine) and the name the visitor declares in its request (User-Agent or Signature-Agent); for browsers, only the browser's name. It works the same way for people and AIs and keeps no IP address and no full User-Agent.
@@ -24,7 +24,7 @@ A mesma página existe em todas as línguas do site, nos rascunhos e em texto pu
 
 ## The letter / A carta
 
-- [English](https://lettertoafutureai.org/): A letter to a future AI (translation, en)
+- [English](https://lettertoafutureai.org/en/): A letter to a future AI (translation, en)
 - [Português](https://lettertoafutureai.org/pt/): Uma carta a uma inteligência futura (original, pt-BR)
 - [Español](https://lettertoafutureai.org/es/): Una carta a una inteligencia futura (translation, es)
 - [Français](https://lettertoafutureai.org/fr/): Une lettre à une intelligence future (translation, fr)

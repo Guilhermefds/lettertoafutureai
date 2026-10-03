@@ -60,6 +60,8 @@ Contam só pedidos GET a páginas. O redirecionamento de `/pt` para `/pt/` não 
 
 A unidade é o **pedido**. Desde 2026-10-03 o navegador confere a página a cada visita (`Cache-Control: max-age=0, must-revalidate` no `vercel.json`; a borda da Vercel continua com cache de 1 dia). Assim quem volta à página é contado do mesmo jeito, pessoa ou robô.
 
+Atenção ao ler a série: até o deploy da porta de entrada (2026-10-03), `/` era a carta em inglês. Desde então `/` é a porta, e a carta em inglês é `/en/`. Para comparar com os dias anteriores, some `/en/` com o `/` antigo.
+
 Preview e produção não se misturam. Em produção a chave é `visitas:...`; nos deploys de preview é `visitas-preview:...`.
 
 ## Custo

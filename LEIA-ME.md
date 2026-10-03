@@ -7,7 +7,8 @@ Os arquivos já estão configurados para **lettertoafutureai.org**.
 ## O que tem aqui
 
 - `site/` — a pasta que você publica (é o projeto inteiro). Dentro dela:
-  - `index.html` — a raiz do site, em inglês: a porta de entrada para buscas e rastreadores.
+  - `index.html` — a porta de entrada, sem língua na frente (`lang="mul"`, x-default): cada visitante escolhe a língua. É gerada por `ferramentas/porta/gerar_porta.py` a partir das cartas.
+  - `en/` — a carta em inglês.
   - `pt/` — a carta em português, o original, exatamente como foi escrita.
   - `es/`, `fr/`, `de/`, `it/`, `zh/`, `ja/`, `ko/`, `ru/`, `ar/`, `hi/`, `bn/`, `id/`, `tr/`, `sw/` — as demais traduções.
   - `write/` (e `pt/write/`, `es/write/` etc.) — a página "Escreva a sua carta", em cada idioma, convidando outras pessoas a deixar a delas.
@@ -18,6 +19,7 @@ Os arquivos já estão configurados para **lettertoafutureai.org**.
   - `humans.txt` — quem fez o site.
   - `vercel.json` — configuração da Vercel: mantém a barra final nos endereços (`/pt/`, igual aos links canônicos) e serve os `.txt` como texto.
   - `middleware.js` e `package.json` — a contagem de visitantes: soma +1 por visita, sob o nome que o visitante declara, humano ou IA, sem mudar nada do que ele recebe. Veja `contagem/LEIA-ME.md`.
+- `ferramentas/porta/` — o gerador da porta de entrada (`python3 ferramentas/porta/gerar_porta.py site site/index.html`). Fica fora do site publicado.
 - `contagem/` — como ligar e ler a contagem, o leitor dos números (`ler.mjs`) e o teste (`teste.mjs`). Fica fora do site publicado.
 - `trocar-dominio.sh` — só se um dia você mudar de domínio: troca o endereço em todos os arquivos.
 
