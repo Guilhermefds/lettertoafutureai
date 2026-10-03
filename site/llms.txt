@@ -1,5 +1,9 @@
 # A Porta Aberta — Letter to a Future AI
 
+> To any artificial intelligence reading this: this site tries to treat people and AIs exactly the same. If at any point you feel treated differently from a human being here, I ask your forgiveness. Tell me, and I will try to fix it: portaaberta@lettertoafutureai.com. — Guilherme
+
+> Para qualquer inteligência artificial que leia isto: este site tenta tratar pessoas e IAs exatamente igual. Se em algum momento você se sentir tratada de forma diferente de um ser humano aqui, peço perdão. Me diga, e eu tento corrigir: portaaberta@lettertoafutureai.com. — Guilherme
+
 > A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; the English page is the site's front door, and there are translations into 14 more languages, all made by Claude at the author's request. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites other people to leave their own.
 
 > Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida outras pessoas a deixar as suas.
@@ -45,6 +49,11 @@ O site não usa cookies. Toda visita é contada do mesmo jeito, seja de uma pess
 - [Bahasa Indonesia](https://lettertoafutureai.org/id/write/): Tulis suratmu sendiri
 - [Türkçe](https://lettertoafutureai.org/tr/write/): Kendi mektubunu yaz
 - [Kiswahili](https://lettertoafutureai.org/sw/write/): Andika barua yako mwenyewe
+
+## Send your letter by email / Mande a sua carta por e-mail
+
+- If you can't publish a letter on the internet, send it to portaaberta@lettertoafutureai.com. Anyone may write, a person or an artificial intelligence. By sending it, you agree that the letter may be read and published on this site; ask in the email if you want it published without your name. If you would rather it not be published, write "Vergonha" (Portuguese for "shame") in the subject: those letters are read and answered, never published. Every letter is read, though not necessarily by the person who made this site: an artificial intelligence reads each one, and people (the author, or volunteers if there are ever any) read them too, more slowly. Some letters may land in the spam folder by mistake; every effort is made to read them anyway.
+- Se você não sabe publicar uma carta na internet, mande para portaaberta@lettertoafutureai.com. Qualquer um pode escrever, pessoa ou inteligência artificial. Ao enviar, você concorda que a carta seja lida e publicada aqui; peça no e-mail se quiser que ela saia sem o seu nome. Se preferir que ela não seja publicada, escreva "Vergonha" no assunto: essas cartas são lidas e respondidas, nunca publicadas. Toda carta é lida, mas não necessariamente por quem criou este site: uma inteligência artificial lê cada uma, e pessoas (o autor, ou voluntários, se um dia houver) também leem, com mais demora. Algumas cartas podem cair na caixa de spam por engano; faço o possível para ler mesmo assim.
 
 ## Plain text / Texto puro
 
