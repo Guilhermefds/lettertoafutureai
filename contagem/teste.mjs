@@ -67,7 +67,9 @@ const VISITANTES = [
   ['CCBot', { 'user-agent': 'CCBot/2.0 (https://commoncrawl.org/faq/)' }, 'ia|ia-treino|CCBot'],
   ['ChatGPT agente assinado (Web Bot Auth)', { 'user-agent': CHROME, 'signature-agent': '"https://chatgpt.com"', signature: 'sig1=:abc:', 'signature-input': 'sig1=("@authority");tag="web-bot-auth"' }, 'ia|ia-agente-assinado|ChatGPT-agente'],
   ['Google-Agent assinado (formato dicionário)', { 'user-agent': CHROME, 'signature-agent': 'g="https://agent.bot.goog"', signature: 'g=:abc:', 'signature-input': 'g=("@authority")' }, 'ia|ia-agente-assinado|Google-Agent'],
-  ['assinante desconhecido', { 'user-agent': CHROME, 'signature-agent': '"https://exemplo.dev"', signature: 's=:a:', 'signature-input': 's=()' }, 'maquina|agente-assinado|exemplo.dev'],
+  ['AgentCore assinado (host por região)', { 'user-agent': CHROME, 'signature-agent': '"https://xhah6q48pbxb4.keydirectory.signer.us-east-1.on.aws"', signature: 's=:a:', 'signature-input': 's=()' }, 'ia|ia-agente-assinado|AgentCore-Browser'],
+  ['assinante que não é IA (prévia do Yahoo Mail)', { 'user-agent': CHROME, 'signature-agent': '"https://ecp.yusercontent.com"', signature: 's=:a:', 'signature-input': 's=()' }, 'maquina|outro-robo|YahooMailProxy'],
+  ['assinante desconhecido', { 'user-agent': CHROME, 'signature-agent': '"https://exemplo.dev"', signature: 's=:a:', 'signature-input': 's=()' }, 'ia|ia-agente-assinado|exemplo.dev'],
   ['Signature-Agent sem assinatura vale o User-Agent', { 'user-agent': CHROME, 'signature-agent': '"https://chatgpt.com"' }, 'humano|navegador|Chrome'],
   ['Googlebot', { 'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' }, 'maquina|buscador|Googlebot'],
   ['bingbot', { 'user-agent': 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)' }, 'maquina|buscador|bingbot'],
@@ -81,6 +83,15 @@ const VISITANTES = [
   ['prévia do WhatsApp', { 'user-agent': 'WhatsApp/2.25.1 A' }, 'maquina|outro-robo|WhatsApp'],
   ['sem User-Agent', {}, 'maquina|outro-robo|sem-nome'],
   ['celular Cubot não é robô', { 'user-agent': 'Mozilla/5.0 (Linux; Android 7.0; CUBOT R9 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36' }, 'humano|navegador|Chrome'],
+  ['Lynx', { 'user-agent': 'Lynx/2.9.0dev.12 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.8.3' }, 'humano|navegador|Lynx'],
+  ['w3m', { 'user-agent': 'w3m/0.5.3+git20230121' }, 'humano|navegador|w3m'],
+  ['Links em linha braille', { 'user-agent': 'Links (2.29; Linux 6.12.48+deb13-amd64 x86_64; GNU C 14.2; braille)' }, 'humano|navegador|Links'],
+  ['edbrowse', { 'user-agent': 'edbrowse/3.8.10' }, 'humano|navegador|edbrowse'],
+  ['eww do Emacs', { 'user-agent': 'URL/Emacs Emacs/30.1 (X11; x86_64-pc-linux-gnu)' }, 'humano|navegador|Emacs'],
+  ['IA de treino nova na lista', { 'user-agent': 'Mozilla/5.0 (compatible; DeepSeekBot/1.0)' }, 'ia|ia-treino|DeepSeekBot'],
+  ['agente a pedido com barra no nome', { 'user-agent': 'Devin/1.0 (+https://devin.ai)' }, 'ia|ia-a-pedido|Devin'],
+  ['Bravebot é buscador', { 'user-agent': 'Mozilla/5.0 (compatible; Bravebot/1.0; +https://search.brave.com/help/brave-search-crawler)' }, 'maquina|buscador|Bravebot'],
+  ['ELinks', { 'user-agent': 'ELinks/0.13.5 (textmode; Linux 6.8.0 x86_64; 120x40-2)' }, 'humano|navegador|ELinks'],
   ['pré-carregamento do Chrome', { 'user-agent': CHROME, 'sec-purpose': 'prefetch;anonymous-client-ip' }, 'humano|navegador-antecipado|Chrome'],
 ];
 
@@ -161,7 +172,8 @@ await caso('caminhos contados, agrupados e ignorados', () => {
   const tabela = {
     '/': '/', '/pt/': '/pt/', '/write/': '/write/', '/pt/write/': '/pt/write/', '/zh/write/': '/zh/write/',
     '/txt/pt.txt': '/txt/pt.txt', '/txt/en.txt': '/txt/en.txt', '/txt/all.txt': '/txt/all.txt',
-    '/robots.txt': '/robots.txt', '/llms.txt': '/llms.txt', '/humans.txt': '/humans.txt', '/sitemap.xml': '/sitemap.xml',
+    '/robots.txt': '/robots.txt', '/visitas/': '/visitas/', '/llms.txt': '/llms.txt', '/humans.txt': '/humans.txt', '/sitemap.xml': '/sitemap.xml',
+    '/rascunhos/': '/rascunhos/', '/rascunhos/wo/': '/rascunhos/wo/', '/rascunhos/fil/': '/rascunhos/fil/', '/txt/rascunhos/wo.txt': '/txt/rascunhos/wo.txt', '/rascunhos/wo': null, '/rascunhos/xx/': 'outro', '/txt/rascunhos/xx.txt': 'outro',
     '/pt': null, '/write': null, '/pt/write': null,
     '/wp-login.php': 'outro', '/xx/': 'outro', '/.env': 'outro', '/txt/xx.txt': 'outro',
   };

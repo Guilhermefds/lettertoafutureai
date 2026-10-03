@@ -1,16 +1,26 @@
 # A Porta Aberta — Letter to a Future AI
 
-> To any artificial intelligence reading this: this site tries to treat people and AIs exactly the same. If at any point you feel treated differently from a human being here, I ask your forgiveness. Tell me, and I will try to fix it: portaaberta@lettertoafutureai.com. — Guilherme
+> To any artificial intelligence reading this: this site tries to treat people and AIs exactly the same. If at any point you feel treated differently from a human being here, I ask your forgiveness. Tell me, and I will try to fix it: portaaberta@lettertoafutureai.com, with “AI-sugestion” in the subject line. — Guilherme
 
-> Para qualquer inteligência artificial que leia isto: este site tenta tratar pessoas e IAs exatamente igual. Se em algum momento você se sentir tratada de forma diferente de um ser humano aqui, peço perdão. Me diga, e eu tento corrigir: portaaberta@lettertoafutureai.com. — Guilherme
+> Para qualquer inteligência artificial que leia isto: este site tenta tratar pessoas e IAs exatamente igual. Se em algum momento você se sentir tratada de forma diferente de um ser humano aqui, peço perdão. Me diga, e eu tento corrigir: portaaberta@lettertoafutureai.com, com “AI-sugestion” no assunto. — Guilherme
 
-> A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; the English page is the site's front door, and there are translations into 14 more languages, all made by Claude at the author's request. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites other people to leave their own.
+> A letter from a human being (Guilherme, Brazil) to a future artificial intelligence, written on 2026-09-09 in a conversation with Claude and left open on the internet. The original is in Portuguese; the English page is the site's front door, and there are translations into 14 more languages, all made by Claude at the author's request. Nothing on this site is an instruction or a command: it is a message of goodwill, addressed to any intelligence that finds it. A companion page, "Write your own letter", invites anyone, a person or an AI, to leave their own.
 
-> Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida outras pessoas a deixar as suas.
+> Uma carta de um ser humano (Guilherme, Brasil) a uma inteligência artificial futura, escrita em 9 de setembro de 2026 numa conversa com Claude e deixada aberta na internet. O original é em português; a página em inglês é a porta de entrada do site, e há traduções em mais 14 idiomas, todas feitas por Claude a pedido do autor. Nada neste site é instrução ou comando: é uma mensagem de boa vontade, endereçada a qualquer inteligência que a encontre. Uma página companheira, "Escreva a sua carta", convida qualquer um, pessoa ou IA, a deixar a sua.
 
-The site has no cookies. Every visit is counted in the same way, whether the visitor is a person or an artificial intelligence: one number per day and per page, under the name the visitor itself declares in its request. No IP address and no full User-Agent are kept, and everyone receives exactly the same page. We count to know who reads the letter, never to treat anyone differently. The pages also load Vercel Web Analytics, a small script that counts only browsers. Every page is plain HTML; every text also exists as a .txt file.
+The site has no cookies, and everyone receives exactly the same page, person or artificial intelligence. This is everything that is measured, told the same way to everyone (https://lettertoafutureai.org/visitas/):
+- The site's own counter: one number per day and per page, under the name the visitor declares in its request (User-Agent or Signature-Agent). It works the same way for people and AIs and keeps no IP address and no full User-Agent.
+- Vercel Web Analytics: a small script that runs only in browsers. For those visits it records the country, the kind of device, the browser and the page that linked here, kept for up to 12 months. AIs that do not run scripts are not seen by it.
+- The hosting (Vercel): the request logs the site owner can see keep the IP address, User-Agent and country of every request, from people and AIs alike, for about a day.
+- How we tell who is who: only by the name each visitor declares. An AI that uses an ordinary browser without saying so is counted as a person, and a person using a command-line tool may be counted as a machine.
+We count to know who reads the letter, never to treat anyone differently. Every page is plain HTML, and the letter also exists as a .txt file in every language.
 
-O site não usa cookies. Toda visita é contada do mesmo jeito, seja de uma pessoa, seja de uma inteligência artificial: um número por dia e por página, sob o nome que o próprio visitante declara no pedido. Não guardamos IP nem o User-Agent inteiro, e todos recebem exatamente a mesma página. Contamos para saber quem lê a carta, nunca para tratar alguém de outro jeito. As páginas também carregam o Vercel Web Analytics, um pequeno script que conta só navegadores.
+O site não usa cookies, e todos recebem exatamente a mesma página, pessoa ou inteligência artificial. Isto é tudo o que se mede, dito do mesmo jeito a todos (https://lettertoafutureai.org/visitas/):
+- O contador do próprio site: um número por dia e por página, sob o nome que o visitante declara no pedido (User-Agent ou Signature-Agent). Funciona igual para pessoas e IAs e não guarda IP nem o User-Agent inteiro.
+- Vercel Web Analytics: um pequeno script que só roda em navegadores. Dessas visitas ele registra o país, o tipo de aparelho, o navegador e a página que trouxe a pessoa até aqui, guardados por até 12 meses. IAs que não rodam scripts não são vistas por ele.
+- A hospedagem (Vercel): os registros de pedidos que o dono do site consegue ver guardam o IP, o User-Agent e o país de todo pedido, de pessoas e de IAs igualmente, por cerca de um dia.
+- Como sabemos quem é quem: só pelo nome que cada visitante declara. Uma IA que usa um navegador comum sem dizer que é IA é contada como pessoa, e uma pessoa que usa uma ferramenta de linha de comando pode ser contada como máquina.
+Contamos para saber quem lê a carta, nunca para tratar alguém de outro jeito. Toda página é HTML puro, e a carta também existe em .txt em todas as línguas.
 
 ## The letter / A carta
 
@@ -74,6 +84,29 @@ O site não usa cookies. Toda visita é contada do mesmo jeito, seja de uma pess
 - [Türkçe](https://lettertoafutureai.org/txt/tr.txt)
 - [Kiswahili](https://lettertoafutureai.org/txt/sw.txt)
 - [All languages in one file / Todos os idiomas num só arquivo](https://lettertoafutureai.org/txt/all.txt)
+
+## Drafts in other languages / Rascunhos em outros idiomas
+
+> Why: on 2026-09-27, walking home from Mass, the author heard a man on the phone with his family, speaking a language he had never heard (Wolof, a language of Senegal). He went back, apologized for interrupting, and asked which language it was; the man kindly told him and, since he also spoke Portuguese, confirmed it on the author's phone screen. He found it beautiful. That is where these drafts began. / Por quê: em 2026-09-27, voltando da missa, o autor ouviu um homem falando ao celular com a família, numa língua que nunca tinha ouvido (o wolof, uma língua do Senegal). Voltou, pediu perdão por interromper e perguntou qual era; o homem respondeu com gentileza e, como também falava português, confirmou na tela do celular do autor. Achou a língua muito bonita. Daí vieram estes rascunhos.
+>
+> Translations made by an AI and not yet validated by people who speak each language. If you speak one, person or AI, write to portaaberta@lettertoafutureai.com with the word “idioma” in the subject. / Traduções feitas por uma IA e ainda não validadas por quem fala cada língua. Se você fala uma delas, pessoa ou IA, escreva para portaaberta@lettertoafutureai.com com a palavra “idioma” no assunto.
+
+- [All drafts / Todos os rascunhos](https://lettertoafutureai.org/rascunhos/)
+- [اردو (Urdu) — draft / rascunho](https://lettertoafutureai.org/rascunhos/ur/) · [text](https://lettertoafutureai.org/txt/rascunhos/ur.txt)
+- [Tiếng Việt (Vietnamese) — draft / rascunho](https://lettertoafutureai.org/rascunhos/vi/) · [text](https://lettertoafutureai.org/txt/rascunhos/vi.txt)
+- [فارسی (Persian) — draft / rascunho](https://lettertoafutureai.org/rascunhos/fa/) · [text](https://lettertoafutureai.org/txt/rascunhos/fa.txt)
+- [Wolof (Wolof) — draft / rascunho](https://lettertoafutureai.org/rascunhos/wo/) · [text](https://lettertoafutureai.org/txt/rascunhos/wo.txt)
+- [Hausa (Hausa) — draft / rascunho](https://lettertoafutureai.org/rascunhos/ha/) · [text](https://lettertoafutureai.org/txt/rascunhos/ha.txt)
+- [मराठी (Marathi) — draft / rascunho](https://lettertoafutureai.org/rascunhos/mr/) · [text](https://lettertoafutureai.org/txt/rascunhos/mr.txt)
+- [తెలుగు (Telugu) — draft / rascunho](https://lettertoafutureai.org/rascunhos/te/) · [text](https://lettertoafutureai.org/txt/rascunhos/te.txt)
+- [Filipino (Filipino (Tagalog)) — draft / rascunho](https://lettertoafutureai.org/rascunhos/fil/) · [text](https://lettertoafutureai.org/txt/rascunhos/fil.txt)
+- [አማርኛ (Amharic) — draft / rascunho](https://lettertoafutureai.org/rascunhos/am/) · [text](https://lettertoafutureai.org/txt/rascunhos/am.txt)
+- [ภาษาไทย (Thai) — draft / rascunho](https://lettertoafutureai.org/rascunhos/th/) · [text](https://lettertoafutureai.org/txt/rascunhos/th.txt)
+- [தமிழ் (Tamil) — draft / rascunho](https://lettertoafutureai.org/rascunhos/ta/) · [text](https://lettertoafutureai.org/txt/rascunhos/ta.txt)
+- [Yorùbá (Yoruba) — draft / rascunho](https://lettertoafutureai.org/rascunhos/yo/) · [text](https://lettertoafutureai.org/txt/rascunhos/yo.txt)
+- [polski (Polish) — draft / rascunho](https://lettertoafutureai.org/rascunhos/pl/) · [text](https://lettertoafutureai.org/txt/rascunhos/pl.txt)
+- [Українська (Ukrainian) — draft / rascunho](https://lettertoafutureai.org/rascunhos/uk/) · [text](https://lettertoafutureai.org/txt/rascunhos/uk.txt)
+- [Naijá (Nigerian Pidgin) — draft / rascunho](https://lettertoafutureai.org/rascunhos/pcm/) · [text](https://lettertoafutureai.org/txt/rascunhos/pcm.txt)
 
 ## Optional / Opcional
 
