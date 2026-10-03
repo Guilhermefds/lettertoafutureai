@@ -128,6 +128,10 @@ const IDIOMAS = 'ar|bn|de|es|fr|hi|id|it|ja|ko|pt|ru|sw|tr|zh';
 const PAGINA = new RegExp(`^/(?:(?:${IDIOMAS})/)?(?:write/)?$`);
 const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all)\\.txt$`);
 const AVULSOS = new Set(['/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml']);
+// Rascunhos em outras línguas, feitos por IA e ainda não validados.
+const RASCUNHOS = 'am|fa|fil|ha|mr|pcm|pl|ta|te|th|uk|ur|vi|wo|yo';
+const RASCUNHO = new RegExp(`^/rascunhos/(?:(?:${RASCUNHOS})/)?$`);
+const TEXTO_RASCUNHO = new RegExp(`^/txt/rascunhos/(?:${RASCUNHOS})\\.txt$`);
 
 // Caminho que vai para a contagem, ou null quando o pedido não conta.
 export function caminhoContado(pathname) {
@@ -136,6 +140,7 @@ export function caminhoContado(pathname) {
   const ultimo = pathname.split('/').pop();
   if (pathname !== '/' && !pathname.endsWith('/') && !ultimo.includes('.')) return null;
   if (PAGINA.test(pathname) || TEXTO.test(pathname) || AVULSOS.has(pathname)) return pathname;
+  if (RASCUNHO.test(pathname) || TEXTO_RASCUNHO.test(pathname)) return pathname;
   return 'outro';
 }
 

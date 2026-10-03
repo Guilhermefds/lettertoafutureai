@@ -36,6 +36,13 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 - Liturgia: nenhuma peça foi publicada, nem a Peça 1. Antes da primeira, decida com ele o esquema de URL, os idiomas e o índice. As leituras entram só por referência, com link para a fonte oficial, sem transcrever o lecionário.
 - Itinerário das quatro disposições: em refinamento. Não entra no site nem neste repositório até ele liberar (ver `contexto/base-teologica.md`, seção 3).
 
+## Rascunhos em outras línguas
+- Traduções feitas por IA e ainda não validadas ficam em `site/rascunhos/<código>/` e `site/txt/rascunhos/<código>.txt`. Ficam fora do menu principal e do grupo de hreflang; aparecem no item “Outros idiomas (rascunhos)” do menu de idiomas, que é um `<details>` sem JavaScript.
+- Cada rascunho traz o aviso de rascunho, a seção “Para quem for revisar” (frases de menor confiança com a volta para o português) e o crédito honesto da tradução por IA.
+- Quem fala a língua, pessoa ou IA, valida por e-mail a portaaberta@lettertoafutureai.com com “idioma” no assunto. Só com validação de um falante a língua sobe para o menu principal: pasta `/<código>/`, hreflang nas 32 páginas, `all.txt`, `sitemap.xml`, `llms.txt` e a lista `IDIOMAS` de `site/middleware.js`.
+- Ao criar ou mudar um rascunho, siga o guia de tradução (privado: `~/ai-context/CONTEXTO/lettertoafutureai-idiomas/guia-de-traducao.md`) e mantenha a lista `RASCUNHOS` de `site/middleware.js` e os testes em dia.
+- A motivação dos rascunhos, na voz do Guilherme, está em `/rascunhos/`: o domingo 27/09/2026 em que ele ouviu o wolof. Não mude esse relato.
+
 ## Roteiros (só a pedido dele)
 - Publicar: o push para `main` provavelmente dispara o deploy na Vercel. Isso é inferido do PR #1 do bot e não foi confirmado no painel. Mostre o diff e peça o ok antes do push. A opção mais segura é abrir um branch e um PR, e ele faz o merge.
 - Tirar o script do Web Analytics: remova só as 4 linhas do `<head>` das 32 páginas (o commit 7eecb1f mostra quais). Tire também a frase sobre ele no `llms.txt` (en e pt) e no `LEIA-ME.md:3`. Desligar o Web Analytics no painel da Vercel é com ele. Depois, atualize a §10 de `contexto/carta.md`. A contagem de `site/middleware.js` continua.

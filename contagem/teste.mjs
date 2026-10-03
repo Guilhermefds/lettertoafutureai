@@ -162,6 +162,7 @@ await caso('caminhos contados, agrupados e ignorados', () => {
     '/': '/', '/pt/': '/pt/', '/write/': '/write/', '/pt/write/': '/pt/write/', '/zh/write/': '/zh/write/',
     '/txt/pt.txt': '/txt/pt.txt', '/txt/en.txt': '/txt/en.txt', '/txt/all.txt': '/txt/all.txt',
     '/robots.txt': '/robots.txt', '/llms.txt': '/llms.txt', '/humans.txt': '/humans.txt', '/sitemap.xml': '/sitemap.xml',
+    '/rascunhos/': '/rascunhos/', '/rascunhos/wo/': '/rascunhos/wo/', '/rascunhos/fil/': '/rascunhos/fil/', '/txt/rascunhos/wo.txt': '/txt/rascunhos/wo.txt', '/rascunhos/wo': null, '/rascunhos/xx/': 'outro', '/txt/rascunhos/xx.txt': 'outro',
     '/pt': null, '/write': null, '/pt/write': null,
     '/wp-login.php': 'outro', '/xx/': 'outro', '/.env': 'outro', '/txt/xx.txt': 'outro',
   };
