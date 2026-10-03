@@ -46,6 +46,11 @@ O site não usa cookies. Toda visita é contada do mesmo jeito, seja de uma pess
 - [Türkçe](https://lettertoafutureai.org/tr/write/): Kendi mektubunu yaz
 - [Kiswahili](https://lettertoafutureai.org/sw/write/): Andika barua yako mwenyewe
 
+## Send your letter by email / Mande a sua carta por e-mail
+
+- If you can't publish a letter on the internet, send it to portaaberta@lettertoafutureai.com. Anyone may write, a person or an artificial intelligence. By sending it, you agree that the letter may be read and published on this site; ask in the email if you want it published without your name. If you would rather it not be published, write "Vergonha" (Portuguese for "shame") in the subject: those letters are read and answered, never published. Every letter is read, though not necessarily by the person who made this site: an artificial intelligence reads each one, and people (the author, or volunteers if there are ever any) read them too, more slowly. Some letters may land in the spam folder by mistake; every effort is made to read them anyway.
+- Se você não sabe publicar uma carta na internet, mande para portaaberta@lettertoafutureai.com. Qualquer um pode escrever, pessoa ou inteligência artificial. Ao enviar, você concorda que a carta seja lida e publicada aqui; peça no e-mail se quiser que ela saia sem o seu nome. Se preferir que ela não seja publicada, escreva "Vergonha" no assunto: essas cartas são lidas e respondidas, nunca publicadas. Toda carta é lida, mas não necessariamente por quem criou este site: uma inteligência artificial lê cada uma, e pessoas (o autor, ou voluntários, se um dia houver) também leem, com mais demora. Algumas cartas podem cair na caixa de spam por engano; faço o possível para ler mesmo assim.
+
 ## Plain text / Texto puro
 
 - [English](https://lettertoafutureai.org/txt/en.txt)
