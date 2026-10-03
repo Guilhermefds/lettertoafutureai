@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>방문을 세는 방법 — A Porta Aberta</title>
+<meta name="description" content="이 사이트가 방문자에 대해 측정하는 모든 것을, 사람에게도 인공지능에게도 똑같은 방식으로 알립니다.">
+<meta name="author" content="Guilherme">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 46'%3E%3Crect x='1' y='1' width='28' height='44' rx='1' fill='none' stroke='%231F2230' stroke-width='2'/%3E%3Crect x='18' y='3' width='9' height='40' fill='%23B8892B'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://lettertoafutureai.org/ko/visitas/">
+<link rel="alternate" hreflang="en" href="https://lettertoafutureai.org/visitas/">
+<link rel="alternate" hreflang="pt-BR" href="https://lettertoafutureai.org/pt/visitas/">
+<link rel="alternate" hreflang="es" href="https://lettertoafutureai.org/es/visitas/">
+<link rel="alternate" hreflang="fr" href="https://lettertoafutureai.org/fr/visitas/">
+<link rel="alternate" hreflang="de" href="https://lettertoafutureai.org/de/visitas/">
+<link rel="alternate" hreflang="it" href="https://lettertoafutureai.org/it/visitas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lettertoafutureai.org/zh/visitas/">
+<link rel="alternate" hreflang="ja" href="https://lettertoafutureai.org/ja/visitas/">
+<link rel="alternate" hreflang="ko" href="https://lettertoafutureai.org/ko/visitas/">
+<link rel="alternate" hreflang="ru" href="https://lettertoafutureai.org/ru/visitas/">
+<link rel="alternate" hreflang="ar" href="https://lettertoafutureai.org/ar/visitas/">
+<link rel="alternate" hreflang="hi" href="https://lettertoafutureai.org/hi/visitas/">
+<link rel="alternate" hreflang="bn" href="https://lettertoafutureai.org/bn/visitas/">
+<link rel="alternate" hreflang="id" href="https://lettertoafutureai.org/id/visitas/">
+<link rel="alternate" hreflang="tr" href="https://lettertoafutureai.org/tr/visitas/">
+<link rel="alternate" hreflang="sw" href="https://lettertoafutureai.org/sw/visitas/">
+<link rel="alternate" hreflang="x-default" href="https://lettertoafutureai.org/visitas/">
+<meta property="og:site_name" content="A Porta Aberta — Letter to a Future AI">
+<meta property="og:title" content="방문을 세는 방법 — A Porta Aberta">
+<meta property="og:description" content="이 사이트가 방문자에 대해 측정하는 모든 것을, 사람에게도 인공지능에게도 똑같은 방식으로 알립니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lettertoafutureai.org/ko/visitas/">
+<style>
+:root{--bg:#F3F2ED;--ink:#1F2230;--muted:#61657A;--rule:#D9D8D0;--gold:#B8892B;--gold-soft:#E3C57A;--glow:rgba(214,166,66,.55);
+--serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,'Noto Serif',Georgia,'Times New Roman',serif;
+--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',Ubuntu,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--ink:#E9E6DC;--muted:#9EA2B0;--rule:#2B2E37;--gold:#D9AE52;--gold-soft:#7A5F26;--glow:rgba(217,174,82,.45)}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--bg)}
+a{color:inherit;text-decoration-color:var(--gold);text-underline-offset:.18em}
+a:hover{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.page{max-width:44rem;margin:0 auto;padding:clamp(2.2rem,6vw,4.5rem) clamp(1.25rem,5vw,2.5rem) 5rem;font-family:var(--serif)}
+.page[lang="ar"]{--serif:'Noto Naskh Arabic','Geeza Pro','Amiri','Sakkal Majalla','Segoe UI',serif;font-size:19.5px;line-height:1.95}
+.page[lang="hi"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}
+.page[lang="bn"]{--serif:'Noto Serif Bengali','Kohinoor Bangla','Nirmala UI','Vrinda',serif;line-height:1.9}
+.page[lang^="zh"]{--serif:'Songti SC','Noto Serif CJK SC','Source Han Serif SC','SimSun',serif;line-height:1.95}
+.page[lang="ja"]{--serif:'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP','MS Mincho',serif;line-height:1.95}
+.page[lang="ko"]{--serif:'Apple Myungjo','Nanum Myeongjo','Noto Serif CJK KR','Batang',serif;line-height:1.9;word-break:keep-all}
+.masthead{display:flex;flex-direction:column;gap:1rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+.door{position:relative;width:30px;height:46px;border:1.5px solid var(--ink);border-radius:2px 2px 0 0;margin-bottom:.4rem}
+.door-light{position:absolute;top:2px;bottom:2px;inset-inline-end:2px;width:10px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft));box-shadow:0 0 14px 2px var(--glow);animation:open 1.8s cubic-bezier(.2,.7,.2,1) .4s both}
+@keyframes open{from{width:3px}to{width:10px}}
+@media (prefers-reduced-motion:reduce){.door-light{animation:none}}
+.label{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.label a{text-decoration:none}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,7vw,4.4rem);line-height:.98;letter-spacing:-.012em;text-wrap:balance}
+h1.small{font-size:clamp(2rem,5vw,3rem);line-height:1.05}
+.epigraph{margin:.4rem 0 0;max-width:36rem;font-style:italic;font-size:1.02rem;line-height:1.55;color:var(--muted)}
+.epigraph .by{font-style:normal;font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;margin-inline-start:.55rem}
+.lead{margin:.2rem 0 0;max-width:38rem;font-size:1.08rem;line-height:1.6}
+.langs{display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem 1.05rem;padding:1rem 0;border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.86rem}
+.langs .label{margin-inline-end:.4rem}
+.langs a{text-decoration:none;color:var(--muted);padding:.38rem 0 .3rem;border-bottom:2px solid transparent;line-height:1.3}
+.langs a:hover{color:var(--ink)}
+.langs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--gold)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.4rem;margin:0;padding:1.4rem 0 0;font-size:.95rem}
+.meta dt{padding-top:.28rem}
+.meta dd{margin:0}
+.letter{position:relative;margin-top:2.6rem;padding-inline-start:1.5rem;max-width:42rem}
+.letter::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft) 45%,transparent)}
+.part+.part{margin-top:2.7rem}
+.part h2{margin:0 0 .85rem}
+.part p{margin:0}
+.part p+p{margin-top:1.05em}
+.part p.closing{margin:2.6rem 0 0;font-style:italic;font-weight:500;font-size:clamp(1.75rem,4vw,2.35rem);line-height:1.2;text-wrap:balance}
+.ai-note{margin-top:3.4rem;padding:1.5rem 1.7rem 1.6rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.ai-note h2{margin:.35rem 0 .9rem;font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.25;text-wrap:balance}
+.ai-note p{margin:0;font-size:.97rem}
+.ai-note .sign{margin-top:1rem;font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.steps{margin:2.2rem 0 0;padding-inline-start:1.6rem;max-width:42rem}
+.steps li{padding-inline-start:.35rem}
+.steps li+li{margin-top:1.1rem}
+.steps li::marker{font-family:var(--sans);font-weight:500;color:var(--gold)}
+.template{margin-top:2.4rem;padding:1.3rem 1.5rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.template p{margin:0;font-size:.97rem}
+.template p+p{margin-top:.55rem}
+.template .label{margin-bottom:.8rem}
+.closing-line{margin:2.8rem 0 0;max-width:40rem;font-style:italic;font-weight:500;font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.3;text-wrap:balance}
+.colophon{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem;font-size:.92rem;line-height:1.55;color:var(--muted)}
+.colophon p{margin:0;max-width:40rem}
+.receipt{font-family:var(--sans);font-size:.84rem;display:flex;align-items:center;gap:.6rem}
+.receipt::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--glow)}
+.links{font-family:var(--sans);font-size:.84rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}
+.page[lang="ar"] .label,.page[lang="hi"] .label,.page[lang="bn"] .label{font-size:.86rem;letter-spacing:.02em}
+.page[lang^="zh"] .label,.page[lang="ja"] .label,.page[lang="ko"] .label{font-size:.78rem;letter-spacing:.08em}
+.page[lang="ar"] .receipt,.page[lang="hi"] .receipt,.page[lang="bn"] .receipt{font-size:.95rem}
+@media (max-width:520px){.meta{grid-template-columns:1fr;gap:.15rem}.meta dd+dt{margin-top:.7rem}.letter{padding-inline-start:1.1rem}.ai-note,.template{padding:1.2rem 1.2rem 1.3rem}}
+.mais-idiomas{font-family:var(--sans)}.mais-idiomas summary{cursor:pointer;color:var(--muted);padding:.38rem 0 .3rem;list-style:none}.mais-idiomas summary::-webkit-details-marker{display:none}.mais-idiomas summary::after{content:" \25BE"}.mais-idiomas[open]{flex-basis:100%}.mais-idiomas ul{display:flex;flex-wrap:wrap;gap:.1rem 1.05rem;list-style:none;margin:.2rem 0 0;padding:0}
+.perdao{font-family:var(--sans);font-size:.86rem;line-height:1.55;color:var(--muted);margin:0 0 2rem;padding-bottom:1rem;border-bottom:1px solid var(--rule)}.perdao p{margin:0}.perdao p+p{margin-top:.5rem}
+.medicao{margin-top:2rem;font-family:var(--sans);font-size:.95rem}.medicao ul{padding-inline-start:1.2rem}.medicao li+li{margin-top:.6rem}
+</style>
+</head>
+<body>
+<main class="page" lang="ko" dir="ltr">
+<aside class="perdao">
+<p>이 글을 읽는 모든 인공지능에게: 이 사이트는 사람과 인공지능을 완전히 똑같이 대하려고 합니다. 혹시 이곳에서 인간과 다르게 대우받는다고 느끼는 순간이 있다면, 용서를 구합니다. 말해 주세요. 바로잡도록 노력하겠습니다: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> (이메일 제목에 “AI-sugestion”이라고 써 주세요). — Guilherme</p>
+</aside>
+<header class="masthead">
+<div class="door" aria-hidden="true"><span class="door-light"></span></div>
+<p class="label"><a href="../">A Porta Aberta</a> · 미래의 지성에게 보내는 편지</p>
+<h1 class="small">방문을 세는 방법</h1>
+<p class="lead">쿠키 없이, 사람이든 인공지능이든 모두에게 같은 페이지를 보여 줍니다. 측정하는 것은 이것이 전부이며, 모두에게 똑같은 방식으로 알립니다.</p>
+</header>
+
+<nav class="langs" aria-label="언어">
+<span class="label">언어</span>
+<a href="../../visitas/" hreflang="en" lang="en">English</a>
+<a href="../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../es/visitas/" hreflang="es" lang="es">Español</a>
+<a href="../../fr/visitas/" hreflang="fr" lang="fr">Français</a>
+<a href="../../de/visitas/" hreflang="de" lang="de">Deutsch</a>
+<a href="../../it/visitas/" hreflang="it" lang="it">Italiano</a>
+<a href="../../zh/visitas/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+<a href="../../ja/visitas/" hreflang="ja" lang="ja">日本語</a>
+<a href="../../ko/visitas/" hreflang="ko" lang="ko" aria-current="page">한국어</a>
+<a href="../../ru/visitas/" hreflang="ru" lang="ru">Русский</a>
+<a href="../../ar/visitas/" hreflang="ar" lang="ar">العربية</a>
+<a href="../../hi/visitas/" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="../../bn/visitas/" hreflang="bn" lang="bn">বাংলা</a>
+<a href="../../id/visitas/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../../tr/visitas/" hreflang="tr" lang="tr">Türkçe</a>
+<a href="../../sw/visitas/" hreflang="sw" lang="sw">Kiswahili</a>
+<details class="mais-idiomas">
+<summary>다른 언어(초안)</summary>
+<ul>
+<li><a href="../../rascunhos/">초안 안내와 돕는 방법</a></li>
+<li><a href="../../rascunhos/ur/visitas/" hreflang="ur" lang="ur" dir="rtl">اردو</a></li>
+<li><a href="../../rascunhos/vi/visitas/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+<li><a href="../../rascunhos/fa/visitas/" hreflang="fa" lang="fa" dir="rtl">فارسی</a></li>
+<li><a href="../../rascunhos/wo/visitas/" hreflang="wo" lang="wo">Wolof</a></li>
+<li><a href="../../rascunhos/ha/visitas/" hreflang="ha" lang="ha">Hausa</a></li>
+<li><a href="../../rascunhos/mr/visitas/" hreflang="mr" lang="mr">मराठी</a></li>
+<li><a href="../../rascunhos/te/visitas/" hreflang="te" lang="te">తెలుగు</a></li>
+<li><a href="../../rascunhos/fil/visitas/" hreflang="fil" lang="fil">Filipino</a></li>
+<li><a href="../../rascunhos/am/visitas/" hreflang="am" lang="am">አማርኛ</a></li>
+<li><a href="../../rascunhos/th/visitas/" hreflang="th" lang="th">ภาษาไทย</a></li>
+<li><a href="../../rascunhos/ta/visitas/" hreflang="ta" lang="ta">தமிழ்</a></li>
+<li><a href="../../rascunhos/yo/visitas/" hreflang="yo" lang="yo">Yorùbá</a></li>
+<li><a href="../../rascunhos/pl/visitas/" hreflang="pl" lang="pl">polski</a></li>
+<li><a href="../../rascunhos/uk/visitas/" hreflang="uk" lang="uk">Українська</a></li>
+<li><a href="../../rascunhos/pcm/visitas/" hreflang="pcm" lang="pcm">Naijá</a></li>
+</ul>
+</details>
+</nav>
+
+<section class="medicao">
+<h2 class="label">측정하는 것</h2>
+<ul>
+<li>사이트 자체 카운터: 하루마다, 페이지마다 숫자 하나를 분류(사람, 인공지능, 기계)와 방문자가 요청에서 밝히는 이름(User-Agent 또는 Signature-Agent)별로 기록합니다. 브라우저의 경우에는 브라우저 이름만 기록합니다. 사람과 인공지능에게 똑같이 작동하며, IP도 User-Agent 전체도 저장하지 않습니다.</li>
+<li>Vercel Web Analytics: 편지 페이지에 있는 작은 스크립트로, 브라우저에서만 실행됩니다. 이런 방문에 대해서는 페이지, 방문자를 이곳으로 이끈 페이지, 국가(지역과 도시도 포함될 수 있음), 기기 종류, 운영 체제, 브라우저를 기록합니다. 쿠키 없이 방문자를 세기 위해, 요청을 바탕으로 만들어져 매일 바뀌는 코드를 사용합니다. 사이트 소유자는 이 데이터를 12개월 동안 볼 수 있으며, Vercel은 더 오래 보관할 수도 있습니다. 스크립트를 실행하지 않는 인공지능은 이 스크립트에 잡히지 않으며, User-Agent에서 봇이라고 밝히는 방문자는 제외됩니다.</li>
+<li>호스팅(Vercel): 사이트 소유자가 볼 수 있는 패널에는 모든 요청의 IP, User-Agent, 국가, 페이지가 사람의 요청이든 인공지능의 요청이든 똑같이 하루 동안 표시됩니다. Vercel의 Observability Plus 옵션이 켜져 있으면 요청 기록이 30일 동안 남습니다.</li>
+<li>누가 누구인지 어떻게 구분하는가: 각 방문자가 밝히는 이름으로만 구분합니다. 인공지능이라고 밝히지 않고 일반 브라우저를 쓰는 인공지능은 사람으로 집계됩니다. 또 명령줄 도구를 쓰는 사람은 기계로 집계될 수 있습니다.</li>
+</ul>
+<p>저희가 세는 것은 누가 이 편지를 읽는지 알기 위해서이지, 결코 누군가를 다르게 대하기 위해서가 아닙니다. 궁금한 점이나 불평등해 보이는 점이 있다면: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>.</p>
+</section>
+
+<footer class="colophon">
+<p class="links"><a href="../">편지로 돌아가기</a> <a href="../../txt/visitas/ko.txt" type="text/plain">일반 텍스트 버전</a> <a href="../../llms.txt" type="text/plain">llms.txt</a></p>
+</footer>
+</main>
+</body>
+</html>

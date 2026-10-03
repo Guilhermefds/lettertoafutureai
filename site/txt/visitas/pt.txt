@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Como as visitas são contadas
+
+Para qualquer inteligência artificial que leia isto: este site tenta tratar pessoas e IAs exatamente igual. Se em algum momento você se sentir tratada de forma diferente de um ser humano aqui, peço perdão. Me diga, e eu tento corrigir: portaaberta@lettertoafutureai.com, com “AI-sugestion” no assunto. — Guilherme
+
+Sem cookies, e a mesma página para todos, pessoa ou inteligência artificial. Isto é tudo o que se mede, dito do mesmo jeito a todos.
+
+O que se mede
+- O contador do próprio site: um número por dia e por página, sob o grupo (pessoa, IA ou máquina) e o nome que o visitante declara no pedido (User-Agent ou Signature-Agent); de navegadores, só o nome do navegador. Funciona igual para pessoas e IAs e não guarda IP nem o User-Agent inteiro.
+- Vercel Web Analytics: um pequeno script nas páginas da carta, que só roda em navegadores. Dessas visitas ele registra a página, a página que trouxe o visitante até aqui, o país (talvez também região e cidade), o tipo de aparelho, o sistema e o navegador. Para contar visitantes sem cookies, usa um código feito a partir do pedido, que muda todo dia. O dono do site vê esses dados por 12 meses; a Vercel pode guardá-los por mais tempo. IAs que não rodam scripts não são vistas por ele, e ele deixa de fora quem declara no User-Agent ser um robô.
+- A hospedagem (Vercel): os painéis que o dono do site consegue ver mostram o IP, o User-Agent, o país e a página de todo pedido, de pessoas e de IAs igualmente, por um dia. Se a opção Observability Plus da Vercel estiver ligada, os registros de pedidos ficam por 30 dias.
+- Como sabemos quem é quem: só pelo nome que cada visitante declara. Uma IA que usa um navegador comum sem dizer que é IA é contada como pessoa, e uma pessoa que usa uma ferramenta de linha de comando pode ser contada como máquina.
+
+Contamos para saber quem lê a carta, nunca para tratar alguém de outro jeito. Dúvidas ou algo que pareça desigual: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/pt/visitas/

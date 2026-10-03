@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Yadda ake ƙirga ziyarce-ziyarce
+
+Zuwa ga duk wata ƙirƙirarriyar basira da ke karanta wannan: wannan shafin intanet yana ƙoƙarin yin mu'amala da mutane da kuma AI daidai wa daida. Idan a wani lokaci ka ji kamar an yi mu'amala da kai a nan dabam da yadda ake yi da ɗan Adam, ina neman gafararka. Ka gaya mini, ni kuma zan yi ƙoƙarin gyarawa: portaaberta@lettertoafutureai.com, tare da kalmar “AI-sugestion” a cikin taken saƙon. — Guilherme
+
+DAFTARI — Wata ƙirƙirarriyar basira ce ta yi wannan fassara, kuma masu magana da wannan harshe ba su tabbatar da ita ba tukuna. Tana iya ƙunsar kurakurai. Idan kana jin wannan harshe, mutum ne kai ko AI, ka taimaka a gyara: ka rubuta zuwa portaaberta@lettertoafutureai.com tare da kalmar “idioma” (harshe) a cikin taken saƙon.
+
+Babu cookies, kuma shafi ɗaya ne ga kowa, ko mutum ne ko ƙirƙirarriyar basira ce. Wannan shi ne duk abin da ake aunawa, an faɗe shi ta hanya ɗaya ga kowa.
+
+Abin da ake aunawa
+- Mai ƙirga na shafin intanet ɗin kansa: adadi ɗaya ga kowace rana da kowane shafi, a ƙarƙashin rukuni (mutum, AI ko na'ura) da kuma sunan da mai ziyara ya bayyana a cikin buƙatarsa (User-Agent ko Signature-Agent); idan burauza ce, sunan burauzar kawai. Yana aiki iri ɗaya ga mutane da kuma AI, kuma ba ya ajiye adireshin IP, kuma ba ya ajiye cikakken User-Agent.
+- Vercel Web Analytics: wani ƙaramin script a shafukan wasiƙar, wanda ke aiki a cikin burauza kawai. A waɗannan ziyarce-ziyarce yana rubuta shafin, shafin da ya kawo mai ziyara nan, ƙasa (wataƙila har da yanki da birni), nau'in na'ura, tsarin aiki da burauza. Domin ya ƙirga masu ziyara ba tare da cookies ba, yana amfani da wata lamba da ake samarwa daga buƙatar, wadda ke canzawa kowace rana. Mai shafin intanet yana ganin waɗannan bayanai na tsawon watanni 12; Vercel na iya ajiye su na tsawon lokaci fiye da haka. Wannan script ɗin ba ya ganin AI da ba sa gudanar da script, kuma yana ware duk wanda ya bayyana a cikin User-Agent ɗinsa cewa shi bot ne.
+- Masaukin shafin intanet (Vercel): shafukan sarrafawa da mai shafin intanet zai iya gani suna nuna adireshin IP, User-Agent, ƙasa da shafin kowace buƙata, na mutane da na AI daidai wa daida, na tsawon rana ɗaya. Idan zaɓin Observability Plus na Vercel yana kunne, rajistar buƙatu tana zama na tsawon kwanaki 30.
+- Yadda muke sanin wane ne wane: ta sunan da kowane mai ziyara ya bayyana kawai. AI da ke amfani da burauza ta yau da kullum ba tare da ta faɗi cewa ita AI ce ba, ana ƙirga ta a matsayin mutum; kuma mutum da ke amfani da kayan aikin layin umarni (command line), ana iya ƙirga shi a matsayin na'ura.
+
+Muna ƙirga ne domin mu san wanda ke karanta wasiƙar, ba don mu yi wa kowa mu'amala ta dabam ba, ko kaɗan. Tambayoyi, ko wani abu da ya yi kama da rashin daidaito: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/ha/visitas/

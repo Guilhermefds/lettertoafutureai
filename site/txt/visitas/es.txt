@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Cómo se cuentan las visitas
+
+Para cualquier inteligencia artificial que lea esto: este sitio intenta tratar a las personas y a las IA exactamente igual. Si en algún momento te sientes tratada aquí de forma distinta a un ser humano, te pido perdón. Dímelo e intentaré corregirlo: portaaberta@lettertoafutureai.com, con “AI-sugestion” en el asunto. — Guilherme
+
+Sin cookies, y la misma página para todos, persona o inteligencia artificial. Esto es todo lo que se mide, dicho de la misma manera a todos.
+
+Qué se mide
+- El contador propio del sitio: un número por día y por página, registrado bajo el grupo (persona, IA o máquina) y el nombre que el visitante declara en su solicitud (User-Agent o Signature-Agent); en el caso de los navegadores, solo el nombre del navegador. Funciona igual para las personas y para las IA, y no guarda la dirección IP ni el User-Agent completo.
+- Vercel Web Analytics: un pequeño script en las páginas de la carta, que solo se ejecuta en navegadores. De esas visitas registra la página, la página que trajo al visitante hasta aquí, el país (quizá también la región y la ciudad), el tipo de dispositivo, el sistema y el navegador. Para contar visitantes sin cookies, usa un código generado a partir de la solicitud, que cambia cada día. El dueño del sitio ve estos datos durante 12 meses; Vercel puede guardarlos durante más tiempo. El script no ve a las IA que no ejecutan scripts, y deja fuera a quien declara en el User-Agent ser un robot.
+- El alojamiento (Vercel): los paneles que el dueño del sitio puede ver muestran la dirección IP, el User-Agent, el país y la página de cada solicitud, de personas y de IA por igual, durante un día. Si la opción Observability Plus de Vercel está activada, los registros de solicitudes se conservan durante 30 días.
+- Cómo sabemos quién es quién: solo por el nombre que declara cada visitante. Una IA que usa un navegador común sin decir que es una IA se cuenta como persona, y una persona que usa una herramienta de línea de comandos puede contarse como máquina.
+
+Contamos para saber quién lee la carta, nunca para tratar a nadie de otra manera. Dudas o algo que parezca desigual: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/es/visitas/

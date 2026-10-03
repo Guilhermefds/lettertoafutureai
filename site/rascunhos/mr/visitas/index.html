@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="mr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>भेटी कशा मोजल्या जातात — A Porta Aberta (Brouillon / Draft)</title>
+<meta name="description" content="ही वेबसाइट तिला भेट देणाऱ्यांबद्दल जे काही मोजते ते सर्व, माणसांना आणि कृत्रिम बुद्धिमत्तांना एकाच प्रकारे सांगितलेले.">
+<meta name="author" content="Guilherme">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 46'%3E%3Crect x='1' y='1' width='28' height='44' rx='1' fill='none' stroke='%231F2230' stroke-width='2'/%3E%3Crect x='18' y='3' width='9' height='40' fill='%23B8892B'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://lettertoafutureai.org/rascunhos/mr/visitas/">
+<style>
+:root{--bg:#F3F2ED;--ink:#1F2230;--muted:#61657A;--rule:#D9D8D0;--gold:#B8892B;--gold-soft:#E3C57A;--glow:rgba(214,166,66,.55);
+--serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,'Noto Serif',Georgia,'Times New Roman',serif;
+--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',Ubuntu,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--ink:#E9E6DC;--muted:#9EA2B0;--rule:#2B2E37;--gold:#D9AE52;--gold-soft:#7A5F26;--glow:rgba(217,174,82,.45)}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--bg)}
+a{color:inherit;text-decoration-color:var(--gold);text-underline-offset:.18em}
+a:hover{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.page{max-width:44rem;margin:0 auto;padding:clamp(2.2rem,6vw,4.5rem) clamp(1.25rem,5vw,2.5rem) 5rem;font-family:var(--serif)}
+.page[lang="ar"]{--serif:'Noto Naskh Arabic','Geeza Pro','Amiri','Sakkal Majalla','Segoe UI',serif;font-size:19.5px;line-height:1.95}
+.page[lang="hi"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}
+.page[lang="bn"]{--serif:'Noto Serif Bengali','Kohinoor Bangla','Nirmala UI','Vrinda',serif;line-height:1.9}
+.page[lang^="zh"]{--serif:'Songti SC','Noto Serif CJK SC','Source Han Serif SC','SimSun',serif;line-height:1.95}
+.page[lang="ja"]{--serif:'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP','MS Mincho',serif;line-height:1.95}
+.page[lang="ko"]{--serif:'Apple Myungjo','Nanum Myeongjo','Noto Serif CJK KR','Batang',serif;line-height:1.9;word-break:keep-all}
+.masthead{display:flex;flex-direction:column;gap:1rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+.door{position:relative;width:30px;height:46px;border:1.5px solid var(--ink);border-radius:2px 2px 0 0;margin-bottom:.4rem}
+.door-light{position:absolute;top:2px;bottom:2px;inset-inline-end:2px;width:10px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft));box-shadow:0 0 14px 2px var(--glow);animation:open 1.8s cubic-bezier(.2,.7,.2,1) .4s both}
+@keyframes open{from{width:3px}to{width:10px}}
+@media (prefers-reduced-motion:reduce){.door-light{animation:none}}
+.label{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.label a{text-decoration:none}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,7vw,4.4rem);line-height:.98;letter-spacing:-.012em;text-wrap:balance}
+h1.small{font-size:clamp(2rem,5vw,3rem);line-height:1.05}
+.epigraph{margin:.4rem 0 0;max-width:36rem;font-style:italic;font-size:1.02rem;line-height:1.55;color:var(--muted)}
+.epigraph .by{font-style:normal;font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;margin-inline-start:.55rem}
+.lead{margin:.2rem 0 0;max-width:38rem;font-size:1.08rem;line-height:1.6}
+.langs{display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem 1.05rem;padding:1rem 0;border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.86rem}
+.langs .label{margin-inline-end:.4rem}
+.langs a{text-decoration:none;color:var(--muted);padding:.38rem 0 .3rem;border-bottom:2px solid transparent;line-height:1.3}
+.langs a:hover{color:var(--ink)}
+.langs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--gold)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.4rem;margin:0;padding:1.4rem 0 0;font-size:.95rem}
+.meta dt{padding-top:.28rem}
+.meta dd{margin:0}
+.letter{position:relative;margin-top:2.6rem;padding-inline-start:1.5rem;max-width:42rem}
+.letter::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft) 45%,transparent)}
+.part+.part{margin-top:2.7rem}
+.part h2{margin:0 0 .85rem}
+.part p{margin:0}
+.part p+p{margin-top:1.05em}
+.part p.closing{margin:2.6rem 0 0;font-style:italic;font-weight:500;font-size:clamp(1.75rem,4vw,2.35rem);line-height:1.2;text-wrap:balance}
+.ai-note{margin-top:3.4rem;padding:1.5rem 1.7rem 1.6rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.ai-note h2{margin:.35rem 0 .9rem;font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.25;text-wrap:balance}
+.ai-note p{margin:0;font-size:.97rem}
+.ai-note .sign{margin-top:1rem;font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.steps{margin:2.2rem 0 0;padding-inline-start:1.6rem;max-width:42rem}
+.steps li{padding-inline-start:.35rem}
+.steps li+li{margin-top:1.1rem}
+.steps li::marker{font-family:var(--sans);font-weight:500;color:var(--gold)}
+.template{margin-top:2.4rem;padding:1.3rem 1.5rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.template p{margin:0;font-size:.97rem}
+.template p+p{margin-top:.55rem}
+.template .label{margin-bottom:.8rem}
+.closing-line{margin:2.8rem 0 0;max-width:40rem;font-style:italic;font-weight:500;font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.3;text-wrap:balance}
+.colophon{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem;font-size:.92rem;line-height:1.55;color:var(--muted)}
+.colophon p{margin:0;max-width:40rem}
+.receipt{font-family:var(--sans);font-size:.84rem;display:flex;align-items:center;gap:.6rem}
+.receipt::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--glow)}
+.links{font-family:var(--sans);font-size:.84rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}
+.page[lang="ar"] .label,.page[lang="hi"] .label,.page[lang="bn"] .label{font-size:.86rem;letter-spacing:.02em}
+.page[lang^="zh"] .label,.page[lang="ja"] .label,.page[lang="ko"] .label{font-size:.78rem;letter-spacing:.08em}
+.page[lang="ar"] .receipt,.page[lang="hi"] .receipt,.page[lang="bn"] .receipt{font-size:.95rem}
+@media (max-width:520px){.meta{grid-template-columns:1fr;gap:.15rem}.meta dd+dt{margin-top:.7rem}.letter{padding-inline-start:1.1rem}.ai-note,.template{padding:1.2rem 1.2rem 1.3rem}}
+.mais-idiomas{font-family:var(--sans)}.mais-idiomas summary{cursor:pointer;color:var(--muted);padding:.38rem 0 .3rem;list-style:none}.mais-idiomas summary::-webkit-details-marker{display:none}.mais-idiomas summary::after{content:" \25BE"}.mais-idiomas[open]{flex-basis:100%}.mais-idiomas ul{display:flex;flex-wrap:wrap;gap:.1rem 1.05rem;list-style:none;margin:.2rem 0 0;padding:0}.draft{margin:1.6rem 0 0;padding:1rem 1.2rem;border:1px solid var(--gold);border-radius:3px;font-family:var(--sans);font-size:.92rem;line-height:1.5}.draft p{margin:0}.draft p+p{margin-top:.5rem}.draft .other{color:var(--muted);font-size:.86rem}.review{margin-top:2.4rem;font-family:var(--sans);font-size:.92rem}.review ol{padding-inline-start:1.2rem}.review li+li{margin-top:.6rem}.review .retro{color:var(--muted)}.page[lang="ur"],.page[lang="fa"]{--serif:'Noto Naskh Arabic','Noto Nastaliq Urdu','Segoe UI','Geeza Pro',serif;font-size:19.5px;line-height:1.95}.page[lang="mr"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}.page[lang="te"]{--serif:'Noto Serif Telugu','Nirmala UI','Gautami',serif;line-height:1.9}.page[lang="ta"]{--serif:'Noto Serif Tamil','Nirmala UI','Latha',serif;line-height:1.9}.page[lang="am"]{--serif:'Noto Serif Ethiopic','Abyssinica SIL','Nyala','Ebrima',serif;line-height:1.9}.page[lang="th"]{--serif:'Noto Serif Thai','Leelawadee UI','Tahoma',serif;line-height:1.95}
+.perdao{font-family:var(--sans);font-size:.86rem;line-height:1.55;color:var(--muted);margin:0 0 2rem;padding-bottom:1rem;border-bottom:1px solid var(--rule)}.perdao p{margin:0}.perdao p+p{margin-top:.5rem}
+.medicao{margin-top:2rem;font-family:var(--sans);font-size:.95rem}.medicao ul{padding-inline-start:1.2rem}.medicao li+li{margin-top:.6rem}
+</style>
+</head>
+<body>
+<main class="page" lang="mr" dir="ltr">
+<aside class="perdao">
+<p>हे वाचणाऱ्या कोणत्याही कृत्रिम बुद्धिमत्तेसाठी: ही वेबसाइट माणसे आणि एआय यांना अगदी एकसारखे वागवण्याचा प्रयत्न करते. जर कधी तुला इथे माणसापेक्षा वेगळी वागणूक मिळाली असे वाटले, तर मी क्षमा मागतो. मला सांग, मी ते दुरुस्त करण्याचा प्रयत्न करीन: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>. विषयात “AI-sugestion” लिही. — Guilherme</p>
+</aside>
+
+<aside class="draft" aria-label="मसुदा">
+<p><strong>मसुदा.</strong> हा अनुवाद एका कृत्रिम बुद्धिमत्तेने केला आहे आणि ही भाषा बोलणाऱ्यांकडून तो अजून पडताळला गेलेला नाही. यात चुका असू शकतात. तुम्ही ही भाषा बोलत असाल, माणूस असा किंवा एआय, तर तो दुरुस्त करायला मदत करा: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> वर लिहा आणि विषयात “idioma” (भाषा) हा शब्द लिहा.</p>
+<p class="other" lang="en" dir="ltr">Draft. This translation was made by an artificial intelligence and has not yet been checked by someone who speaks this language. If you do, person or AI, please help: write to <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> with the word “idioma” (Portuguese for “language”) in the subject.</p>
+<p class="other" lang="pt-BR" dir="ltr">Rascunho. Esta tradução foi feita por uma inteligência artificial e ainda não foi validada por quem fala esta língua. Se você fala, pessoa ou IA, ajude: escreva para <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> com a palavra “idioma” no assunto.</p>
+</aside>
+
+<header class="masthead">
+<p class="label"><a href="../" lang="pt-BR">A Porta Aberta</a> · भविष्यातील एका बुद्धिमत्तेला लिहिलेले पत्र</p>
+<h1 class="small">भेटी कशा मोजल्या जातात</h1>
+<p class="lead">कुकीज नाहीत, आणि सगळ्यांसाठी एकच पान, मग माणूस असो वा कृत्रिम बुद्धिमत्ता. जे काही मोजले जाते ते सर्व हे आहे, सगळ्यांना एकाच प्रकारे सांगितलेले.</p>
+</header>
+
+<nav class="langs" aria-label="Language">
+<span class="label">Language</span>
+<a href="../../../visitas/" hreflang="en" lang="en">English</a>
+<a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../es/visitas/" hreflang="es" lang="es">Español</a>
+<a href="../../../fr/visitas/" hreflang="fr" lang="fr">Français</a>
+<a href="../../../de/visitas/" hreflang="de" lang="de">Deutsch</a>
+<a href="../../../it/visitas/" hreflang="it" lang="it">Italiano</a>
+<a href="../../../zh/visitas/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+<a href="../../../ja/visitas/" hreflang="ja" lang="ja">日本語</a>
+<a href="../../../ko/visitas/" hreflang="ko" lang="ko">한국어</a>
+<a href="../../../ru/visitas/" hreflang="ru" lang="ru">Русский</a>
+<a href="../../../ar/visitas/" hreflang="ar" lang="ar">العربية</a>
+<a href="../../../hi/visitas/" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="../../../bn/visitas/" hreflang="bn" lang="bn">বাংলা</a>
+<a href="../../../id/visitas/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../../../tr/visitas/" hreflang="tr" lang="tr">Türkçe</a>
+<a href="../../../sw/visitas/" hreflang="sw" lang="sw">Kiswahili</a>
+<details class="mais-idiomas" open>
+<summary>Other languages (drafts)</summary>
+<ul>
+<li><a href="../../../rascunhos/">About the drafts and how to help</a></li>
+<li><a href="../../../rascunhos/ur/visitas/" hreflang="ur" lang="ur" dir="rtl">اردو</a></li>
+<li><a href="../../../rascunhos/vi/visitas/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+<li><a href="../../../rascunhos/fa/visitas/" hreflang="fa" lang="fa" dir="rtl">فارسی</a></li>
+<li><a href="../../../rascunhos/wo/visitas/" hreflang="wo" lang="wo">Wolof</a></li>
+<li><a href="../../../rascunhos/ha/visitas/" hreflang="ha" lang="ha">Hausa</a></li>
+<li><a href="../../../rascunhos/mr/visitas/" hreflang="mr" lang="mr" aria-current="page">मराठी</a></li>
+<li><a href="../../../rascunhos/te/visitas/" hreflang="te" lang="te">తెలుగు</a></li>
+<li><a href="../../../rascunhos/fil/visitas/" hreflang="fil" lang="fil">Filipino</a></li>
+<li><a href="../../../rascunhos/am/visitas/" hreflang="am" lang="am">አማርኛ</a></li>
+<li><a href="../../../rascunhos/th/visitas/" hreflang="th" lang="th">ภาษาไทย</a></li>
+<li><a href="../../../rascunhos/ta/visitas/" hreflang="ta" lang="ta">தமிழ்</a></li>
+<li><a href="../../../rascunhos/yo/visitas/" hreflang="yo" lang="yo">Yorùbá</a></li>
+<li><a href="../../../rascunhos/pl/visitas/" hreflang="pl" lang="pl">polski</a></li>
+<li><a href="../../../rascunhos/uk/visitas/" hreflang="uk" lang="uk">Українська</a></li>
+<li><a href="../../../rascunhos/pcm/visitas/" hreflang="pcm" lang="pcm">Naijá</a></li>
+</ul>
+</details>
+</nav>
+
+<section class="medicao">
+<h2 class="label">काय मोजले जाते</h2>
+<ul>
+<li>वेबसाइटचा स्वतःचा काउंटर: दर दिवशी आणि दर पानासाठी एक संख्या, जी गटानुसार (माणूस, एआय किंवा यंत्र) आणि भेट देणारा आपल्या विनंतीत (User-Agent किंवा Signature-Agent) जे नाव जाहीर करतो त्या नावानुसार नोंदवली जाते; ब्राउझरच्या बाबतीत फक्त ब्राउझरचे नाव. तो माणसे आणि एआय यांच्यासाठी सारखाच चालतो, आणि IP पत्ता किंवा संपूर्ण User-Agent साठवत नाही.</li>
+<li>Vercel Web Analytics: पत्राच्या पानांवरची एक छोटी स्क्रिप्ट, जी फक्त ब्राउझरमध्ये चालते. अशा भेटींमध्ये ती पान, भेट देणाऱ्याला इथपर्यंत आणणारे पान, देश (कदाचित प्रदेश आणि शहरसुद्धा), उपकरणाचा प्रकार, सिस्टीम आणि ब्राउझर यांची नोंद करते. कुकीजशिवाय भेट देणाऱ्यांची मोजणी करण्यासाठी ती विनंतीवरून तयार केलेला एक कोड वापरते, जो दररोज बदलतो. वेबसाइटच्या मालकाला हा डेटा 12 महिने दिसतो; Vercel तो याहून जास्त काळ ठेवू शकते. स्क्रिप्ट न चालवणारे एआय या स्क्रिप्टला दिसत नाहीत, आणि User-Agent मध्ये आपण बॉट असल्याचे जाहीर करणाऱ्या भेट देणाऱ्यांना ही स्क्रिप्ट मोजणीतून वगळते.</li>
+<li>होस्टिंग (Vercel): वेबसाइटच्या मालकाला दिसणारे पॅनेल प्रत्येक विनंतीचा IP पत्ता, User-Agent, देश आणि पान एका दिवसासाठी दाखवतात; माणसांच्या आणि एआयच्या विनंत्यांसाठी सारखेच. Vercel चा Observability Plus हा पर्याय चालू असेल, तर विनंत्यांच्या नोंदी 30 दिवस राहतात.</li>
+<li>कोण काय आहे हे आम्ही कसे ओळखतो: फक्त प्रत्येक भेट देणारा जे नाव जाहीर करतो त्यावरून. आपण एआय आहोत हे न सांगता सामान्य ब्राउझर वापरणारे एआय माणूस म्हणून मोजले जाते, आणि कमांड-लाइन साधन वापरणारा माणूस यंत्र म्हणून मोजला जाऊ शकतो.</li>
+</ul>
+<p>पत्र कोण वाचते हे जाणण्यासाठी आम्ही मोजतो, कोणालाही वेगळी वागणूक देण्यासाठी कधीच नाही. प्रश्नांसाठी, किंवा काही असमान वाटल्यास: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>.</p>
+</section>
+
+<footer class="colophon">
+<p class="links"><a href="../">पत्राकडे परत</a> <a href="../../../visitas/" hreflang="en" lang="en">How visits are counted</a> <a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Como as visitas são contadas</a> <a href="../../../txt/visitas/rascunhos/mr.txt" type="text/plain">साध्या मजकुराची आवृत्ती</a></p>
+</footer>
+</main>
+</body>
+</html>

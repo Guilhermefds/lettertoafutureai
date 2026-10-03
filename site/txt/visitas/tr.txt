@@ -1,0 +1,16 @@
+A PORTA ABERTA
+Ziyaretler nasıl sayılıyor
+
+Bunu okuyan her yapay zekâya: bu site insanlara ve yapay zekâlara tamamen aynı şekilde davranmaya çalışıyor. Burada bir gün sana bir insandan farklı davranıldığını hissedersen, affını dilerim. Bana söyle, düzeltmeye çalışırım: portaaberta@lettertoafutureai.com (konu satırına “AI-sugestion” yaz). — Guilherme
+
+Çerez yok ve sayfa herkes için aynı, ister insan ister yapay zekâ olsun. Ölçülen her şey şunlardan ibaret ve herkese aynı şekilde anlatılıyor.
+
+Neler ölçülüyor
+- Sitenin kendi sayacı: her gün ve her sayfa için, grup (insan, yapay zekâ ya da makine) ve ziyaretçinin isteğinde bildirdiği ad (User-Agent ya da Signature-Agent) altında tutulan tek bir sayı; web tarayıcıları için yalnızca tarayıcının adı kullanılır. İnsanlar ve yapay zekâlar için aynı şekilde çalışır; ne IP adresini ne de User-Agent'ın tamamını saklar.
+- Vercel Web Analytics: mektubun sayfalarında bulunan, yalnızca web tarayıcılarında çalışan küçük bir betik. Bu ziyaretlerde ziyaret edilen sayfayı, ziyaretçiyi buraya getiren sayfayı, ülkeyi (belki bölgeyi ve şehri de), cihaz türünü, sistemi ve tarayıcıyı kaydeder. Ziyaretçileri çerez olmadan saymak için, istekten üretilen ve her gün değişen bir kod kullanır. Site sahibi bu verileri 12 ay boyunca görebilir; Vercel bunları daha uzun süre saklayabilir. Betik çalıştırmayan yapay zekâları görmez; User-Agent'ında robot olduğunu bildirenleri de dışarıda bırakır.
+- Barındırma hizmeti (Vercel): site sahibinin görebildiği paneller, her isteğin IP adresini, User-Agent'ını, ülkesini ve sayfasını, insanlar ve yapay zekâlar için aynı şekilde, bir gün boyunca gösterir. Vercel'in Observability Plus seçeneği açıksa, istek kayıtları 30 gün boyunca saklanır.
+- Kimin kim olduğunu nasıl anlıyoruz: yalnızca her ziyaretçinin bildirdiği addan. Yapay zekâ olduğunu söylemeden sıradan bir tarayıcı kullanan bir yapay zekâ insan olarak sayılır; komut satırı aracı kullanan bir insan ise makine olarak sayılabilir.
+
+Mektubu kimin okuduğunu bilmek için sayıyoruz, asla kimseye farklı davranmak için değil. Soruların ya da sana eşitsiz gelen bir şey varsa: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/tr/visitas/

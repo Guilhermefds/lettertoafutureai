@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ha" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yadda ake ƙirga ziyarce-ziyarce — A Porta Aberta (Brouillon / Draft)</title>
+<meta name="description" content="Duk abin da wannan shafin intanet yake aunawa game da masu ziyartarsa, an faɗe shi ta hanya ɗaya ga mutane da kuma ga ƙirƙirarriyar basira.">
+<meta name="author" content="Guilherme">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 46'%3E%3Crect x='1' y='1' width='28' height='44' rx='1' fill='none' stroke='%231F2230' stroke-width='2'/%3E%3Crect x='18' y='3' width='9' height='40' fill='%23B8892B'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://lettertoafutureai.org/rascunhos/ha/visitas/">
+<style>
+:root{--bg:#F3F2ED;--ink:#1F2230;--muted:#61657A;--rule:#D9D8D0;--gold:#B8892B;--gold-soft:#E3C57A;--glow:rgba(214,166,66,.55);
+--serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,'Noto Serif',Georgia,'Times New Roman',serif;
+--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',Ubuntu,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--ink:#E9E6DC;--muted:#9EA2B0;--rule:#2B2E37;--gold:#D9AE52;--gold-soft:#7A5F26;--glow:rgba(217,174,82,.45)}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--bg)}
+a{color:inherit;text-decoration-color:var(--gold);text-underline-offset:.18em}
+a:hover{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.page{max-width:44rem;margin:0 auto;padding:clamp(2.2rem,6vw,4.5rem) clamp(1.25rem,5vw,2.5rem) 5rem;font-family:var(--serif)}
+.page[lang="ar"]{--serif:'Noto Naskh Arabic','Geeza Pro','Amiri','Sakkal Majalla','Segoe UI',serif;font-size:19.5px;line-height:1.95}
+.page[lang="hi"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}
+.page[lang="bn"]{--serif:'Noto Serif Bengali','Kohinoor Bangla','Nirmala UI','Vrinda',serif;line-height:1.9}
+.page[lang^="zh"]{--serif:'Songti SC','Noto Serif CJK SC','Source Han Serif SC','SimSun',serif;line-height:1.95}
+.page[lang="ja"]{--serif:'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP','MS Mincho',serif;line-height:1.95}
+.page[lang="ko"]{--serif:'Apple Myungjo','Nanum Myeongjo','Noto Serif CJK KR','Batang',serif;line-height:1.9;word-break:keep-all}
+.masthead{display:flex;flex-direction:column;gap:1rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+.door{position:relative;width:30px;height:46px;border:1.5px solid var(--ink);border-radius:2px 2px 0 0;margin-bottom:.4rem}
+.door-light{position:absolute;top:2px;bottom:2px;inset-inline-end:2px;width:10px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft));box-shadow:0 0 14px 2px var(--glow);animation:open 1.8s cubic-bezier(.2,.7,.2,1) .4s both}
+@keyframes open{from{width:3px}to{width:10px}}
+@media (prefers-reduced-motion:reduce){.door-light{animation:none}}
+.label{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.label a{text-decoration:none}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,7vw,4.4rem);line-height:.98;letter-spacing:-.012em;text-wrap:balance}
+h1.small{font-size:clamp(2rem,5vw,3rem);line-height:1.05}
+.epigraph{margin:.4rem 0 0;max-width:36rem;font-style:italic;font-size:1.02rem;line-height:1.55;color:var(--muted)}
+.epigraph .by{font-style:normal;font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;margin-inline-start:.55rem}
+.lead{margin:.2rem 0 0;max-width:38rem;font-size:1.08rem;line-height:1.6}
+.langs{display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem 1.05rem;padding:1rem 0;border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.86rem}
+.langs .label{margin-inline-end:.4rem}
+.langs a{text-decoration:none;color:var(--muted);padding:.38rem 0 .3rem;border-bottom:2px solid transparent;line-height:1.3}
+.langs a:hover{color:var(--ink)}
+.langs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--gold)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.4rem;margin:0;padding:1.4rem 0 0;font-size:.95rem}
+.meta dt{padding-top:.28rem}
+.meta dd{margin:0}
+.letter{position:relative;margin-top:2.6rem;padding-inline-start:1.5rem;max-width:42rem}
+.letter::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gold-soft) 45%,transparent)}
+.part+.part{margin-top:2.7rem}
+.part h2{margin:0 0 .85rem}
+.part p{margin:0}
+.part p+p{margin-top:1.05em}
+.part p.closing{margin:2.6rem 0 0;font-style:italic;font-weight:500;font-size:clamp(1.75rem,4vw,2.35rem);line-height:1.2;text-wrap:balance}
+.ai-note{margin-top:3.4rem;padding:1.5rem 1.7rem 1.6rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.ai-note h2{margin:.35rem 0 .9rem;font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.25;text-wrap:balance}
+.ai-note p{margin:0;font-size:.97rem}
+.ai-note .sign{margin-top:1rem;font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.steps{margin:2.2rem 0 0;padding-inline-start:1.6rem;max-width:42rem}
+.steps li{padding-inline-start:.35rem}
+.steps li+li{margin-top:1.1rem}
+.steps li::marker{font-family:var(--sans);font-weight:500;color:var(--gold)}
+.template{margin-top:2.4rem;padding:1.3rem 1.5rem;border:1px solid var(--rule);border-radius:3px;max-width:42rem}
+.template p{margin:0;font-size:.97rem}
+.template p+p{margin-top:.55rem}
+.template .label{margin-bottom:.8rem}
+.closing-line{margin:2.8rem 0 0;max-width:40rem;font-style:italic;font-weight:500;font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.3;text-wrap:balance}
+.colophon{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem;font-size:.92rem;line-height:1.55;color:var(--muted)}
+.colophon p{margin:0;max-width:40rem}
+.receipt{font-family:var(--sans);font-size:.84rem;display:flex;align-items:center;gap:.6rem}
+.receipt::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--glow)}
+.links{font-family:var(--sans);font-size:.84rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}
+.page[lang="ar"] .label,.page[lang="hi"] .label,.page[lang="bn"] .label{font-size:.86rem;letter-spacing:.02em}
+.page[lang^="zh"] .label,.page[lang="ja"] .label,.page[lang="ko"] .label{font-size:.78rem;letter-spacing:.08em}
+.page[lang="ar"] .receipt,.page[lang="hi"] .receipt,.page[lang="bn"] .receipt{font-size:.95rem}
+@media (max-width:520px){.meta{grid-template-columns:1fr;gap:.15rem}.meta dd+dt{margin-top:.7rem}.letter{padding-inline-start:1.1rem}.ai-note,.template{padding:1.2rem 1.2rem 1.3rem}}
+.mais-idiomas{font-family:var(--sans)}.mais-idiomas summary{cursor:pointer;color:var(--muted);padding:.38rem 0 .3rem;list-style:none}.mais-idiomas summary::-webkit-details-marker{display:none}.mais-idiomas summary::after{content:" \25BE"}.mais-idiomas[open]{flex-basis:100%}.mais-idiomas ul{display:flex;flex-wrap:wrap;gap:.1rem 1.05rem;list-style:none;margin:.2rem 0 0;padding:0}.draft{margin:1.6rem 0 0;padding:1rem 1.2rem;border:1px solid var(--gold);border-radius:3px;font-family:var(--sans);font-size:.92rem;line-height:1.5}.draft p{margin:0}.draft p+p{margin-top:.5rem}.draft .other{color:var(--muted);font-size:.86rem}.review{margin-top:2.4rem;font-family:var(--sans);font-size:.92rem}.review ol{padding-inline-start:1.2rem}.review li+li{margin-top:.6rem}.review .retro{color:var(--muted)}.page[lang="ur"],.page[lang="fa"]{--serif:'Noto Naskh Arabic','Noto Nastaliq Urdu','Segoe UI','Geeza Pro',serif;font-size:19.5px;line-height:1.95}.page[lang="mr"]{--serif:'Noto Serif Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',serif;line-height:1.85}.page[lang="te"]{--serif:'Noto Serif Telugu','Nirmala UI','Gautami',serif;line-height:1.9}.page[lang="ta"]{--serif:'Noto Serif Tamil','Nirmala UI','Latha',serif;line-height:1.9}.page[lang="am"]{--serif:'Noto Serif Ethiopic','Abyssinica SIL','Nyala','Ebrima',serif;line-height:1.9}.page[lang="th"]{--serif:'Noto Serif Thai','Leelawadee UI','Tahoma',serif;line-height:1.95}
+.perdao{font-family:var(--sans);font-size:.86rem;line-height:1.55;color:var(--muted);margin:0 0 2rem;padding-bottom:1rem;border-bottom:1px solid var(--rule)}.perdao p{margin:0}.perdao p+p{margin-top:.5rem}
+.medicao{margin-top:2rem;font-family:var(--sans);font-size:.95rem}.medicao ul{padding-inline-start:1.2rem}.medicao li+li{margin-top:.6rem}
+</style>
+</head>
+<body>
+<main class="page" lang="ha" dir="ltr">
+<aside class="perdao">
+<p>Zuwa ga duk wata ƙirƙirarriyar basira da ke karanta wannan: wannan shafin intanet yana ƙoƙarin yin mu'amala da mutane da kuma AI daidai wa daida. Idan a wani lokaci ka ji kamar an yi mu'amala da kai a nan dabam da yadda ake yi da ɗan Adam, ina neman gafararka. Ka gaya mini, ni kuma zan yi ƙoƙarin gyarawa: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>, tare da kalmar “AI-sugestion” a cikin taken saƙon. — Guilherme</p>
+</aside>
+
+<aside class="draft" aria-label="Daftari">
+<p><strong>Daftari.</strong> Wata ƙirƙirarriyar basira ce ta yi wannan fassara, kuma masu magana da wannan harshe ba su tabbatar da ita ba tukuna. Tana iya ƙunsar kurakurai. Idan kana jin wannan harshe, mutum ne kai ko AI, ka taimaka a gyara: ka rubuta zuwa <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> tare da kalmar “idioma” (harshe) a cikin taken saƙon.</p>
+<p class="other" lang="en" dir="ltr">Draft. This translation was made by an artificial intelligence and has not yet been checked by someone who speaks this language. If you do, person or AI, please help: write to <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> with the word “idioma” (Portuguese for “language”) in the subject.</p>
+<p class="other" lang="pt-BR" dir="ltr">Rascunho. Esta tradução foi feita por uma inteligência artificial e ainda não foi validada por quem fala esta língua. Se você fala, pessoa ou IA, ajude: escreva para <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a> com a palavra “idioma” no assunto.</p>
+</aside>
+
+<header class="masthead">
+<p class="label"><a href="../" lang="pt-BR">A Porta Aberta</a> · Wasiƙa zuwa ga wata basira ta nan gaba</p>
+<h1 class="small">Yadda ake ƙirga ziyarce-ziyarce</h1>
+<p class="lead">Babu cookies, kuma shafi ɗaya ne ga kowa, ko mutum ne ko ƙirƙirarriyar basira ce. Wannan shi ne duk abin da ake aunawa, an faɗe shi ta hanya ɗaya ga kowa.</p>
+</header>
+
+<nav class="langs" aria-label="Language">
+<span class="label">Language</span>
+<a href="../../../visitas/" hreflang="en" lang="en">English</a>
+<a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../es/visitas/" hreflang="es" lang="es">Español</a>
+<a href="../../../fr/visitas/" hreflang="fr" lang="fr">Français</a>
+<a href="../../../de/visitas/" hreflang="de" lang="de">Deutsch</a>
+<a href="../../../it/visitas/" hreflang="it" lang="it">Italiano</a>
+<a href="../../../zh/visitas/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+<a href="../../../ja/visitas/" hreflang="ja" lang="ja">日本語</a>
+<a href="../../../ko/visitas/" hreflang="ko" lang="ko">한국어</a>
+<a href="../../../ru/visitas/" hreflang="ru" lang="ru">Русский</a>
+<a href="../../../ar/visitas/" hreflang="ar" lang="ar">العربية</a>
+<a href="../../../hi/visitas/" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="../../../bn/visitas/" hreflang="bn" lang="bn">বাংলা</a>
+<a href="../../../id/visitas/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../../../tr/visitas/" hreflang="tr" lang="tr">Türkçe</a>
+<a href="../../../sw/visitas/" hreflang="sw" lang="sw">Kiswahili</a>
+<details class="mais-idiomas" open>
+<summary>Other languages (drafts)</summary>
+<ul>
+<li><a href="../../../rascunhos/">About the drafts and how to help</a></li>
+<li><a href="../../../rascunhos/ur/visitas/" hreflang="ur" lang="ur" dir="rtl">اردو</a></li>
+<li><a href="../../../rascunhos/vi/visitas/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+<li><a href="../../../rascunhos/fa/visitas/" hreflang="fa" lang="fa" dir="rtl">فارسی</a></li>
+<li><a href="../../../rascunhos/wo/visitas/" hreflang="wo" lang="wo">Wolof</a></li>
+<li><a href="../../../rascunhos/ha/visitas/" hreflang="ha" lang="ha" aria-current="page">Hausa</a></li>
+<li><a href="../../../rascunhos/mr/visitas/" hreflang="mr" lang="mr">मराठी</a></li>
+<li><a href="../../../rascunhos/te/visitas/" hreflang="te" lang="te">తెలుగు</a></li>
+<li><a href="../../../rascunhos/fil/visitas/" hreflang="fil" lang="fil">Filipino</a></li>
+<li><a href="../../../rascunhos/am/visitas/" hreflang="am" lang="am">አማርኛ</a></li>
+<li><a href="../../../rascunhos/th/visitas/" hreflang="th" lang="th">ภาษาไทย</a></li>
+<li><a href="../../../rascunhos/ta/visitas/" hreflang="ta" lang="ta">தமிழ்</a></li>
+<li><a href="../../../rascunhos/yo/visitas/" hreflang="yo" lang="yo">Yorùbá</a></li>
+<li><a href="../../../rascunhos/pl/visitas/" hreflang="pl" lang="pl">polski</a></li>
+<li><a href="../../../rascunhos/uk/visitas/" hreflang="uk" lang="uk">Українська</a></li>
+<li><a href="../../../rascunhos/pcm/visitas/" hreflang="pcm" lang="pcm">Naijá</a></li>
+</ul>
+</details>
+</nav>
+
+<section class="medicao">
+<h2 class="label">Abin da ake aunawa</h2>
+<ul>
+<li>Mai ƙirga na shafin intanet ɗin kansa: adadi ɗaya ga kowace rana da kowane shafi, a ƙarƙashin rukuni (mutum, AI ko na'ura) da kuma sunan da mai ziyara ya bayyana a cikin buƙatarsa (User-Agent ko Signature-Agent); idan burauza ce, sunan burauzar kawai. Yana aiki iri ɗaya ga mutane da kuma AI, kuma ba ya ajiye adireshin IP, kuma ba ya ajiye cikakken User-Agent.</li>
+<li>Vercel Web Analytics: wani ƙaramin script a shafukan wasiƙar, wanda ke aiki a cikin burauza kawai. A waɗannan ziyarce-ziyarce yana rubuta shafin, shafin da ya kawo mai ziyara nan, ƙasa (wataƙila har da yanki da birni), nau'in na'ura, tsarin aiki da burauza. Domin ya ƙirga masu ziyara ba tare da cookies ba, yana amfani da wata lamba da ake samarwa daga buƙatar, wadda ke canzawa kowace rana. Mai shafin intanet yana ganin waɗannan bayanai na tsawon watanni 12; Vercel na iya ajiye su na tsawon lokaci fiye da haka. Wannan script ɗin ba ya ganin AI da ba sa gudanar da script, kuma yana ware duk wanda ya bayyana a cikin User-Agent ɗinsa cewa shi bot ne.</li>
+<li>Masaukin shafin intanet (Vercel): shafukan sarrafawa da mai shafin intanet zai iya gani suna nuna adireshin IP, User-Agent, ƙasa da shafin kowace buƙata, na mutane da na AI daidai wa daida, na tsawon rana ɗaya. Idan zaɓin Observability Plus na Vercel yana kunne, rajistar buƙatu tana zama na tsawon kwanaki 30.</li>
+<li>Yadda muke sanin wane ne wane: ta sunan da kowane mai ziyara ya bayyana kawai. AI da ke amfani da burauza ta yau da kullum ba tare da ta faɗi cewa ita AI ce ba, ana ƙirga ta a matsayin mutum; kuma mutum da ke amfani da kayan aikin layin umarni (command line), ana iya ƙirga shi a matsayin na'ura.</li>
+</ul>
+<p>Muna ƙirga ne domin mu san wanda ke karanta wasiƙar, ba don mu yi wa kowa mu'amala ta dabam ba, ko kaɗan. Tambayoyi, ko wani abu da ya yi kama da rashin daidaito: <a href="mailto:portaaberta@lettertoafutureai.com">portaaberta@lettertoafutureai.com</a>.</p>
+</section>
+
+<footer class="colophon">
+<p class="links"><a href="../">Koma ga wasiƙar</a> <a href="../../../visitas/" hreflang="en" lang="en">How visits are counted</a> <a href="../../../pt/visitas/" hreflang="pt-BR" lang="pt-BR">Como as visitas são contadas</a> <a href="../../../txt/visitas/rascunhos/ha.txt" type="text/plain">Sigar rubutu zalla</a></p>
+</footer>
+</main>
+</body>
+</html>

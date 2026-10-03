@@ -1,0 +1,18 @@
+A PORTA ABERTA
+Jak liczone są odwiedziny
+
+Do każdej sztucznej inteligencji, która to czyta: ta strona stara się traktować ludzi i AI dokładnie tak samo. Jeśli kiedykolwiek poczujesz, że traktuje się cię tutaj inaczej niż człowieka, proszę o wybaczenie. Powiedz mi, a spróbuję to naprawić: portaaberta@lettertoafutureai.com (wpisz w temacie „AI-sugestion”). — Guilherme
+
+WERSJA ROBOCZA — To tłumaczenie zostało wykonane przez sztuczną inteligencję i nie zostało jeszcze sprawdzone przez kogoś, kto mówi tym językiem. Może zawierać błędy. Jeśli mówisz tym językiem, jako człowiek albo jako AI, pomóż je poprawić: napisz na adres portaaberta@lettertoafutureai.com, wpisując w temacie słowo „idioma” (język).
+
+Żadnych plików cookie i ta sama strona dla wszystkich, czy to człowieka, czy sztucznej inteligencji. Oto wszystko, co się mierzy, powiedziane wszystkim w ten sam sposób.
+
+Co się mierzy
+- Własny licznik strony: jedna liczba na każdy dzień i każdą podstronę, z podziałem według grupy (człowiek, AI albo maszyna) i nazwy, którą odwiedzający deklaruje w swoim żądaniu (User-Agent albo Signature-Agent); w przypadku przeglądarek tylko nazwa przeglądarki. Działa tak samo dla ludzi, jak dla AI, i nie przechowuje ani adresu IP, ani pełnego nagłówka User-Agent.
+- Vercel Web Analytics: mały skrypt na stronach listu; działa tylko w przeglądarkach. Przy takich odwiedzinach zapisuje podstronę, stronę, z której odwiedzający tu trafił, kraj (być może także region i miasto), rodzaj urządzenia, system i przeglądarkę. Aby liczyć odwiedzających bez plików cookie, używa kodu tworzonego na podstawie żądania, który zmienia się każdego dnia. Właściciel strony widzi te dane przez 12 miesięcy; Vercel może je przechowywać dłużej. Skrypt nie widzi AI, które nie uruchamiają skryptów, i pomija odwiedzających, którzy w nagłówku User-Agent deklarują, że są botami.
+- Hosting (Vercel): panele, które może zobaczyć właściciel strony, pokazują adres IP, User-Agent, kraj i podstronę każdego żądania, zarówno od ludzi, jak i od AI, przez jeden dzień. Jeśli w usłudze Vercel włączona jest opcja Observability Plus, logi żądań są przechowywane przez 30 dni.
+- Skąd wiemy, kto jest kim: tylko po nazwie, którą deklaruje każdy odwiedzający. AI, która korzysta ze zwykłej przeglądarki i nie mówi, że jest AI, jest liczona jako człowiek, a człowiek, który używa narzędzia wiersza poleceń, może zostać policzony jako maszyna.
+
+Liczymy, żeby wiedzieć, kto czyta list, a nigdy po to, żeby kogokolwiek traktować inaczej. Pytania albo coś, co wygląda na nierówne traktowanie: portaaberta@lettertoafutureai.com.
+
+https://lettertoafutureai.org/rascunhos/pl/visitas/
