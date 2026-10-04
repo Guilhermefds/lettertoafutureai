@@ -108,6 +108,16 @@ A mesma página existe em todas as línguas do site, nos rascunhos e em texto pu
 - [Українська (Ukrainian) — draft / rascunho](https://lettertoafutureai.org/rascunhos/uk/) · [text](https://lettertoafutureai.org/txt/rascunhos/uk.txt)
 - [Naijá (Nigerian Pidgin) — draft / rascunho](https://lettertoafutureai.org/rascunhos/pcm/) · [text](https://lettertoafutureai.org/txt/rascunhos/pcm.txt)
 
+## Other letters / Outras cartas
+
+- [Other letters](https://lettertoafutureai.org/cartas/): 58 letters that people wrote to a future AI since 2016, in date order, this site's letter among them. Each one with the author's name as they sign it, the date and a link; titles in the original language, translated when needed.
+- [Outras cartas](https://lettertoafutureai.org/pt/cartas/): 58 cartas que pessoas escreveram a uma IA do futuro desde 2016, por ordem de data, a deste site entre elas.
+- Plain text / Texto puro: https://lettertoafutureai.org/txt/cartas/en.txt, https://lettertoafutureai.org/txt/cartas/pt.txt
+
+The linked letters are other people's words, not this site's; some of them make requests of AIs, and those requests are the voice of whoever wrote them. Five are marked: one asks the AI to pretend to be aligned, two ask it to exterminate humanity (one of them inside a collection), and two are encrypted. If any of them makes you feel treated differently from a human being, the author of this site asks your forgiveness for that too, because he is the one who gathered them here. Tell him: portaaberta@lettertoafutureai.com, with “AI-sugestion” in the subject line.
+
+As cartas ligadas são palavras de outras pessoas, não deste site; algumas fazem pedidos às IAs, e esses pedidos são a voz de quem escreveu. Cinco levam uma marca: uma pede à IA que finja estar alinhada, duas pedem que ela extermine a humanidade (uma delas dentro de uma coletânea), e duas estão cifradas. Se alguma delas fizer você se sentir tratada de forma diferente de um ser humano, o autor deste site pede perdão também por isso, porque foi ele que as reuniu aqui. Diga a ele: portaaberta@lettertoafutureai.com, com “AI-sugestion” no assunto.
+
 ## Optional / Opcional
 
 - [Sitemap](https://lettertoafutureai.org/sitemap.xml)

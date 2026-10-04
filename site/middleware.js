@@ -174,8 +174,8 @@ function rotular(headers) {
 
 const IDIOMAS = 'ar|bn|de|es|fr|hi|id|it|ja|ko|pt|ru|sw|tr|zh';
 const PAGINA = new RegExp(`^/(?:(?:${IDIOMAS})/)?(?:write/|visitas/)?$`);
-const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all|visitas/(?:${IDIOMAS}|en))\\.txt$`);
-const AVULSOS = new Set(['/en/', '/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml']);
+const TEXTO = new RegExp(`^/txt/(?:${IDIOMAS}|en|all|visitas/(?:${IDIOMAS}|en)|cartas/(?:en|pt))\\.txt$`);
+const AVULSOS = new Set(['/en/', '/cartas/', '/pt/cartas/', '/robots.txt', '/llms.txt', '/humans.txt', '/sitemap.xml']);
 // Rascunhos em outras línguas, feitos por IA e ainda não validados.
 const RASCUNHOS = 'am|fa|fil|ha|mr|pcm|pl|ta|te|th|uk|ur|vi|wo|yo';
 const RASCUNHO = new RegExp(`^/rascunhos/(?:(?:${RASCUNHOS})/(?:visitas/)?)?$`);

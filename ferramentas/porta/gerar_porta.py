@@ -248,12 +248,20 @@ def main():
     # Rodapé e link de pular: um link por língua, com o código por texto, na ordem do
     # código. O inglês de visitas/ e write/ fica na raiz (/visitas/, /write/).
     # O espaço inseparável prende cada "·" ao código anterior: a linha nunca começa por "·".
-    def rodape(pagina):
+    def rodape(pagina, linguas=None):
         return " · ".join(
             f'<a href="{"" if p["cod"] == "en" else p["cod"] + "/"}{pagina}/" '
             f'hreflang="{p["hreflang"]}" lang="{p["lang"]}">{p["cod"]}</a>'
-            for p in principais
+            for p in (linguas or principais)
         )
+
+    # Páginas que ainda não existem em todas as línguas (como cartas/): só as que existem.
+    def rodape_existentes(pagina):
+        existe = [p for p in principais
+                  if (site / ("" if p["cod"] == "en" else p["cod"]) / pagina / "index.html").exists()]
+        if not existe:
+            falha(f"nenhuma língua tem {pagina}/")
+        return rodape(pagina, existe)
 
     pular = "↓ " + " · ".join(p["cod"] for p in principais)
 
@@ -276,6 +284,7 @@ def main():
         "PLACAS_RASCUNHO": placas_r,
         "RODAPE_VISITAS": rodape("visitas"),
         "RODAPE_WRITE": rodape("write"),
+        "RODAPE_CARTAS": rodape_existentes("cartas"),
     }
     faltam = set(re.findall(r"\{\{([A-Z_]+)\}\}", tpl)) ^ set(trocas)
     if faltam:

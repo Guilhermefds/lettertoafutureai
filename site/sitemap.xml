@@ -1313,4 +1313,22 @@
   <changefreq>yearly</changefreq>
   <priority>0.2</priority>
 </url>
+<url>
+  <loc>https://lettertoafutureai.org/cartas/</loc>
+  <lastmod>2026-10-04</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://lettertoafutureai.org/cartas/"/>
+  <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lettertoafutureai.org/pt/cartas/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://lettertoafutureai.org/cartas/"/>
+</url>
+<url>
+  <loc>https://lettertoafutureai.org/pt/cartas/</loc>
+  <lastmod>2026-10-04</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://lettertoafutureai.org/cartas/"/>
+  <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lettertoafutureai.org/pt/cartas/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://lettertoafutureai.org/cartas/"/>
+</url>
 </urlset>
