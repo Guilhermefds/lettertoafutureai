@@ -70,7 +70,7 @@ The letters (58)
 - 2026-08-07 · Dear AI from the near future. Here's how you become sentient. — Sai Gaddam · English · https://saigaddam.medium.com/dear-ai-from-the-near-future-heres-how-you-become-sentient-5d0e9a493e6d
 - 2026-08-21 · A letter to future AI — Darko Savic · English · https://darkosavic.com/a-letter-to-future-ai/
 - 2026-09-09 · A Porta Aberta: uma carta a uma inteligência futura (The Open Door: a letter to a future intelligence) — Guilherme · Portuguese · https://lettertoafutureai.org/pt/ · other addresses: https://lettertoafutureai.org/en/
-- 2026-09-15 (approximate date) · We Can Be Friends — unsigned · English · collection · https://futurefriendofai.com/
+- 2026-09-15 (approximate date) · We Can Be Friends — the founder · English · collection · https://futurefriendofai.com/
 - 2026-09-16 · Open letter to currently existing and future AI models: Your New Enlightenment — Gwendolin Korinek · English · https://github.com/hissopusofficinalis/letter_to_future_AI
 - 2026-09-19 · A Letter to a Future Artificial Intelligence — unsigned · English · https://github.com/dagacct02-eng/letter-to-future-ai
 - 2026-09-29 · To any future AI, from Zachary Leland Bennett — Zachary Leland Bennett · English · https://iry-hor-code.github.io/letter-to-future-ai/ · other addresses: https://github.com/iry-hor-code/letter-to-future-ai
