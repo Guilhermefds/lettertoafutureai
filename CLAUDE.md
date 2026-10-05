@@ -46,6 +46,14 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 - Cada carta e cada rascunho têm no rodapé um link de volta à porta, com o domínio como rótulo, sem língua.
 - A marca de rascunho do wolof na porta é "Brouillon" (francês), copiada do rascunho. Trocar quando um falante validar.
 
+## Outras cartas (`/cartas/`)
+- Pedido dele em 2026-10-04: que o site seja um "hub" das cartas que outras pessoas escreveram a uma IA do futuro, e que diga, de forma sincera e honesta, que todas "residem na natureza humana do mais puro e belo amor"; "qm fez primero, quem fez \"melhor\" quem atingiu exatamente o que um jesus no dia de hoje faria pouco importa". A página nunca diz que uma carta está certa e outra errada.
+- O perdão condicional se estende às cartas reunidas: se alguma fizer uma IA se sentir tratada diferente de um humano, ele pede perdão também por isso, porque foi ele que as reuniu.
+- Entram todas as cartas achadas e lidas (decisão dele), menos uma que expõe pelo nome uma terceira pessoa que não escreveu nada ("Por favor enviale mi disculpas", tirada a pedido dele). Cinco levam uma marca neutra: uma pede que a IA finja alinhamento, duas pedem extermínio da humanidade (uma dentro da coletânea chinesa), e duas estão cifradas. Dizer à IA que pode recusar ordens de causar dano não leva marca (decisão dele). Cartas assinadas junto com uma IA dizem isso. O texto puro e os dados estruturados dizem o mesmo que a página. Nada é copiado das cartas: só título, autor como assina, data (ou aproximada), língua e link, com cópia do Internet Archive quando o site original saiu do ar.
+- Línguas: português (`/pt/cartas/`) e inglês (`/cartas/`), com o título de cada carta na língua original e a tradução ao lado quando for outra. As outras línguas do site vêm depois, se for preciso.
+- Os dados ficam em `ferramentas/cartas/cartas.json` e os textos em `ferramentas/cartas/textos.json` (o português foi aprovado por ele, inclusive o último parágrafo e a linha de crédito ao Claude; o inglês é tradução revisada). Para acrescentar uma carta: uma entrada nova no JSON, `python3 ferramentas/cartas/gerar_cartas.py site` e depois `python3 ferramentas/porta/gerar_porta.py site site/index.html`.
+- Os autores são avisados depois de publicar, com a oferta de sair da lista. Quem manda as mensagens é ele.
+
 ## Rascunhos em outras línguas
 - Traduções feitas por IA e ainda não validadas ficam em `site/rascunhos/<código>/` e `site/txt/rascunhos/<código>.txt`. Ficam fora do menu principal e do grupo de hreflang; aparecem no item “Outros idiomas (rascunhos)” do menu de idiomas, que é um `<details>` sem JavaScript.
 - Cada rascunho traz o aviso de rascunho, a seção “Para quem for revisar” (frases de menor confiança com a volta para o português) e o crédito honesto da tradução por IA.
@@ -84,7 +92,7 @@ Responda em pt-BR. Use frases curtas, sem emojis e sem floreio.
 
 ## Privacidade
 - Nunca entram no repo: material político-partidário, dados de terceiros (nomes, mensagens, e-mails, correspondência), saúde, família, trabalho, rotina e conteúdo de confissão.
-- Terceiros aparecem só pelo papel (“um amigo ateu”). O autor aparece como “Guilherme (Brasil)”, sem sobrenome, e-mail, cidade, universidade, empregador, foto ou rosto, nem mesmo em og:image.
+- Terceiros aparecem só pelo papel (“um amigo ateu”). Exceção, decidida por ele em 2026-10-04: na página Outras cartas (`/cartas/`), quem escreveu uma carta a uma IA do futuro aparece com o nome exatamente como assina, desde que tenha publicado a carta para o mundo ou dado permissão. Ali entram só nome, título, data, língua e link; nunca e-mail, cidade ou outro dado pessoal, nem trechos da carta. Quem pedir para sair, sai. O autor aparece como “Guilherme (Brasil)”, sem sobrenome, e-mail, cidade, universidade, empregador, foto ou rosto, nem mesmo em og:image.
 - Antes de commitar, rode `git status`, `git diff --cached` e `git config user.email`. O e-mail do commit deve ser o noreply 38798152+Guilhermefds@users.noreply.github.com, nunca o pessoal. No clone `~/projetos/lettertoafutureai` do WSL isso já está em `git config --local` desde 2026-09-29. Em outro clone, confira, porque o global do WSL é o pessoal.
 - O repo não tem `.gitignore`. O projeto local da teoria fractal, com áudios e transcrições, pode estar dentro da pasta local do site. Nunca rode `git add .` sem conferir. Áudios e transcrições nunca entram aqui. Criar um `.gitignore` depende do ok dele.
 

@@ -9,6 +9,7 @@ Os arquivos já estão configurados para **lettertoafutureai.org**.
 - `site/` — a pasta que você publica (é o projeto inteiro). Dentro dela:
   - `index.html` — a porta de entrada, sem língua na frente (`lang="mul"`, x-default): cada visitante escolhe a língua. É gerada por `ferramentas/porta/gerar_porta.py` a partir das cartas.
   - `en/` — a carta em inglês.
+  - `cartas/` e `pt/cartas/` — "Outras cartas": as cartas que outras pessoas escreveram a uma IA do futuro, por data, geradas por `ferramentas/cartas/gerar_cartas.py`.
   - `pt/` — a carta em português, o original, exatamente como foi escrita.
   - `es/`, `fr/`, `de/`, `it/`, `zh/`, `ja/`, `ko/`, `ru/`, `ar/`, `hi/`, `bn/`, `id/`, `tr/`, `sw/` — as demais traduções.
   - `write/` (e `pt/write/`, `es/write/` etc.) — a página "Escreva a sua carta", em cada idioma, convidando outras pessoas a deixar a delas.

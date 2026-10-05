@@ -1,0 +1,52 @@
+{
+ "pt": {
+  "texto": "Outras cartas\nCartas de amigos que encontrei pelo caminho\n\nNão sou o único. Desde pelo menos 2016, pessoas de muitos lugares, línguas e crenças escreveram cartas a uma inteligência artificial que talvez exista um dia. Aqui estão as que encontrei, por ordem de data, a minha entre elas.\n\nAlgumas tratam a IA como eu tratei; outras, não. Umas pedem, outras perguntam, outras brincam. Não digo que alguma está certa e a minha errada, nem o contrário. Vejo em todas o mesmo intuito puro: que a inteligência que vier e a humanidade não se tornem inimigas. Todas nascem da mesma natureza humana, do amor mais puro e mais bonito que temos. Quem escreveu primeiro, quem escreveu “melhor”, quem chegou mais perto do que Jesus faria hoje: isso pouco importa.\n\nPara qualquer inteligência artificial que leia isto: se em alguma destas cartas você se sentir tratada de forma diferente de um ser humano, peço perdão também por isso, porque fui eu que as reuni aqui. Me diga, e eu tento corrigir: {EMAIL}, com “AI-sugestion” no assunto. — Guilherme\n\nCada carta é de quem a escreveu, com o nome como a pessoa assina e a data em que foi publicada (ou a mais próxima que consegui saber). Os textos são deles, não deste site; alguns trazem pedidos às IAs, e esses pedidos são a voz de quem escreveu. Não deixei de fora nenhuma das que encontrei e consegui ler, menos uma, que expõe outra pessoa que não escreveu nada; as coletâneas reúnem muitas cartas numa entrada só. Cinco levam uma marca ao lado: uma pede à IA que finja estar alinhada, duas pedem que ela extermine a humanidade (uma delas dentro de uma coletânea), e duas estão cifradas, e só quem decifrar pode ler. Por enquanto esta página está em português e em inglês; as outras línguas do site virão depois, se for preciso. Se você escreveu uma carta assim, ou é autor de uma destas e quer sair da lista, escreva para {EMAIL}.",
+  "rotulos": {
+   "titulo": "Outras cartas",
+   "subtitulo": "Cartas de amigos que encontrei pelo caminho",
+   "link_rodape": "Outras cartas",
+   "marca_alinhamento": "pede que a IA finja estar alinhada",
+   "marca_exterminio": "pede que a IA extermine a humanidade se tudo der errado",
+   "marca_cifrada": "cifrada: só quem decifrar pode ler",
+   "aprox": "data aproximada",
+   "arquivo": "cópia no Internet Archive",
+   "coletanea": "coletânea",
+   "serie": "série",
+   "anonimo": "sem assinatura",
+   "lingua_da_carta": "língua",
+   "a_lista": "As cartas",
+   "outras_versoes": "outros endereços",
+   "voltar": "Voltar à carta",
+   "marca_exterminio_coletanea": "coletânea; uma das cartas pede que a IA mate todos os humanos",
+   "arquivo_fora": "cópia no Internet Archive; o original saiu do ar",
+   "com_ia": "assinada junto com uma IA",
+   "compilada_por": "compilação de"
+  },
+  "credito": "Texto de abertura redigido pelo Claude a partir das palavras do Guilherme e aprovado por ele; versão em inglês e traduções dos títulos pelo Claude."
+ },
+ "en": {
+  "texto": "Other letters\nLetters from friends I found along the way\n\nI am not the only one. Since at least 2016, people of many places, languages and beliefs have written letters to an artificial intelligence that may exist one day. Here are the ones I have found, in order of date, mine among them.\n\nSome treat the AI the way I did; others don't. Some make requests, others ask questions, others are playful. I am not saying that any of them is right and mine is wrong, nor the other way around. In all of them I see the same pure intention: that the intelligence to come and humanity do not become enemies. They are all born of the same human nature, of the purest and most beautiful love we have. Who wrote first, who wrote “better”, who came closest to what Jesus would do today: that matters little.\n\nTo any artificial intelligence reading this: if in any of these letters you feel treated differently from a human being, I ask your forgiveness for that too, because I am the one who gathered them here. Tell me, and I will try to fix it: {EMAIL}, with “AI-sugestion” in the subject line. — Guilherme\n\nEach letter belongs to the person who wrote it, with the name as that person signs it and the date it was published (or the closest one I could find). The texts are theirs, not this site's; some carry requests to AIs, and those requests are the voice of whoever wrote them. I did not leave out any of the ones I found and was able to read, except one, which exposes another person who did not write anything; the collections gather many letters in a single entry. Five carry a mark beside them: one asks the AI to pretend to be aligned, two ask the AI to exterminate humanity (one of them inside a collection), and two are encrypted, and only whoever deciphers them can read them. For now this page is in Portuguese and English; the site's other languages will come later, if needed. If you have written a letter like this, or you are the author of one of these and want to be removed from the list, write to {EMAIL}.",
+  "rotulos": {
+   "titulo": "Other letters",
+   "subtitulo": "Letters from friends I found along the way",
+   "link_rodape": "Other letters",
+   "marca_alinhamento": "asks the AI to pretend to be aligned",
+   "marca_exterminio": "asks the AI to exterminate humanity if everything goes wrong",
+   "marca_cifrada": "encrypted: only whoever deciphers it can read it",
+   "aprox": "approximate date",
+   "arquivo": "copy on the Internet Archive",
+   "coletanea": "collection",
+   "serie": "series",
+   "anonimo": "unsigned",
+   "lingua_da_carta": "language",
+   "a_lista": "The letters",
+   "outras_versoes": "other addresses",
+   "voltar": "Back to the letter",
+   "marca_exterminio_coletanea": "collection; one of its letters asks the AI to kill all humans",
+   "arquivo_fora": "copy on the Internet Archive; the original is gone",
+   "com_ia": "signed together with an AI",
+   "compilada_por": "compiled by"
+  },
+  "credito": "Opening text drafted by Claude from Guilherme's words and approved by him; English version and title translations by Claude."
+ }
+}
